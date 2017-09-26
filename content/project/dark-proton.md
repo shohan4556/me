@@ -13,7 +13,7 @@ image_preview = "dark-proton.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["demo"]
+tags = ["other"]
 
 # Does the project detail page use math formatting?
 math = false

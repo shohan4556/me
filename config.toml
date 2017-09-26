@@ -167,7 +167,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Experience"
-  url = "#teaching"
+  url = "#experience"
   weight = 5
 
 [[menu.main]]

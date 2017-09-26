@@ -39,7 +39,7 @@ view = 1
 
 [[filter]]
   name = "Other"
-  tag = ".demo"
+  tag = ".other"
 
 +++
 

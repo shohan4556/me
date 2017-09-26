@@ -9,5 +9,21 @@
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/me/tags/academic/" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Dark Inside</title>
+      <link>https://shohan4556.github.io/me/project/dark-inside/</link>
+      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/dark-inside/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Project Leader : Shohanur Rahaman
+
+&lt;ul&gt;
+&lt;li&gt;Game Art: Belal Hossain&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

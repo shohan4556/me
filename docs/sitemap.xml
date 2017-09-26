@@ -41,6 +41,15 @@
     
     <url>
     
+      <loc>https://shohan4556.github.io/me/post/my-honest-interview-p1/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://shohan4556.github.io/me/post/</loc>
       <lastmod>2017-01-01T00:00:00+06:00</lastmod>
     </url>
@@ -68,53 +77,8 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/post/getting-started/</loc>
-      <lastmod>2017-09-03T00:00:00+06:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/post/widgets/</loc>
-      <lastmod>2016-04-19T00:00:00+06:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/post/managing-content/</loc>
-      <lastmod>2016-04-18T00:00:00+06:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/post/writing-markdown-latex/</loc>
-      <lastmod>2016-04-17T00:00:00+06:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://shohan4556.github.io/me/publication/person-re-identification/</loc>
       <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/post/migrate-from-jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00+06:00</lastmod>
     </url>
     
   
@@ -190,26 +154,6 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/tags/hugo/</loc>
-      <lastmod>2017-09-03T00:00:00+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00+06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://shohan4556.github.io/me/project/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -231,6 +175,16 @@
     <url>
     
       <loc>https://shohan4556.github.io/me/tags/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%AC%E0%A6%BF/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>

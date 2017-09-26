@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Academic</title>
+    <title>Posts on Hello !</title>
     <link>https://shohan4556.github.io/me/post/</link>
-    <description>Recent content in Posts on Academic</description>
+    <description>Recent content in Posts on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2017 Your Name</copyright>
+    <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0600</lastBuildDate>
     <atom:link href="/me/post/" rel="self" type="application/rss+xml" />
     

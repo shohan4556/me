@@ -135,6 +135,11 @@ defaultContentLanguageInSubdir = false
     link = "//twitter.com/shohan4556"
 
   [[params.social]]
+    icon = "quora"
+    icon_pack = "fa"
+    link = "https://www.quora.com/profile/Shohanur-Rahaman"	
+	
+  [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
     link = "https://www.linkedin.com/in/shohan4556/"

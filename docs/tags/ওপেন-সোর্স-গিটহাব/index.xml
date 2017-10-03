@@ -1,107 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello ! on Hello !</title>
-    <link>https://shohan4556.github.io/me/</link>
-    <description>Recent content in Hello ! on Hello !</description>
+    <title>ওপেন সোর্স গিটহাব on Hello !</title>
+    <link>https://shohan4556.github.io/me/tags/%E0%A6%93%E0%A6%AA%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%97%E0%A6%BF%E0%A6%9F%E0%A6%B9%E0%A6%BE%E0%A6%AC/</link>
+    <description>Recent content in ওপেন সোর্স গিটহাব on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/me/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Captain Blands Space Adventure</title>
-      <link>https://shohan4556.github.io/me/project/captain-bland/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/captain-bland/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dark Inside</title>
-      <link>https://shohan4556.github.io/me/project/dark-inside/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/dark-inside/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Project Leader : Shohanur Rahaman
-
-&lt;ul&gt;
-&lt;li&gt;Game Art: Belal Hossain&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dark Proton</title>
-      <link>https://shohan4556.github.io/me/project/dark-proton/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/dark-proton/</guid>
-      <description>&lt;p&gt;When I have used to work with *&lt;strong&gt;PhaserJs&lt;/strong&gt; I mostly work in night. My eyes is very sensitive so that I have tried several themes most of the themes were not suits to my eyes. So I have decided to make my own theme and made this theme which is availe on braket theme repository.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Here is the theme &lt;a href=&#34;https://github.com/shohan4556/dark-proton&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fuzzle</title>
-      <link>https://shohan4556.github.io/me/project/fuzzle/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/fuzzle/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laser2D</title>
-      <link>https://shohan4556.github.io/me/project/laser2d/</link>
-      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/laser2d/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jolly Jumper</title>
-      <link>https://shohan4556.github.io/me/project/jolly-jumper/</link>
-      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/jolly-jumper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example Talk</title>
-      <link>https://shohan4556.github.io/me/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>আমার অনেস্ট ইন্টার্ভিউ আনসার - পার্ট ১</title>
-      <link>https://shohan4556.github.io/me/post/my-honest-interview-p1/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/post/my-honest-interview-p1/</guid>
-      <description>
-
-&lt;h2 id=&#34;প-রশ-ন-আপন-প-চ-বছর-পর-ন-জ-ক-ক-থ-য়-দ-খত-চ-ন&#34;&gt;প্রশ্ন: আপনি পাঁচ বছর পর নিজেকে কোথায় দেখতে চান ?&lt;/h2&gt;
-
-&lt;p&gt;এই প্রশ্নটা কি ঠিক কি কারনে করা হয় আমার জানা নেই, আমার উল্টা প্রশ্নকর্তাকে প্রশ্ন করতে ইচ্ছা করে, আপনি পাঁচ বছর আগে নিজেকে কোথায় দেখতে চেয়েছিলেন পাঁচ বছর পর এখন কি ঠিক সেই জায়গায় বাছাকাছি জায়গায় আছেন? আগামী পাঁচ বছর পর আমি কি করবো, কি হবো, কই যাবো সেটা কে বলতে পারে ? পাঁচ বছর পর আমি অমুক কোম্পানির সিও হব, অমুক  **ল ছিঁড়বো এগুলার কোন মানেই নাই।&lt;/p&gt;
-
-&lt;p&gt;আমি পাঁচ বছর পর কি করব সেটা সময়ই বলে দিবে, আমি শুধুমাত্র &lt;strong&gt;সঠিক সময়ে&lt;/strong&gt; সঠিক &lt;strong&gt;সিধান্তটা&lt;/strong&gt; নিতে চাই ।&lt;/p&gt;
-
-&lt;p&gt;ধন্যবাদ আমার এই শিট পোস্ট পড়ার জনন।&lt;/p&gt;
-</description>
-    </item>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/me/tags/%E0%A6%93%E0%A6%AA%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%97%E0%A6%BF%E0%A6%9F%E0%A6%B9%E0%A6%BE%E0%A6%AC/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>গিটহাব সহজিয়া</title>
@@ -163,26 +69,6 @@ Githab এ যখন একটি প্রোজেক্ট খোলা হ�
 &lt;a href=&#34;https://www.quora.com/profile/Shohanur-Rahaman&#34; target=&#34;_blank&#34;&gt;Quora&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;© copyright reserved by the Author.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Person Re-Identification System For Mobile Devices</title>
-      <link>https://shohan4556.github.io/me/publication/person-re-identification/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/publication/person-re-identification/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mobile visual clothing search</title>
-      <link>https://shohan4556.github.io/me/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/publication/clothing-search/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     

@@ -1,20 +1,21 @@
 +++
 # Date this page was created.
-date = "2017-09-12"
+date = "2017-10-13"
 
 # Project title.
-title = "Dark Inside"
+title = "Quiz Game Prototype"
 
 # Project summary to display on homepage.
-summary = "A puzzle platformer prototype made as a project in Software Engineering course."
+summary = "A quiz game for CEED IT"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "dark-inside.png"
+image_preview = "quiz-game.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["academic", "unity-3d"]
+tags = ["unity-3d"]
 
+external_link = "https://github.com/shohan4556/preposition-quiz"
 
 # Does the project detail page use math formatting?
 math = false
@@ -26,9 +27,7 @@ caption = "My caption :smile:"
 
 +++
 
- * Project Leader : Shohanur Rahaman
- * Game Art: Belal Hossain 
- * [View Project](https://github.com/shohan4556/dark-inside)
+
  
  
  

@@ -6,8 +6,17 @@
     <description>Recent content in Projects on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Tue, 12 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/me/project/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Quiz Game Prototype</title>
+      <link>https://shohan4556.github.io/me/project/quiz-game/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/quiz-game/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Captain Blands Space Adventure</title>
@@ -29,6 +38,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Game Art: Belal Hossain&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shohan4556/dark-inside&#34; target=&#34;_blank&#34;&gt;View Project&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>

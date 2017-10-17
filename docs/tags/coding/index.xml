@@ -28,10 +28,6 @@ var myObj1 = new MyOrdinaryClass();
 
 &lt;p&gt;Here is an example of generic class&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;There must be a &lt;code&gt;&amp;lt;T&amp;gt;&lt;/code&gt; after the name of generic class, this is how you have to define generic class.&lt;/p&gt;
-&lt;/blockquote&gt;
-
 &lt;pre&gt;&lt;code&gt;class MyGenericClass &amp;lt;T&amp;gt; {
     // properties and methods goes here, no special same as ordinary class 
 }
@@ -40,7 +36,11 @@ var myObj1 = new MyOrdinaryClass();
    var myObj3 = new MyGenericClass&amp;lt;string&amp;gt; ();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Look at this example, we have instantiate the same class but &lt;strong&gt;with different type&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There must be a &lt;code&gt;&amp;lt;T&amp;gt;&lt;/code&gt; after the name of generic class, this is how you have to define generic class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Look at this example, we have instantiate the same class but &lt;strong&gt;with different type (integer and string)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;So In simple term Generic class allow you to write class that can work
@@ -91,10 +91,14 @@ Here is another example&lt;/p&gt;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;**Advantages of using Generic Class : **
-        1. Reusing same class multiple times
-        2. Performance
-        3. Type Safety&lt;/p&gt;
+&lt;p&gt;Advantages of using Generic Class :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    1. Reusing same class multiple times 
+
+    2. Performance 
+
+    3. Type Safety 
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
 

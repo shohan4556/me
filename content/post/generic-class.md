@@ -26,7 +26,6 @@ So what we did here, we have instantiated an object **myObj1** type of **MyOrdin
 
 Here is an example of generic class 
 
-> There must be a `<T>` after the name of generic class, this is how you have to define generic class. 
 
     class MyGenericClass <T> {
 	    // properties and methods goes here, no special same as ordinary class 
@@ -35,7 +34,9 @@ Here is an example of generic class
        var myObj2 = new MyGenericClass<int> ();
        var myObj3 = new MyGenericClass<string> ();
    
-Look at this example, we have instantiate the same class but **with different type** 
+> There must be a `<T>` after the name of generic class, this is how you have to define generic class. 
+
+   Look at this example, we have instantiate the same class but **with different type (integer and string)** 
 
 > So In simple term Generic class allow you to write class that can work
 > with any data type.
@@ -86,10 +87,17 @@ Here is another example
 
 
 
+	
+	
 
-**Advantages of using Generic Class : **
+Advantages of using Generic Class :
+
+
+
 		1. Reusing same class multiple times 
+		
 		2. Performance 
+		
 		3. Type Safety 
 
 

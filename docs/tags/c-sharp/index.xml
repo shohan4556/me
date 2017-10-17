@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C Sharp on Hello !</title>
+    <link>https://shohan4556.github.io/me/tags/c-sharp/</link>
+    <description>Recent content in C Sharp on Hello !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Shohan</copyright>
+    <atom:link href="/me/tags/c-sharp/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Intermediate C# - Generic Class</title>
+      <link>https://shohan4556.github.io/me/post/generic-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/generic-class/</guid>
+      <description>&lt;p&gt;Generic class same as typical class in C# except Generic type. So what the f**k is generic type ? Generic type means it is not specified any particular &lt;strong&gt;type&lt;/strong&gt;.
+Let&amp;rsquo;s see an example of an ordinary class&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class MyOrdinaryClass{
+    // properties and methods goes here
+}
+
+var myObj1 = new MyOrdinaryClass();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So what we did here, we have instantiated an object &lt;strong&gt;myObj1&lt;/strong&gt; type of &lt;strong&gt;MyOrdinaryClass&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of generic class&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There must be a &lt;code&gt;&amp;lt;T&amp;gt;&lt;/code&gt; after the name of generic class, this is how you have to define generic class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;class MyGenericClass &amp;lt;T&amp;gt; {
+    // properties and methods goes here, no special same as ordinary class 
+}
+
+   var myObj2 = new MyGenericClass&amp;lt;int&amp;gt; ();
+   var myObj3 = new MyGenericClass&amp;lt;string&amp;gt; ();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Look at this example, we have instantiate the same class but &lt;strong&gt;with different type&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;So In simple term Generic class allow you to write class that can work
+with any data type.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The most common use of generic class is &lt;strong&gt;List&lt;/strong&gt;
+Here is another example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; var obj1 = new MyGenericClass&amp;lt;int&amp;gt; ();
+ var obj2 = new MyGenericClass&amp;lt;string&amp;gt; ();
+
+ var Gobj1  = new List&amp;lt;string&amp;gt; ();
+ var Gobj2 = new List&amp;lt;int&amp;gt; ();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;sample program to follow :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    namespace GenericClass {
+
+    class MyGenericClass &amp;lt;T&amp;gt; {
+        public void sayHello ( ) {
+            Console.WriteLine (&amp;quot;Hello World&amp;quot;);
+        }
+    }
+
+
+    class Program {
+        static void Main ( string[] args ) {
+
+            var myObj2 = new MyGenericClass&amp;lt;int&amp;gt; ();
+            var myObj3 = new MyGenericClass&amp;lt;string&amp;gt; ();
+
+            myObj2.sayHello ();
+            myObj3.sayHello ();
+
+            var obj1 = new MyGenericClass&amp;lt;int&amp;gt; ();
+            var obj2 = new MyGenericClass&amp;lt;string&amp;gt; ();
+
+            var Gobj1  = new List&amp;lt;string&amp;gt; ();
+            var Gobj2 = new List&amp;lt;int&amp;gt; ();
+
+
+            Console.ReadKey ();
+
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;**Advantages of using Generic Class : **
+        1. Reusing same class multiple times
+        2. Performance
+        3. Type Safety&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

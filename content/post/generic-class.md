@@ -1,5 +1,5 @@
 +++
-date = "2017-17-10T00:00:00"
+date = "2017-01-01T00:00:00"
 draft = false
 tags = ["Coding", "C-Sharp"]
 title = "Intermediate C# - Generic Class"

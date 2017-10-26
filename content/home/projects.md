@@ -40,6 +40,10 @@ view = 1
 [[filter]]
   name = "Other"
   tag = ".other"
+  
+[[filter]]
+  name = "Prototype"
+  tag = ".prototype"
 
 +++
 

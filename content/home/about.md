@@ -38,6 +38,6 @@ weight = 1
 
 # Biography
 
-Hi there, I am a tech nerd from Bangladesh who is passionate about Game Development.I am passionate game developer. I do code mostly. I love drawing pixelArt and reading books.
+Hi there, I am a tech nerd from Bangladesh who is passionate about Game Development. I have a solid skill in Unity3D Game Development. I am working as an freelance game developer now. I do code mostly. I love drawing pixelArt and reading books.
 
 I am available as a freelance game developer and would love to take up challenging projects. If you would like to talk about a project, opportunity, consult about something or would simply like to chat, feel free to leave a message.

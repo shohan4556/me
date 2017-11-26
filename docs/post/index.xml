@@ -10,6 +10,117 @@
     <atom:link href="/me/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>আমার Unity3D সেটআপ</title>
+      <link>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</guid>
+      <description>&lt;p&gt;ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip;  প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক
+বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি।
+প্লাগিন গুলার লিস্ট&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Beautify&lt;/li&gt;
+&lt;li&gt;C# (for C# support)&lt;/li&gt;
+&lt;li&gt;Debugger for Unity3D&lt;/li&gt;
+&lt;li&gt;Unity Snippets&lt;/li&gt;
+&lt;li&gt;Unity Tools&lt;/li&gt;
+&lt;li&gt;material Icon Theme&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;তারপর আমি যেটা করি &lt;a href=&#34;https://github.com/hbin/top-programming-fonts&#34; target=&#34;_blank&#34;&gt;Menlo&lt;/a&gt; ফন্ট ইন্সটল করি।
+ফন্ট সাইজ রাখি ১৬ (চোখে কম দেখি ব্র)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &amp;quot;workbench.iconTheme&amp;quot;: &amp;quot;material-icon-theme&amp;quot;,
+    &amp;quot;window.zoomLevel&amp;quot;: 0,
+    &amp;quot;editor.fontSize&amp;quot;: 16,
+    &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Menlo&amp;quot;,
+    &amp;quot;material-icon-theme.showUpdateMessage&amp;quot;: false
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ডার্ক থিম ব্যাবহার করি সব সময়।&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে মধ্যাই ব্যাবহার করি এই মুহূর্তে মনে পড়তেছে না।&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unity Tips - 01</title>
+      <link>https://shohan4556.github.io/me/post/unity-tips-1/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/unity-tips-1/</guid>
+      <description>&lt;p&gt;Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slider&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Range(1, 100)]
+public int weight;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code will come up with a slider in inspector.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;OnValidate()&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes you may want to validate value that comes from inspector. Unity has a nice method &lt;code&gt;onValidate&lt;/code&gt; you can validate value.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public float speed;
+
+void onValidate()
+{
+    if(speed&amp;lt;=0){
+        Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;ToolTip&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes you may have deliver your project to dumb client, ToolTip can make your life easier.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Tooltip(&amp;quot;drop here the screaming audio from Assets &amp;quot;)]
+public AudioClip screamAudio;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;HideInInspector&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hide public variable form Inspector.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[HideInInspector]
+public int p = 5;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;RequireComponent&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Use it for dependency script. Make your life easier.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[RequireComponent(typeof(Rigidbody))]
+public class PlayerScript : MonoBehaviour
+{
+    Rigidbody rBody;
+
+    void Start()
+    {
+        rBody = GetComponent&amp;lt;Rigidbody&amp;gt;();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Intermediate C# - Generic Class</title>
       <link>https://shohan4556.github.io/me/post/generic-class/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
@@ -209,78 +320,6 @@ Githab এ যখন একটি প্রোজেক্ট খোলা হ�
 &lt;a href=&#34;https://www.quora.com/profile/Shohanur-Rahaman&#34; target=&#34;_blank&#34;&gt;Quora&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;© copyright reserved by the Author.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Unity Tips - 01</title>
-      <link>https://shohan4556.github.io/me/post/unity-tips-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/post/unity-tips-1/</guid>
-      <description>&lt;p&gt;Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Slider&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Range(1, 100)]
-public int weight;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This code will come up with a slider in inspector.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;OnValidate()&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you may want to validate value that comes from inspector. Unity has a nice method &lt;code&gt;onValidate&lt;/code&gt; you can validate value.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public float speed;
-
-void onValidate()
-{
-    if(speed&amp;lt;=0){
-        Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;ToolTip&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you may have deliver your project to dumb client, ToolTip can make your life easier.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Tooltip(&amp;quot;drop here the screaming audio from Assets &amp;quot;)]
-public AudioClip screamAudio;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;HideInInspector&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Hide public variable form Inspector.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[HideInInspector]
-public int p = 5;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;RequireComponent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Use it for dependency script. Make your life easier.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[RequireComponent(typeof(Rigidbody))]
-public class PlayerScript : MonoBehaviour
-{
-    Rigidbody rBody;
-
-    void Start()
-    {
-        rBody = GetComponent&amp;lt;Rigidbody&amp;gt;();
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

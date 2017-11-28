@@ -24,6 +24,8 @@ caption = "Image credit: [**Shohan**](https://github.com/shohan4556/)"
 * Unity Snippets
 * Unity Tools
 * material Icon Theme
+* Trainling Semicolon
+* Markdown All in One
 
 তারপর আমি যেটা করি [Menlo](https://github.com/hbin/top-programming-fonts) ফন্ট ইন্সটল করি। 
 ফন্ট সাইজ রাখি ১৬ (চোখে কম দেখি ব্রো) 
@@ -34,7 +36,9 @@ caption = "Image credit: [**Shohan**](https://github.com/shohan4556/)"
     "window.zoomLevel": 0,
     "editor.fontSize": 16,
     "editor.fontFamily": "Menlo",
-    "material-icon-theme.showUpdateMessage": false
+    "material-icon-theme.showUpdateMessage": false,
+    "extensions.ignoreRecommendations": true,
+    "markdown.extension.preview.autoShowPreviewToSide": true
 }
 ```
 ডার্ক থিম ব্যাবহার করি সব সময়। 

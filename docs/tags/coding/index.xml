@@ -26,6 +26,8 @@
 &lt;li&gt;Unity Snippets&lt;/li&gt;
 &lt;li&gt;Unity Tools&lt;/li&gt;
 &lt;li&gt;material Icon Theme&lt;/li&gt;
+&lt;li&gt;Trainling Semicolon&lt;/li&gt;
+&lt;li&gt;Markdown All in One&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;তারপর আমি যেটা করি &lt;a href=&#34;https://github.com/hbin/top-programming-fonts&#34; target=&#34;_blank&#34;&gt;Menlo&lt;/a&gt; ফন্ট ইন্সটল করি।
@@ -36,7 +38,9 @@
     &amp;quot;window.zoomLevel&amp;quot;: 0,
     &amp;quot;editor.fontSize&amp;quot;: 16,
     &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Menlo&amp;quot;,
-    &amp;quot;material-icon-theme.showUpdateMessage&amp;quot;: false
+    &amp;quot;material-icon-theme.showUpdateMessage&amp;quot;: false,
+    &amp;quot;extensions.ignoreRecommendations&amp;quot;: true,
+    &amp;quot;markdown.extension.preview.autoShowPreviewToSide&amp;quot;: true
 }
 &lt;/code&gt;&lt;/pre&gt;
 

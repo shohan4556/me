@@ -2,7 +2,7 @@
 +++
 date = "2017-01-01T00:00:00"
 draft = false
-tags = ["হাবিজাবি, দরসন্"]
+tags = ["হাবিজাবি"]
 title = "আমরা কি সুখি ?"
 math = false
 summary = """
@@ -21,25 +21,29 @@ caption = "Image credit: [**Shohan**](https://github.com/shohan4556/)"
 
 এখন ধরা যাক আপনি ভালো জব করেন, সুন্দরী একটা বউও যোগার করে ফেলেছেন, কিন্তু আপনি ব্যক্তি জীবনে অসুখী । তাহলে এইযে আপনি জীবনের অর্ধেক সময় নষ্ট করে ফেললেন এগুলার পিছনে সেটার কি হবে ? 
 
-টাকা পয়সাকে মানুষকে যতটা গুরুত্বপূর্ণ মনে করে আসলে টাকার গুরুত্ব এর চেয়ে অনেক কম। জীবনে খুব অল্প টাকায়ও জীবনে সুখি থাকা যায়। সমস্যা যেটা হয়, আমাদের  expectation লেভেলটা অনেক বেশি।  
- > The biggest factor in happiness is the gap between what we have and what we want. 
+টাকা পয়সাকে মানুষকে যতটা গুরুত্বপূর্ণ মনে করে আসলে টাকার গুরুত্ব এর চেয়ে অনেক কম। জীবনে খুব অল্প টাকায়ও জীবনে সুখি থাকা যায়। সমস্যা যেটা হয়, আমাদের  expectation লেভেলটা অনেক বেশি।  **The biggest factor in happiness is the gap between what we have and what we want.**
 
 >"শোন হিমু কোনরকম উচ্চাশা রাখবি না। টাকা-পয়সা করতে হবে, বড় হতে হবে, এইসব নিয়ে মোটেও ভাববি না। সমস্ত কষ্টের মূলে আছে আমাদের উচ্চাশা। আমার উচ্চাশা 
 ছিল বল প্রথমদিকে খুবই কষ্ট পেয়েছি।  শেষের দিকে উচ্চাশা ত্যাগ করতে পেরেছিলাম তাই খানিকটা আনন্দে ছিলাম। আনন্দে থাকাটাই বড় কথা। সবসময় আনন্দে থাকতে 
-চেষ্টা করবি।" -- হিমুর বাবা (ময়ূরাক্ষী) 
+চেষ্টা করবি।" 
+
+>> -- হিমুর বাবা (ময়ূরাক্ষী) 
 
 ২০০৪ অথবা ২০০৫ সালের কথা চিন্তা করা যাক আমি তখন একটা ফিচার ফোন পেলেই খুশি । কিন্তু এখন আমার স্মার্ট ফনেও হচ্ছে না আমার আইফন লাগবে। 
 একসময় আমাদের ১৫০ টাকা দামের ক্যাসিও ঘড়িতেই চলে যেত এখন আমাদের লাগবে সেজান, টাইটান আই মিন "Class".
-এর কারন কি ? আমি এখন কম্পেয়ার করতেছি আমার আশে পাশের মানুষ জনের সাথে। এর পিছনে সাথে মিডিয়ার ভুমিকাও অনেক, আমরা যোগাযোগ মাধ্যম গুলোতে বিজ্ঞাপন দেখতেছি আমাদের এক্সপেকটেশন লেভেল বারতেছে। আমরা ফেসবুক, টুইটারে বন্ধু বান্ধব, স্বজনদের কাছাকাছি যাচ্ছি তাদের সাথেও কম্পেয়ার করতেছি, দিনশেষে একরাশ হতাশা নিয়ে ঘুমাতে যাচ্ছি। সময়ের সাথে অসুখীর কার্ভটা শুধু বেড়েই যাচ্ছে। 
+এর কারন কি ? আমি এখন কম্পেয়ার করতেছি আমার আশে পাশের মানুষ জনের সাথে। এর পিছনে সাথে মিডিয়ার ভুমিকাও অনেক, আমরা যোগাযোগ মাধ্যম গুলোতে বিজ্ঞাপন দেখতেছি আমাদের এক্সপেকটেশন লেভেল বেড়ে যাচ্ছে ।  আমরা ফেসবুক, টুইটারে বন্ধু বান্ধব, স্বজনদের কাছাকাছি যাচ্ছি তাদের সাথেও কম্পেয়ার করতেছি, দিনশেষে একরাশ হতাশা নিয়ে ঘুমাতে যাচ্ছি। সময়ের সাথে অসুখীর কার্ভটা শুধু বেড়েই যাচ্ছে। 
 
-> “But are we happier? Did the wealth humankind accumulated over the last five centuries translate into a new-found contentment? … Was the late Neil Armstrong, whose footprint remains intact on the windless moon, happier than the nameless hunter-gatherer who 30,000 years ago left her handprint on a wall in Chauvet Cave? If not, what was the point of developing agriculture, cities, writing, coinage, empires, science and industry?” --  Sapiens: A Brief History of Humankind, 
+> “But are we happier? Did the wealth humankind accumulated over the last five centuries translate into a new-found contentment? … Was the late Neil Armstrong, whose footprint remains intact on the windless moon, happier than the nameless hunter-gatherer who 30,000 years ago left her handprint on a wall in Chauvet Cave? If not, what was the point of developing agriculture, cities, writing, coinage, empires, science and industry?” 
 
-ফোকাস ইলুশন - আমরা মনে করি এই জিনিসটা আমার জীবনে দরকার ভালো থাকার জন্য, আমরা ওভার ফোকাস করে ফেলি। কিন্তু আসলে সেই জিনিসটা না হলে বা কিছুটা কম হলেও ক্ষতি নাই। আপনার সুন্দর চকে চকে গাড়ি দরকার বলে আমি মনে করতেছেন কিন্তুএটা ভাবছেন না যে আপনাকে এই গাড়ি নিয়েও যানজটে বসে থাকতে হবে, ড্রাইভার রাখতে হবে অথবা প্রতি মাসে গাড়ির সার্ভিসিং করাতে হবে।
+>> --  Sapiens: A Brief History of Humankind, 
+
+ফোকাস ইলুশন - আমরা মনে করি এই জিনিসটা আমার জীবনে দরকার ভালো থাকার জন্য, আমরা ওভার ফোকাস করে ফেলি। কিন্তু আসলে সেই জিনিসটা না হলে বা কিছুটা কম হলেও ক্ষতি নাই। আপনার সুন্দর চকে চকে গাড়ি দরকার বলে আমি মনে করতেছেন কিন্তু এটা ভাবছেন না যে আপনাকে এই গাড়ি নিয়েও যানজটে বসে থাকতে হবে, ড্রাইভার রাখতে হবে অথবা প্রতি মাসে গাড়ির সার্ভিসিং বাবদ অনেক গুলো টাকা আপনার পকেট থেকে বের হয়ে যাবে ।
 
 আমরা জীবনেরর অনেক সময় নষ্ট করে ফেলি এই মরীচিকার পিছে ছুটে, আমারা ভাবি একটা সুন্দর জীবনের জন্য আমাদের X,Y,Z দরকার কিন্তু আমরা ভেবে দেখি না 
-আসলেই কি সেগুলো আমাদের জীবনে বড় ধরনের কোন পরিবর্তন করতে পারে, সুখি রাখতে পারে। 
+আসলেই কি সেগুলো আমাদের জীবনে বড় ধরনের কোন পরিবর্তন করতে পারে, **সুখি রাখতে পারে**। 
 
 এবার আসা যাক কিভাবে আপনি কিছুটা হ্যাপি থাকতে পারেন , 
+
 - কখনোই কম্পেয়ার করবেন না 
 - আপনার আশে পাশের মানুষ আপনাকে নিয়ে কি ভাবল সেটা নিয়ে আপনার কিছুটা কম ভাবলে অথবা না ভাবলেও চলে। 
 - ভাবুন আপনি যে সুযোগ সুবিধা গুলো ভোগ করছেন অনেক মানুষ সেগুলো পাচ্ছে না। 
@@ -47,7 +51,9 @@ caption = "Image credit: [**Shohan**](https://github.com/shohan4556/)"
 নিজের ভুল গুলো নিজেই ধরতে শিখুন।  
 
 > When I was 5 years old, my mother always told me that happiness was the key to life.
-When I went school, they asked me what I wanted to be when I grew up. I wrote down "Happy". They told me I didn't understand the assignment, and I told them they didn't understand life. -- John Lennon
+When I went school, they asked me what I wanted to be when I grew up. I wrote down "Happy". They told me I didn't understand the assignment, and I told them they didn't understand life.
+
+>> -- John Lennon
 
 
 

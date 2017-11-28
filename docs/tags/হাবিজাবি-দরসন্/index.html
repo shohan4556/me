@@ -33,17 +33,17 @@
 
   
 
-  <link rel="alternate" href="https://shohan4556.github.io/me/index.xml" type="application/rss+xml" title="Hello !">
-  <link rel="feed" href="https://shohan4556.github.io/me/index.xml" type="application/rss+xml" title="Hello !">
+  <link rel="alternate" href="https://shohan4556.github.io/me/tags/%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%A6%E0%A6%B0%E0%A6%B8%E0%A6%A8%E0%A7%8D/index.xml" type="application/rss+xml" title="Hello !">
+  <link rel="feed" href="https://shohan4556.github.io/me/tags/%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%A6%E0%A6%B0%E0%A6%B8%E0%A6%A8%E0%A7%8D/index.xml" type="application/rss+xml" title="Hello !">
 
   <link rel="icon" type="image/png" href="/me/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/me/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://shohan4556.github.io/me/post/generic-class/">
+  <link rel="canonical" href="https://shohan4556.github.io/me/tags/%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%A6%E0%A6%B0%E0%A6%B8%E0%A6%A8%E0%A7%8D/">
 
   
 
-  <title>Intermediate C# - Generic Class | Hello !</title>
+  <title>হাবিজাবি দরসন্ | Hello !</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -138,218 +138,31 @@
 </nav>
 
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
-
-  
-<div class="article-header">
-  <img src="/me/img/headers/cover-image-1.jpg" class="article-banner" itemprop="image">
-  <span class="article-header-caption">Image credit: <a href="https://pixabay.com/en/hacker-internet-technology-1569744/" target="_blank"><strong>pixabay</strong></a></span>
-</div>
 
 
 
-  <div class="article-container">
-    <h1 itemprop="name">Intermediate C# - Generic Class</h1>
-    
+<div class="universal-wrapper">
 
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2017-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Sun, Jan 1, 2017
-    </time>
-  </span>
+  <h1>হাবিজাবি দরসন্</h1>
 
   
 
   
   
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/me/tags/coding">Coding</a
-    >, 
-    
-    <a href="/me/tags/c-sharp">C-Sharp</a
-    >
-    
-  </span>
-  
-  
-
-  
-  
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgeneric-class%2f"
-         target="_blank">
-        <i class="fa fa-facebook"></i>
-      </a>
-    </li>
-    <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Intermediate%20C%23%20-%20Generic%20Class&amp;url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgeneric-class%2f"
-         target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgeneric-class%2f&amp;title=Intermediate%20C%23%20-%20Generic%20Class"
-         target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-    </li>
-    <li>
-      <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgeneric-class%2f&amp;title=Intermediate%20C%23%20-%20Generic%20Class"
-         target="_blank">
-        <i class="fa fa-weibo"></i>
-      </a>
-    </li>
-    <li>
-      <a class="email"
-         href="mailto:?subject=Intermediate%20C%23%20-%20Generic%20Class&amp;body=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgeneric-class%2f">
-        <i class="fa fa-envelope"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-
-  
-
-</div>
-
-    <div class="article-style" itemprop="articleBody">
-      <p>Generic class same as typical class in C# except Generic type. So what the f**k is generic type ? Generic type means it is not specified any particular <strong>type</strong>.
-Let&rsquo;s see an example of an ordinary class</p>
-
-<pre><code>class MyOrdinaryClass{
-    // properties and methods goes here
-}
-
-var myObj1 = new MyOrdinaryClass();
-</code></pre>
-
-<p>So what we did here, we have instantiated an object <strong>myObj1</strong> type of <strong>MyOrdinaryClass</strong>.</p>
-
-<p>Here is an example of generic class</p>
-
-<pre><code>class MyGenericClass &lt;T&gt; {
-    // properties and methods goes here, no special same as ordinary class 
-}
-
-   var myObj2 = new MyGenericClass&lt;int&gt; ();
-   var myObj3 = new MyGenericClass&lt;string&gt; ();
-</code></pre>
-
-<blockquote>
-<p>There must be a <code>&lt;T&gt;</code> after the name of generic class, this is how you have to define generic class.</p>
-</blockquote>
-
-<p>Look at this example, we have instantiate the same class but <strong>with different type (integer and string)</strong></p>
-
-<blockquote>
-<p>So In simple term Generic class allow you to write class that can work
-with any data type.</p>
-</blockquote>
-
-<p>The most common use of generic class is <strong>List</strong>
-Here is another example</p>
-
-<pre><code> var obj1 = new MyGenericClass&lt;int&gt; ();
- var obj2 = new MyGenericClass&lt;string&gt; ();
-
- var Gobj1  = new List&lt;string&gt; ();
- var Gobj2 = new List&lt;int&gt; ();
-</code></pre>
-
-<p>sample program to follow :</p>
-
-<pre><code>    namespace GenericClass {
-
-    class MyGenericClass &lt;T&gt; {
-        public void sayHello ( ) {
-            Console.WriteLine (&quot;Hello World&quot;);
-        }
-    }
-
-
-    class Program {
-        static void Main ( string[] args ) {
-
-            var myObj2 = new MyGenericClass&lt;int&gt; ();
-            var myObj3 = new MyGenericClass&lt;string&gt; ();
-
-            myObj2.sayHello ();
-            myObj3.sayHello ();
-
-            var obj1 = new MyGenericClass&lt;int&gt; ();
-            var obj2 = new MyGenericClass&lt;string&gt; ();
-
-            var Gobj1  = new List&lt;string&gt; ();
-            var Gobj2 = new List&lt;int&gt; ();
-
-
-            Console.ReadKey ();
-
-        }
-    }
-}
-</code></pre>
-
-<p>Advantages of using Generic Class :</p>
-
-<pre><code>    1. Reusing same class multiple times 
-
-    2. Performance 
-
-    3. Type Safety 
-</code></pre>
-
-<hr />
-
-<p>follow me on <a href="https://www.facebook.com/shohan4556" target="_blank">facebook</a></p>
-
-<p>follow me on <a href="https://www.twitter.com/shohan4556" target="_blank">twitter</a></p>
-
-<p>follow me on <a href="https://www.github.com/shohan4556" target="_blank">github</a></p>
-
+  <div>
+    <h2><a href="https://shohan4556.github.io/me/post/are-we-happy/">আমরা কি সুখি ?</a></h2>
+    <div class="article-style">
+      
+      ফোকাস ইলুশন - আমরা মনে করি এই জিনিসটা আমার জীবনে দরকার ভালো থাকার জন্য, আমরা ওভার ফোকাস করে ফেলি। কিন্তু আসলে সেই জিনিসটা না হলে বা কিছুটা কম হলেও ক্ষতি নাই। আপনার সুন্দর চকে চকে গাড়ি দরকার বলে আমি মনে করতেছেন কিন্তু এটা ভাবছেন না &hellip;
+      
     </div>
   </div>
-
-</article>
-
-
-
-
-<div class="container">
-  <nav>
-  <ul class="pager">
-    
-    <li class="previous"><a href="https://shohan4556.github.io/me/post/are-we-happy/"><span
-      aria-hidden="true">&larr;</span> আমরা কি সুখি ?</a></li>
-    
-
-    
-    <li class="next"><a href="https://shohan4556.github.io/me/post/unity-tips-1/">Unity Tips - 01 <span
-      aria-hidden="true">&rarr;</span></a></li>
-    
-  </ul>
-</nav>
-
-</div>
-
-<div class="article-container">
   
 
-</div>
+  
 
+
+</div>
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">

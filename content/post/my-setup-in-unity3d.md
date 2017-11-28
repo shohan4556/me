@@ -28,7 +28,7 @@ caption = "Image credit: [**Shohan**](https://github.com/shohan4556/)"
 * Markdown All in One
 
 তারপর আমি যেটা করি [Menlo](https://github.com/hbin/top-programming-fonts) ফন্ট ইন্সটল করি। 
-ফন্ট সাইজ রাখি ১৬ (চোখে কম দেখি ব্রো) 
+ফন্ট সাইজ রাখি ১৬
 
 ```
 {

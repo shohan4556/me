@@ -30,6 +30,8 @@ caption = "Image credit: [**Shohan**](https://github.com/shohan4556/)"
 তারপর আমি যেটা করি [Menlo](https://github.com/hbin/top-programming-fonts) ফন্ট ইন্সটল করি। 
 ফন্ট সাইজ রাখি ১৬
 
+এটা আমার ভিএস কোড এর  prefernce file.
+
 ```
 {
     "workbench.iconTheme": "material-icon-theme",
@@ -46,4 +48,4 @@ caption = "Image credit: [**Shohan**](https://github.com/shohan4556/)"
 [![How to configure Visual Studio Code with Unity3D](https://img.youtube.com/vi/EpYOBMrne0s/0.jpg)](https://www.youtube.com/watch?v=EpYOBMrne0s)
 
 
-> এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে মধ্যাই ব্যাবহার করি এই মুহূর্তে মনে পড়তেছে না। 
+> এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে  মধ্যেই ব্যাবহার করি এই মুহূর্তে মনে পড়ছে না। 

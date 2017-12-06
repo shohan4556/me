@@ -57,6 +57,160 @@
     </item>
     
     <item>
+      <title>Laser2D Wiki</title>
+      <link>https://shohan4556.github.io/me/post/laser2d-doc/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/laser2d-doc/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://assetstore.unity.com/packages/vfx/particles/laser2d-81830&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://shohan4556.github.io/Laser2D/&#34; target=&#34;_blank&#34;&gt;web version of the doc&lt;/a&gt; - Recommended.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; Verssion : 0.02  
+ Updated : December 2017 
+ Developer : Shohanur Rahaman
+ Contact : shohan4556@gmail.com 
+ web : techshohan.me
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Four directional Laser (Top, Down, Left, Right)&lt;/li&gt;
+&lt;li&gt;Modify Laser Color&lt;/li&gt;
+&lt;li&gt;Easy to Implement&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Mobile Friendly&lt;/li&gt;
+&lt;li&gt;Great for Pixel Art Games&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;how-to-use&#34;&gt;How To Use&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#Getting-Started&#34;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#changing-laser-color&#34;&gt;Changing Laser Color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#understanding-inspector-variables&#34;&gt;Understanding Inspector Variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#using-four-directional-laser&#34;&gt;Using Four Directional Laser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Modify Code
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;#how-to-add-enemy-damage&#34;&gt;How to Add Enemy Damage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#modify-input&#34;&gt;Modify Input&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tips&#34;&gt;Tips&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;More Features is Coming Soon&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h4&gt;
+
+&lt;p&gt;The easiest to way to see Use Laser2D create a &lt;strong&gt;Parent Gameobject&lt;/strong&gt; (that could be player/ship sprite) then &lt;strong&gt;drag the Prefab&lt;/strong&gt; and make it child of the parent object. Add the &lt;strong&gt;Sprite Light&lt;/strong&gt; material to the enemy gameobject. Play the game and Click the &lt;strong&gt;Right Mouse Button&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/3zBZ5Nx.gif&#34; alt=&#34;Getting Started&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;changing-laser-color&#34;&gt;Changing Laser Color&lt;/h4&gt;
+
+&lt;p&gt;To Change a Laser Color go through the child object &amp;gt; find the &lt;strong&gt;Laser Glow&lt;/strong&gt; gameobject and change the sprite color.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8iK3wlN.gif&#34; alt=&#34;Changing Laser Color&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;understanding-inspector-variables&#34;&gt;Understanding Inspector Variables&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KHX1Rao.png&#34; alt=&#34;Inspector&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Begin Pos :&lt;/strong&gt; This is the position where the laser beam starts from.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Enemy Hit layer :&lt;/strong&gt; you Enemy should be in Enemy Layer, you can also add multiple layers.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Size :&lt;/strong&gt; This is the invisible Ray size or Raycast Size.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Size :&lt;/strong&gt; This is the visible Laser size. Adjust the size according to your need.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Glow Size :&lt;/strong&gt; This is the Laser glow size adjust the size with &lt;strong&gt;Laser Size&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Damage :&lt;/strong&gt; This is the damage for the &lt;strong&gt;Enemy&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Duration :&lt;/strong&gt; Laser firing duration in second.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Hit Emitter :&lt;/strong&gt; Laser Hit emitter prefab.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Melt Emitter :&lt;/strong&gt; Laser Melting Prefab.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Glow :&lt;/strong&gt; Laser glowing sprite.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Dir :&lt;/strong&gt; Laser direction, use it for changing direction. Its not changeable in&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;runtime&lt;/strong&gt; you need to define it before playing the game. Available laser direction &lt;strong&gt;Top, Down, Left and Right&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;using-four-directional-laser&#34;&gt;Using Four Directional Laser&lt;/h4&gt;
+
+&lt;p&gt;The easiest way to use Four directional laser is using Prefab there are four prefabs
+&lt;strong&gt;L2D-Top, L2D-Down, L2D-Left &amp;amp; L2D-Right&lt;/strong&gt; you can use any of them.
+There is another way is &lt;strong&gt;Changing the Laser Direction.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/WlAsU9c.png&#34; alt=&#34;Top-Down&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;how-to-add-enemy-damage&#34;&gt;How to Add Enemy Damage&lt;/h4&gt;
+
+&lt;p&gt;To give damage on Enemy gameobject create a tag name as &lt;strong&gt;Enemy&lt;/strong&gt; and add it to the enemy object. Edit the code inside the &lt;strong&gt;Update&lt;/strong&gt; method.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; /*-------------------- Enemy Damage -------------------- */
+     if (hit.collider.tag == &amp;quot;Enemy&amp;quot;) {
+      hit.collider.gameObject.GetComponent&amp;lt;L2DEnemyHealth().giveDamage(laserDamage);
+   }
+ /*------------------------------------------------------ */
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Tips :&lt;/em&gt; For better performance you can cache the EnemyHealth script inside Start method.&lt;/p&gt;
+
+&lt;h4 id=&#34;modify-input&#34;&gt;Modify Input&lt;/h4&gt;
+
+&lt;p&gt;To modify input go through the &lt;code&gt;LaserBeam&lt;/code&gt; script and find the &lt;code&gt;FireLaser&lt;/code&gt; function you can find there the input code. Its easy to change the code.
+Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code&gt; you can simply do it like this  from &lt;code&gt;Myscript&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    public LaserBeam laserbeam; // drag the LaserBeam gameobject
+    void Start()
+    {
+        if(laserbeam==null){
+           laserbeam =  Gameobject.FindObjectOfType&amp;lt;LaserBeam&amp;gt;();
+        }
+    }
+    
+    void Update()
+    {
+        if( Input.GetButtonDown(keyCode.Space){
+         laserbeam.FireLaser();   
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Note :&lt;/em&gt; Don&amp;rsquo;t forget to comment out the &lt;code&gt;FireLaser&lt;/code&gt; method form the &lt;code&gt;LaserBeam&lt;/code&gt; script.&lt;/p&gt;
+
+&lt;h4 id=&#34;tips&#34;&gt;Tips&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use &lt;strong&gt;Order in Layer&lt;/strong&gt; for ordering Player sprite and Laser. I suggest you to use lower order to Player and higher order for Laser2D, it looks better than.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Unity Tips - 01</title>
       <link>https://shohan4556.github.io/me/post/unity-tips-1/</link>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>

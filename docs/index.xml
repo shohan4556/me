@@ -10,56 +10,50 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>আমার Unity3D সেটআপ</title>
-      <link>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</link>
-      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      <title>ডিজিটাল ওয়ার্ল্ড - গেমিং কনফারেন্সের  ২০১৭</title>
+      <link>https://shohan4556.github.io/me/post/digital-world-gaming-conf-2017/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</guid>
-      <description>&lt;p&gt;ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip;  প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক
-বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি।
-প্লাগিন গুলার লিস্ট&lt;/p&gt;
+      <guid>https://shohan4556.github.io/me/post/digital-world-gaming-conf-2017/</guid>
+      <description>&lt;p&gt;কি-নোটে​ ​প্রথমেই​ ​যে​ ​বিষয়টা​ ​চলে​ ​আসছে​ ​“passion”​ ​যেটাই​ ​করেন​ ​না​ ​কেন​ ​ভালবাসা​ ​থাকতে​ ​হবে।​ ​আজকে​ ​ওয়েব​ ​ডেভ
+করলাম​ ​কাল​ ​ফ্রিলান্সিং​ ​করলাম​ ​পরশু​ ​গেমডেভ​ ​করলাম,​ ​এরকম​ ​নয়।​ ​ভালবাসা​ ​থাকতে​ ​হবে।​ &lt;strong&gt;​“আমি​ ​কি​ ​পারবো”,”​ ​আমি
+পারি​ ​না​ ​&amp;hellip;”​&lt;/strong&gt; ​এই​ ​বাক্য​ ​গুলো​ ​প্যাশনের​ ​সম্পূর্ণ​ ​বিপরীত।&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Beautify&lt;/li&gt;
-&lt;li&gt;C# (for C# support)&lt;/li&gt;
-&lt;li&gt;Debugger for Unity3D&lt;/li&gt;
-&lt;li&gt;Unity Snippets&lt;/li&gt;
-&lt;li&gt;Unity Tools&lt;/li&gt;
-&lt;li&gt;material Icon Theme&lt;/li&gt;
-&lt;li&gt;Trainling Semicolon&lt;/li&gt;
-&lt;li&gt;Markdown All in One&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ফিক্সড​ ​মাইন্ডসেট​ ​নয়​ ​গ্রোথ​ ​মাইন্ডসেট​ ​থাকতে​ ​হবে।​&lt;/strong&gt; ​​গ্রোথ​ ​মাইন্ডসেট​ ​বিষয়​ ​টা​ ​যদি​ ​সহজ​ ​ভাষায়​ ​বলি​ ​তাহলে
+এরকম​ ​আপনি​ ​যদি​ ​আপনার​ ​গোল​ ​ঠিক​ ​করে​ ​ফেলেন​ ​আপনি​ ​এবং​ ​সেভাবে​ ​স্টেপ​ ​বাই​ ​স্টেপ​ ​কাজ​ ​করতে​ ​থাকেন,​ ​প্র্যাকটিস
+করতে​ ​থাকেন​ ​তাহলে​ ​আপনার​ ​নিউরাল​ ​গ্রোথও​ ​একই​ ​সাথে​ ​হতে​ ​থাকবে।​ ​এটার​ ​সাথে​ ​রিলেটেড​ ​হচ্ছে
+&lt;strong&gt;Grit&lt;/strong&gt;(perseverance​ ​and​ ​passion​ ​for​ ​long-term​ ​goals)।​ ​আপনি​ ​এখন​ ​ফেইলর​ ​হতে​ ​পারেন​ ​কিন্তু​ ​এটা​ ​সাময়িক,
+সাময়িক​ ​ফেইলর​ ​আপনার​ ​লংটার্ম​ ​গোল​ ​থেকে​ ​বিচ্যুত​ ​করতে​ ​পারবে​ ​না। একটা​ ​বইয়ে​ ​কথাও​ ​মনে​ ​পড়তেছে​ ​এই​ ​মুহূর্তে​ ​-​ ​​&lt;em&gt;Grit:​ ​The​ ​Power​ ​of​ ​Passion​ ​and​ ​Perseverance&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;তারপর আমি যেটা করি &lt;a href=&#34;https://github.com/hbin/top-programming-fonts&#34; target=&#34;_blank&#34;&gt;Menlo&lt;/a&gt; ফন্ট ইন্সটল করি।
-ফন্ট সাইজ রাখি ১৬&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ten​ ​thousand​ ​hour​ ​rule​ ​:&lt;/strong&gt;​ ​আপনি​ ​কোন​ ​একটা​ ​বিষয়ে​ ​দশ​ ​হাজার​ ​ঘণ্টা​ ​সময়​ ​দিন​ ​সত্যিকার​ ​অর্থেই​ ​আপনি​ ​ঐ​ ​বিষয়ে
+একজন​ ​এক্সপার্ট​ ​হয়ে​ ​যাবে।​ ​Talent​ ​+​ ​effort​ ​=​ ​skill​ ​+​ ​effort​ ​=​ ​achievement.&lt;/p&gt;
 
-&lt;p&gt;এটা আমার ভিএস কোড এর  prefernce file.&lt;/p&gt;
+&lt;p&gt;মাশা ভাইের স্পিচে, যে বিষয় গুলো আসছে গেম ডেভেলপমেন্টের বিভিন্ন সেক্টর, গেম ডিজাইন থেকে গেম মার্কেটিং। গেম মার্কেটিং এ তিনি জিরো বাজেট মার্কেটিং এর কথা বলছেন। indie game developer রা এমনিতেই অভাবে থাকে এখন যদি গেম মার্কেটিং এ যদি টাকা খরচ করে ফেলে তাহলেই হইছে কাজ। &lt;em&gt;(মাশা ভাই মুক্তি ক্যাম্পের একটা টিশার্ট পড়ে আসছিল এটাও মার্কেটিংের অংশ )&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;{
-    &amp;quot;workbench.iconTheme&amp;quot;: &amp;quot;material-icon-theme&amp;quot;,
-    &amp;quot;window.zoomLevel&amp;quot;: 0,
-    &amp;quot;editor.fontSize&amp;quot;: 16,
-    &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Menlo&amp;quot;,
-    &amp;quot;material-icon-theme.showUpdateMessage&amp;quot;: false,
-    &amp;quot;extensions.ignoreRecommendations&amp;quot;: true,
-    &amp;quot;markdown.extension.preview.autoShowPreviewToSide&amp;quot;: true
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ইন্ডি গেম ডেভেলপার দের জন্য টুইটার আর রেডিট খুব কাজের ব্যক্তিগত অভিজ্ঞতা । জিরো বাজেট মার্কেটিং এর জন্য এই ভিডিও টা দেখা যেতে পারে খুব কাজের। &lt;a href=&#34;https://www.youtube.com/watch?v=SkEQtMP2CuA&#34; target=&#34;_blank&#34;&gt;Marketing Indie Games on a $0 Budget&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;ডার্ক থিম ব্যাবহার করি সব সময়।&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agility​ ​:​&lt;/strong&gt; ​​ ​আপনার​ ​যেকোনো​ ​চেঞ্জ​ ​adapt​ ​করার​ ​ক্ষমতা​ ​থাকতে​ ​হবে।​ ​আপনার​ ​গেমের​ ​কোন​ ​একটা​ ​মেকানিজম​ ​আপনার
+কাছে​ ​ভালো​ ​মনে​ ​হলেও​ ​প্লেয়ারদের​ ​এটা​ ​ভালো​ ​লাগে​ ​নাই,​ ​আপনাকে​ ​চেঞ্জ​ ​করতে​ ​হবে।​ ​আপনার​ ​গেম​ ​রিলিজের​ ​শেষ​ ​মুহূর্তে
+গিয়েও​ ​কোন​ ​চেঞ্জ​ ​করতে​ ​হতে​ ​পারে।&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=EpYOBMrne0s&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/EpYOBMrne0s/0.jpg&#34; alt=&#34;How to configure Visual Studio Code with Unity3D&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;কিছু প্রশ্ন ছিল, গেম ডিজাইনার হিসেবে কিভাবে ক্যারিয়ার বা কিভাবে শেখা যায়, মাশা ভাইয়ের সাজেশন ছিল বিভিন্ন বই এবং extracredit এর গেম ডিজাইন এর ভিডিও গুলো। আর একটা প্রশ্নের কথা মনে পড়তেছে, কিভাবে ম্যাসিভ অডিয়েন্স পাওয়া যায়, এখানে অনেক গুলো সাজেশন ছিল, যেমন বাংলাদেশ বা সাউথ এশিয়ান রিজিওন কে টার্গেট করে গেম বানানো যেতে পার, লোকালাইজেশন করে বিভিন্ন রিজিওনাল সাইটে গেম পাবলিশ করা যেতে পারে অথবা আউট অফ বক্স কোন আইডিয়া নিয়ে গেম ডেভেলপ করা যেতে পারে।&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে  মধ্যেই ব্যাবহার করি এই মুহূর্তে মনে পড়ছে না।&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;এই লেখাটা স্মৃতি থেকে লেখা, অনেক পয়েন্ট বাদ পড়ে গেছে আবার নতুন পয়েন্ট নিজের মত করে অ্যাড করে দিয়েছি।&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Laser2D Wiki</title>
       <link>https://shohan4556.github.io/me/post/laser2d-doc/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/laser2d-doc/</guid>
       <description>
@@ -200,13 +194,58 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
 
 &lt;hr /&gt;
 
-&lt;hr /&gt;
-
 &lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>আমার Unity3D সেটআপ</title>
+      <link>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</guid>
+      <description>&lt;p&gt;ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip;  প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক
+বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি।
+প্লাগিন গুলার লিস্ট&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Beautify&lt;/li&gt;
+&lt;li&gt;C# (for C# support)&lt;/li&gt;
+&lt;li&gt;Debugger for Unity3D&lt;/li&gt;
+&lt;li&gt;Unity Snippets&lt;/li&gt;
+&lt;li&gt;Unity Tools&lt;/li&gt;
+&lt;li&gt;material Icon Theme&lt;/li&gt;
+&lt;li&gt;Trainling Semicolon&lt;/li&gt;
+&lt;li&gt;Markdown All in One&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;তারপর আমি যেটা করি &lt;a href=&#34;https://github.com/hbin/top-programming-fonts&#34; target=&#34;_blank&#34;&gt;Menlo&lt;/a&gt; ফন্ট ইন্সটল করি।
+ফন্ট সাইজ রাখি ১৬&lt;/p&gt;
+
+&lt;p&gt;এটা আমার ভিএস কোড এর  prefernce file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &amp;quot;workbench.iconTheme&amp;quot;: &amp;quot;material-icon-theme&amp;quot;,
+    &amp;quot;window.zoomLevel&amp;quot;: 0,
+    &amp;quot;editor.fontSize&amp;quot;: 16,
+    &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Menlo&amp;quot;,
+    &amp;quot;material-icon-theme.showUpdateMessage&amp;quot;: false,
+    &amp;quot;extensions.ignoreRecommendations&amp;quot;: true,
+    &amp;quot;markdown.extension.preview.autoShowPreviewToSide&amp;quot;: true
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ডার্ক থিম ব্যাবহার করি সব সময়।&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=EpYOBMrne0s&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/EpYOBMrne0s/0.jpg&#34; alt=&#34;How to configure Visual Studio Code with Unity3D&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে  মধ্যেই ব্যাবহার করি এই মুহূর্তে মনে পড়ছে না।&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -539,24 +578,6 @@ When I went school, they asked me what I wanted to be when I grew up. I wrote do
 &lt;p&gt;&amp;ndash; John Lennon&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>আমার অনেস্ট ইন্টার্ভিউ আনসার - পার্ট ১</title>
-      <link>https://shohan4556.github.io/me/post/my-honest-interview-p1/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/post/my-honest-interview-p1/</guid>
-      <description>
-
-&lt;h2 id=&#34;প-রশ-ন-আপন-প-চ-বছর-পর-ন-জ-ক-ক-থ-য়-দ-খত-চ-ন&#34;&gt;প্রশ্ন: আপনি পাঁচ বছর পর নিজেকে কোথায় দেখতে চান ?&lt;/h2&gt;
-
-&lt;p&gt;এই প্রশ্নটা কি ঠিক কি কারনে করা হয় আমার জানা নেই, আমার উল্টা প্রশ্নকর্তাকে প্রশ্ন করতে ইচ্ছা করে, আপনি পাঁচ বছর আগে নিজেকে কোথায় দেখতে চেয়েছিলেন পাঁচ বছর পর এখন কি ঠিক সেই জায়গায় বাছাকাছি জায়গায় আছেন? আগামী পাঁচ বছর পর আমি কি করবো, কি হবো, কই যাবো সেটা কে বলতে পারে ? পাঁচ বছর পর আমি অমুক কোম্পানির সিও হব, অমুক  **ল ছিঁড়বো এগুলার কোন মানেই নাই।&lt;/p&gt;
-
-&lt;p&gt;আমি পাঁচ বছর পর কি করব সেটা সময়ই বলে দিবে, আমি শুধুমাত্র &lt;strong&gt;সঠিক সময়ে&lt;/strong&gt; সঠিক &lt;strong&gt;সিধান্তটা&lt;/strong&gt; নিতে চাই ।&lt;/p&gt;
-
-&lt;p&gt;ধন্যবাদ আমার এই শিট পোস্ট পড়ার জনন।&lt;/p&gt;
 </description>
     </item>
     

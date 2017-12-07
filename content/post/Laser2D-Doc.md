@@ -1,5 +1,5 @@
 +++
-date = "2017-11-01T00:00:00"
+date = "2017-12-06T00:00:00"
 draft = false
 tags = ["Unity-3D"]
 title = "Laser2D Wiki"
@@ -133,9 +133,6 @@ Here is an example, assumes that you have a script ```Myscript``` you can simply
 
 
 -----------------
-
-
-----------
 
 
 follow me on [facebook](https://www.facebook.com/shohan4556) 

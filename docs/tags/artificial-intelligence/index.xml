@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial Intelligence on Hello !</title>
+    <link>https://shohan4556.github.io/me/tags/artificial-intelligence/</link>
+    <description>Recent content in Artificial Intelligence on Hello !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Shohan</copyright>
+    <lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/me/tags/artificial-intelligence/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Game AI - Finite State Machine</title>
+      <link>https://shohan4556.github.io/me/post/game-ai-fsm/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/game-ai-fsm/</guid>
+      <description>&lt;p&gt;Hello there, I have posted a tutorial series about Finite State Machine with Unity3D. FSM is very easy to implement and very effective is some cases.&lt;/p&gt;
+
+&lt;p&gt;Here is the tutorial series.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dDQEFSk-rQM&amp;amp;list=PLWnE_CWJ15J7ajZQ8gKwed8rnetI0SdfN&#34; title=&#34;FSM with Unity3D Intro&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.imgur.com/Hp2oLiw.png&#34; alt=&#34;FSM with Unity3D Intro&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

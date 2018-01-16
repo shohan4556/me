@@ -45,5 +45,9 @@ view = 1
   name = "Prototype"
   tag = ".prototype"
 
+[[filter]]
+  name = "AI"
+  tag = ".AI"
+
 +++
 

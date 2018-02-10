@@ -10,6 +10,15 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>মোটিভেশন, খেয়ে দে !</title>
+      <link>https://shohan4556.github.io/me/post/motivation-comic/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/motivation-comic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ডিজিটাল ওয়ার্ল্ড - গেমিং কনফারেন্সের  ২০১৭</title>
       <link>https://shohan4556.github.io/me/post/digital-world-gaming-conf-2017/</link>
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
@@ -435,16 +444,6 @@ public class PlayerScript : MonoBehaviour
       
       <guid>https://shohan4556.github.io/me/project/jolly-jumper/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Example Talk</title>
-      <link>https://shohan4556.github.io/me/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

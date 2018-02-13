@@ -16,7 +16,7 @@ image_preview = "fuzzle.png"
 tags = ["phaser-js"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://play.google.com/store/apps/details?id=com.gluedgame.fuzzle&hl=en"
+external_link = "https://github.com/shohan4556/fuzzle/releases"
 
 # Does the project detail page use math formatting?
 math = false

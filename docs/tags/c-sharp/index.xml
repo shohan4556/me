@@ -6,8 +6,36 @@
     <description>Recent content in C Sharp on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Feb 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/me/tags/c-sharp/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Genetic Algorithm With Machine Learning</title>
+      <link>https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/</link>
+      <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/LJs99AY.png&#34; alt=&#34;Natural Selection&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;আমি একটা মেশিন লার্নিং সিমুলেশন করি যেখানে Natural Selection বিষয়টা ছোট আকারে সিমুলেট করি।&lt;/p&gt;
+
+&lt;p&gt;এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি।  পপুলেশন সাইয হচ্ছে ১০ এবং জেনারেশন টাইম হচ্ছে ১০ সেকেন্ড। ১০ সেকেন্ড পর একটা জেনারেশন এর সব পপুলেশন ডেড হয়ে যাবে এবং এই পপুলেশনএর DNA data গুলো পরবর্তী পপুলেশনে  ইনহেরিট করবে। এখানে সেই ডাটাগুলোর priority level বেশি থাকবে যারা বেশি সময় ধরে সারভাইভ করতে পেরেছে (অর্থাৎ সবার শেষে সেটা ডেড)।  এই ডাটা গুলোরও পরবর্তীতে প্রজন্মে ইনহেরিট করার সম্ভাবনা ৫০% এবং মিউটেশন হচ্ছে  ০.১০% (বেশি মিউটেশন হলে আসল কালার টা হারিয়ে যেতে পারে তাই কম দিয়েছি)।&lt;/p&gt;
+
+&lt;p&gt;এই &lt;a href=&#34;https://streamable.com/og91d&#34; target=&#34;_blank&#34;&gt;ভিডিও&lt;/a&gt; ক্লিপে দেখুন আমি রেড কালার টা সব শেষে remove করি নবম জেনারেশনেই আমি লাল এর আর একটা শেড পাই মিউটেশন এর কারনে। যেহেতু পপুলেশন সাইজ ছোট তাই খুব অল্প সময়েই রেজাল্ট দেখা যাচ্ছে।&lt;/p&gt;
+
+&lt;p&gt;এবার এই &lt;a href=&#34;https://streamable.com/0frnu&#34; target=&#34;_blank&#34;&gt;ক্লিপে&lt;/a&gt; দেখুন এখানে পুরো সিমুলেশনটা অটোমেটেড, কোন সেলেক্টিভ পিকিং হয় নাই। পুরোটাই randomly selection। এখানে পপুলেশন সাইজ ২৫। ৪০তম জেনারেশনে গিয়ে নীল রঙের একটা শেড পাওয়া যাচ্ছে।&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/shohan4556/Genetic-Algorithm-With-Machine-Learning&#34; target=&#34;_blank&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Game AI - Finite State Machine</title>

@@ -6,8 +6,17 @@
     <description>Recent content in Unity 3d on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Sat, 24 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/me/tags/unity-3d/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Genetic Algorithm with Machine Learning</title>
+      <link>https://shohan4556.github.io/me/project/genetic-algo/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/genetic-algo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Genetic Algorithm With Machine Learning</title>

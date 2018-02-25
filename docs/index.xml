@@ -10,6 +10,15 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Genetic Algorithm with Machine Learning</title>
+      <link>https://shohan4556.github.io/me/project/genetic-algo/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/genetic-algo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Genetic Algorithm With Machine Learning</title>
       <link>https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/</link>
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
@@ -453,15 +462,6 @@ public class PlayerScript : MonoBehaviour
       <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/laser2d/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Iso-Metric Single Tap Car Racer</title>
-      <link>https://shohan4556.github.io/me/project/iso-car-prototype/</link>
-      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/iso-car-prototype/</guid>
       <description></description>
     </item>
     

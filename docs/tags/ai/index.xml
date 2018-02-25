@@ -6,8 +6,17 @@
     <description>Recent content in Ai on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Tue, 12 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/me/tags/ai/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Genetic Algorithm with Machine Learning</title>
+      <link>https://shohan4556.github.io/me/project/genetic-algo/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/genetic-algo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Boid/Flocking Agent</title>

@@ -229,7 +229,9 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।
+      
+
+<p>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।
 নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।</p>
 
 <pre><code>using System.Collections;
@@ -277,13 +279,18 @@ public class SingletonBase&lt;T&gt; : MonoBehaviour where T : MonoBehaviour {
 }
 </code></pre>
 
-<p>Little explanation :
-slock  একটা অবজেক্ট ক্রিয়েট করি ।
-Lock ( ….) { } প্রথমে একটি থ্রেড এই ব্লকে ঢুকবে এবং লক করে ফেলবে অন্য কোন থ্রেড কে এখানে ঢুকতে দিবে না যতক্ষণ না এর কাজ শেষ হয়। খাটি বাংলায় এই হচ্ছে মূল কথা । কাজ শেষ হলে slock অবজেক্ট কে রিলিজ করে দিবে অর্থাৎ কাজ শেষ।
-প্রথমে ট্রাই করবো এরকম স্ক্রিপ্ট আরও আছে কিনা খোঁজার যদি না পাই তাহলে একটা এরর মেসেজ দিবো ।
-আর যদি পাই তাহলে তো ভালো।</p>
+<h4 id="little-explanation">Little explanation :</h4>
 
-<p>কিভাবে ইনহেরিট করতে হবে ?</p>
+<ol>
+<li><p>slock  একটা অবজেক্ট ক্রিয়েট করি ।</p></li>
+
+<li><p><code>Lock ( ….) { }</code> প্রথমে একটি থ্রেড এই ব্লকে ঢুকবে এবং লক করে ফেলবে অন্য কোন থ্রেড কে এখানে ঢুকতে দিবে না যতক্ষণ না এর কাজ শেষ হয়। খাটি বাংলায় এই হচ্ছে মূল কথা । কাজ শেষ হলে slock অবজেক্ট কে রিলিজ করে দিবে অর্থাৎ কাজ শেষ।</p></li>
+
+<li><p>প্রথমে ট্রাই করবো এরকম স্ক্রিপ্ট আরও আছে কিনা খোঁজার যদি না পাই তাহলে একটা এরর মেসেজ দিবো ।
+আর যদি পাই তাহলে তো ভালো।</p></li>
+</ol>
+
+<h4 id="ক-ভ-ব-ইনহ-র-ট-করত-হব">কিভাবে ইনহেরিট করতে হবে ?</h4>
 
 <pre><code>using System.Collections;
 using System.Collections.Generic;
@@ -306,7 +313,9 @@ public class UIManager : SingletonBase&lt;UIManager&gt; {
 }
 </code></pre>
 
-<p>রেফারেন্স ঃ</p>
+<ul>
+<li>রেফারেন্স ঃ</li>
+</ul>
 
 <ol>
 <li><a href="https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in" target="_blank">https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in</a></li>

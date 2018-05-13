@@ -15,7 +15,9 @@
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/inheritable-singleton-script/</guid>
-      <description>&lt;p&gt;সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।
+      <description>
+
+&lt;p&gt;সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।
 নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;using System.Collections;
@@ -63,13 +65,18 @@ public class SingletonBase&amp;lt;T&amp;gt; : MonoBehaviour where T : MonoBehavi
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Little explanation :
-slock  একটা অবজেক্ট ক্রিয়েট করি ।
-Lock ( ….) { } প্রথমে একটি থ্রেড এই ব্লকে ঢুকবে এবং লক করে ফেলবে অন্য কোন থ্রেড কে এখানে ঢুকতে দিবে না যতক্ষণ না এর কাজ শেষ হয়। খাটি বাংলায় এই হচ্ছে মূল কথা । কাজ শেষ হলে slock অবজেক্ট কে রিলিজ করে দিবে অর্থাৎ কাজ শেষ।
-প্রথমে ট্রাই করবো এরকম স্ক্রিপ্ট আরও আছে কিনা খোঁজার যদি না পাই তাহলে একটা এরর মেসেজ দিবো ।
-আর যদি পাই তাহলে তো ভালো।&lt;/p&gt;
+&lt;h4 id=&#34;little-explanation&#34;&gt;Little explanation :&lt;/h4&gt;
 
-&lt;p&gt;কিভাবে ইনহেরিট করতে হবে ?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;slock  একটা অবজেক্ট ক্রিয়েট করি ।&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;Lock ( ….) { }&lt;/code&gt; প্রথমে একটি থ্রেড এই ব্লকে ঢুকবে এবং লক করে ফেলবে অন্য কোন থ্রেড কে এখানে ঢুকতে দিবে না যতক্ষণ না এর কাজ শেষ হয়। খাটি বাংলায় এই হচ্ছে মূল কথা । কাজ শেষ হলে slock অবজেক্ট কে রিলিজ করে দিবে অর্থাৎ কাজ শেষ।&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;প্রথমে ট্রাই করবো এরকম স্ক্রিপ্ট আরও আছে কিনা খোঁজার যদি না পাই তাহলে একটা এরর মেসেজ দিবো ।
+আর যদি পাই তাহলে তো ভালো।&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;ক-ভ-ব-ইনহ-র-ট-করত-হব&#34;&gt;কিভাবে ইনহেরিট করতে হবে ?&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;using System.Collections;
 using System.Collections.Generic;
@@ -92,7 +99,9 @@ public class UIManager : SingletonBase&amp;lt;UIManager&amp;gt; {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;রেফারেন্স ঃ&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;রেফারেন্স ঃ&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in&#34; target=&#34;_blank&#34;&gt;https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in&lt;/a&gt;&lt;/li&gt;

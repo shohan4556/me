@@ -39,11 +39,11 @@
   <link rel="icon" type="image/png" href="/me/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/me/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/">
+  <link rel="canonical" href="https://shohan4556.github.io/me/post/inheritable-singleton-script/">
 
   
 
-  <title>Genetic Algorithm With Machine Learning | Hello !</title>
+  <title>Inheritable Singleton Pattern | Hello !</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -142,22 +142,22 @@
 
   
 <div class="article-header">
-  <img src="/me/img/headers/genetic-algo.png" class="article-banner" itemprop="image">
-  <span class="article-header-caption">Image credit: <a href="#">*Me!**</a></span>
+  <img src="/me/img/headers/my-unity-setup.png" class="article-banner" itemprop="image">
+  <span class="article-header-caption">Image credit: <a href="me" target="_blank"><strong>me</strong></a></span>
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">Genetic Algorithm With Machine Learning</h1>
+    <h1 itemprop="name">Inheritable Singleton Pattern</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2018-02-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Sat, Feb 24, 2018
+    <time datetime="2018-05-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Tue, May 1, 2018
     </time>
   </span>
 
@@ -169,7 +169,7 @@
   <span class="article-tags">
     <i class="fa fa-tags"></i>
     
-    <a href="/me/tags/artificial-intelligence">Artificial Intelligence</a
+    <a href="/me/tags/coding">Coding</a
     >, 
     
     <a href="/me/tags/c-sharp">C-Sharp</a
@@ -188,35 +188,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgenetic-algo-with-machine-learning%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2finheritable-singleton-script%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Genetic%20Algorithm%20With%20Machine%20Learning&amp;url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgenetic-algo-with-machine-learning%2f"
+         href="https://twitter.com/intent/tweet?text=Inheritable%20Singleton%20Pattern&amp;url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2finheritable-singleton-script%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgenetic-algo-with-machine-learning%2f&amp;title=Genetic%20Algorithm%20With%20Machine%20Learning"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2finheritable-singleton-script%2f&amp;title=Inheritable%20Singleton%20Pattern"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgenetic-algo-with-machine-learning%2f&amp;title=Genetic%20Algorithm%20With%20Machine%20Learning"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2finheritable-singleton-script%2f&amp;title=Inheritable%20Singleton%20Pattern"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Genetic%20Algorithm%20With%20Machine%20Learning&amp;body=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fgenetic-algo-with-machine-learning%2f">
+         href="mailto:?subject=Inheritable%20Singleton%20Pattern&amp;body=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2finheritable-singleton-script%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -229,17 +229,90 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p><img src="https://i.imgur.com/LJs99AY.png" alt="Natural Selection" /></p>
+      <p>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।
+নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।</p>
 
-<p>আমি একটা মেশিন লার্নিং সিমুলেশন করি যেখানে Natural Selection বিষয়টা ছোট আকারে সিমুলেট করি।</p>
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-<p>এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি।  পপুলেশন সাইয হচ্ছে ১০ এবং জেনারেশন টাইম হচ্ছে ১০ সেকেন্ড। ১০ সেকেন্ড পর একটা জেনারেশন এর সব পপুলেশন ডেড হয়ে যাবে এবং এই পপুলেশনএর DNA data গুলো পরবর্তী পপুলেশনে  ইনহেরিট করবে। এখানে সেই ডাটাগুলোর priority level বেশি থাকবে যারা বেশি সময় ধরে সারভাইভ করতে পেরেছে (অর্থাৎ সবার শেষে সেটা ডেড)।  এই ডাটা গুলোরও পরবর্তীতে প্রজন্মে ইনহেরিট করার সম্ভাবনা ৫০% এবং মিউটেশন হচ্ছে  ০.১০% (বেশি মিউটেশন হলে আসল কালার টা হারিয়ে যেতে পারে তাই কম দিয়েছি)।</p>
+public class SingletonBase&lt;T&gt; : MonoBehaviour where T : MonoBehaviour {
+ 
+    private static object slock = new object(); safety 
+    private static T sInstance; 
 
-<p>এই <a href="https://streamable.com/og91d" target="_blank">ভিডিও</a> ক্লিপে দেখুন আমি রেড কালার টা সব শেষে remove করি নবম জেনারেশনেই আমি লাল এর আর একটা শেড পাই মিউটেশন এর কারনে। যেহেতু পপুলেশন সাইজ ছোট তাই খুব অল্প সময়েই রেজাল্ট দেখা যাচ্ছে।</p>
+    public static T Instance
+    {
+        get {
+            lock (slock) {
+                if(sInstance == null) {
+                    sInstance = GameObject.FindObjectOfType&lt;T&gt;(); 
+                    if(sInstance == null) {
+                        UnityEngine.Debug.LogError(&quot;Expected to find an instance of the &quot; + typeof(T) + &quot; component in the hierarchy but none found!\n&quot;
+                                     + &quot;Attach the &quot; + typeof(T) + &quot; component to a GameObject in the hierarchy.&quot;);
 
-<p>এবার এই <a href="https://streamable.com/0frnu" target="_blank">ক্লিপে</a> দেখুন এখানে পুরো সিমুলেশনটা অটোমেটেড, কোন সেলেক্টিভ পিকিং হয় নাই। পুরোটাই randomly selection। এখানে পপুলেশন সাইজ ২৫। ৪০তম জেনারেশনে গিয়ে নীল রঙের একটা শেড পাওয়া যাচ্ছে।</p>
+                        Abort();
+                    }
+                    // got the instance
+                    DontDestroyOnLoad(sInstance.transform.gameObject);
+                }
+                return sInstance;
+            }
+        }
+    }
 
-<p><a href="https://github.com/shohan4556/Genetic-Algorithm-With-Machine-Learning" target="_blank">source code</a></p>
+    private static void Abort() {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+    }
+
+    private void Awake() {
+        if(Instance != this) {
+            Destroy(this.gameObject);
+            return;
+        }
+    }
+
+}
+</code></pre>
+
+<p>Little explanation :
+slock  একটা অবজেক্ট ক্রিয়েট করি ।
+Lock ( ….) { } প্রথমে একটি থ্রেড এই ব্লকে ঢুকবে এবং লক করে ফেলবে অন্য কোন থ্রেড কে এখানে ঢুকতে দিবে না যতক্ষণ না এর কাজ শেষ হয়। খাটি বাংলায় এই হচ্ছে মূল কথা । কাজ শেষ হলে slock অবজেক্ট কে রিলিজ করে দিবে অর্থাৎ কাজ শেষ।
+প্রথমে ট্রাই করবো এরকম স্ক্রিপ্ট আরও আছে কিনা খোঁজার যদি না পাই তাহলে একটা এরর মেসেজ দিবো ।
+আর যদি পাই তাহলে তো ভালো।</p>
+
+<p>কিভাবে ইনহেরিট করতে হবে ?</p>
+
+<pre><code>using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class UIManager : SingletonBase&lt;UIManager&gt; {
+
+    [SerializeField] private MainMenu mainMenu;
+    [SerializeField] private Camera demoCamera;
+ 
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Debug.Log(&quot;fadeout UI manager&quot;);
+            mainMenu.FadeOut();
+        }
+    }
+
+    public void setDemoCameraActive(bool flag) {
+        demoCamera.gameObject.SetActive(flag);
+    }
+}
+</code></pre>
+
+<p>রেফারেন্স ঃ</p>
+
+<ol>
+<li><a href="https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in" target="_blank">https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in</a></li>
+<li><a href="http://www.yoda.arachsys.com/csharp/singleton.html" target="_blank">http://www.yoda.arachsys.com/csharp/singleton.html</a></li>
+<li><a href="http://wiki.unity3d.com/index.php/Singleton" target="_blank">http://wiki.unity3d.com/index.php/Singleton</a></li>
+</ol>
 
 <hr />
 
@@ -260,13 +333,13 @@
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/me/post/game-ai-fsm/">Game AI - Finite State Machine</a></li>
-    
     <li><a href="/me/post/unity-tips-1/">Unity Tips - 01</a></li>
     
-    <li><a href="/me/post/laser2d-doc/">Laser2D Wiki</a></li>
+    <li><a href="/me/post/genetic-algo-with-machine-learning/">Genetic Algorithm With Machine Learning</a></li>
     
     <li><a href="/me/post/my-setup-in-unity3d/">আমার Unity3D সেটআপ</a></li>
+    
+    <li><a href="/me/post/game-ai-fsm/">Game AI - Finite State Machine</a></li>
     
     <li><a href="/me/post/generic-class/">Intermediate C# - Generic Class</a></li>
     
@@ -278,13 +351,10 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://shohan4556.github.io/me/post/motivation-comic/"><span
-      aria-hidden="true">&larr;</span> মোটিভেশন, খেয়ে দে !</a></li>
+    <li class="previous"><a href="https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/"><span
+      aria-hidden="true">&larr;</span> Genetic Algorithm With Machine Learning</a></li>
     
 
-    
-    <li class="next"><a href="https://shohan4556.github.io/me/post/inheritable-singleton-script/">Inheritable Singleton Pattern <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

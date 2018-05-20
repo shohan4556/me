@@ -16,4 +16,4 @@ weight = 60
 
 - Game Development Instructor at CEED IT.
 - Freelancer at Fiverr & People Per Hour.
-- Indie Game Developer for more than two years.
+- Indie Game Developer.

@@ -10,6 +10,19 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Project Pirate Dev Log - 01</title>
+      <link>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</guid>
+      <description>&lt;p&gt;So far I have created a nice and smooth third person camera with unity &lt;strong&gt;cinemachine&lt;/strong&gt; .
+This camera support collision as well. I have also created another third person camera. I am just testing multiple things which one fit well. Btw here is the demo of the &lt;strong&gt;cinemachine&lt;/strong&gt; camera. (&lt;em&gt;little glitch for recording&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/QFdgjGiLhpE&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/QFdgjGiLhpE/0.jpg&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Inheritable Singleton Pattern</title>
       <link>https://shohan4556.github.io/me/post/inheritable-singleton-script/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
@@ -555,15 +568,6 @@ public class PlayerScript : MonoBehaviour
 &lt;li&gt;Here is the theme &lt;a href=&#34;https://github.com/shohan4556/dark-proton&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Fuzzle</title>
-      <link>https://shohan4556.github.io/me/project/fuzzle/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/fuzzle/</guid>
-      <description></description>
     </item>
     
   </channel>

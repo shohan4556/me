@@ -6,8 +6,21 @@
     <description>Recent content in Unity 3d on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/me/tags/unity-3d/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Project Pirate Dev Log - 01</title>
+      <link>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</guid>
+      <description>&lt;p&gt;So far I have created a nice and smooth third person camera with unity &lt;strong&gt;cinemachine&lt;/strong&gt; .
+This camera support collision as well. I have also created another third person camera. I am just testing multiple things which one fit well. Btw here is the demo of the &lt;strong&gt;cinemachine&lt;/strong&gt; camera. (&lt;em&gt;little glitch for recording&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/QFdgjGiLhpE&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/QFdgjGiLhpE/0.jpg&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Inheritable Singleton Pattern</title>

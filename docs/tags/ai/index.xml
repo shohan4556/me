@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Sun, 25 Feb 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/me/tags/ai/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://shohan4556.github.io/me/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Genetic Algorithm with Machine Learning</title>

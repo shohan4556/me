@@ -545,13 +545,12 @@ public class PlayerScript : MonoBehaviour
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/dark-inside/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Project Leader : Shohanur Rahaman
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/sfoyVC5.png&#34; alt=&#34;Dark Inside&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;Project Leader : Shohanur Rahaman&lt;/li&gt;
 &lt;li&gt;Game Art: Belal Hossain&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/shohan4556/dark-inside&#34; target=&#34;_blank&#34;&gt;View Project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

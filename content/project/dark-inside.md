@@ -26,6 +26,8 @@ caption = "My caption :smile:"
 
 +++
 
+![Dark Inside](https://i.imgur.com/sfoyVC5.png)
+
  * Project Leader : Shohanur Rahaman
  * Game Art: Belal Hossain 
  * [View Project](https://github.com/shohan4556/dark-inside)

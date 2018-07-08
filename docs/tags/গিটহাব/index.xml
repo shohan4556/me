@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/me/tags/%E0%A6%97%E0%A6%BF%E0%A6%9F%E0%A6%B9%E0%A6%BE%E0%A6%AC/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://shohan4556.github.io/me/tags/%E0%A6%97%E0%A6%BF%E0%A6%9F%E0%A6%B9%E0%A6%BE%E0%A6%AC/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>কিভাবে গিটহাব  স্টুডেন্ট ডেভেলপার প্যাক নিবেন</title>
@@ -15,18 +17,7 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/how-to-get-github-student-pack/</guid>
-      <description>&lt;p&gt;গিটহাব ১৮+ যেকোনো স্টুডেন্টকে তাদের স্টুডেন্ট প্যাকটা ফ্রি দেয়। এই প্যাকেজে অনেক প্রিমিয়াম ফিচার  ইনক্লুডেড যেমন ২ বছর এর জন্য যেমন, গিটহাবে আনলিমিটেড প্রাইভেট রিপো খুলতে পারবে, একটা .me ফ্রি ডোমেইন, হ্যাকহ্যান্ড এ ৩০৳ এর ফ্রি সার্ভিস নিতে পারবে, গিটক্রাকেন প্রো ১ বছর এর জন্য ফ্রি ব্যাবহার করতে পারবে সহ আরও অনেক কিছু। এই প্যাক নিতে যেটা করতে হবে এই লিঙ্কে (&lt;a href=&#34;https://education.github.com/&#34; target=&#34;_blank&#34;&gt;https://education.github.com/&lt;/a&gt;) গিয়ে কলেজ অথবা ইউনিভারসিটির ভেরিফাইড মেইল (educational mail) দিয়ে একটা ফর্ম সাবমিট করতে হয়, তারপর ২৪ ঘণ্টার এর মধ্যে রিভিউ হয়ে কনফার্মেশন মেইল আসবে।  বাংলাদেশের অধিঙ্কাংশ শিক্ষা প্রতিষ্ঠান শিক্ষার্থীদের জন্য কোন মেইল সার্ভিস প্রভাইড করে না। আপনি যদি জিমেইল, বা ইয়াহু মেইল দেন তাহলে না পাওয়ার সম্ভাবনা বেশি। এজন্য আপনাকে আপনার আইডি কার্ড এর একটা ছবি তুলে দিতে হবে  যেখানে ভেলিডেশন তারিখটা দেখা যায়। এটা ইম্পরট্যান্ট যদি ভেলিডেশন তারিখ না থাকে তাহলে নাও পেতে পারেন। আমার আপলোড করা &lt;a href=&#34;https://www.dropbox.com/s/5f58dy8rbe7xdhn/My-ID-CARD.png?dl=0&#34; target=&#34;_blank&#34;&gt;ছবিটা&lt;/a&gt; একবার দেখে নিতে পারেন।&lt;/p&gt;
-
-&lt;p&gt;ধন্যবাদ ।&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>গিটহাব ১৮+ যেকোনো স্টুডেন্টকে তাদের স্টুডেন্ট প্যাকটা ফ্রি দেয়। এই প্যাকেজে অনেক প্রিমিয়াম ফিচার ইনক্লুডেড যেমন ২ বছর এর জন্য যেমন, গিটহাবে আনলিমিটেড প্রাইভেট রিপো খুলতে পারবে, একটা .me ফ্রি ডোমেইন, হ্যাকহ্যান্ড এ ৩০৳ এর ফ্রি সার্ভিস নিতে পারবে, গিটক্রাকেন প্রো ১ বছর এর জন্য ফ্রি ব্যাবহার করতে পারবে সহ আরও অনেক কিছু। এই প্যাক নিতে যেটা করতে হবে এই লিঙ্কে (https://education.github.com/) গিয়ে কলেজ অথবা ইউনিভারসিটির ভেরিফাইড মেইল (educational mail) দিয়ে একটা ফর্ম সাবমিট করতে হয়, তারপর ২৪ ঘণ্টার এর মধ্যে রিভিউ হয়ে কনফার্মেশন মেইল আসবে। বাংলাদেশের অধিঙ্কাংশ শিক্ষা প্রতিষ্ঠান শিক্ষার্থীদের জন্য কোন মেইল সার্ভিস প্রভাইড করে না। আপনি যদি জিমেইল, বা ইয়াহু মেইল দেন তাহলে না পাওয়ার সম্ভাবনা বেশি। এজন্য আপনাকে আপনার আইডি কার্ড এর একটা ছবি তুলে দিতে হবে যেখানে ভেলিডেশন তারিখটা দেখা যায়। এটা ইম্পরট্যান্ট যদি ভেলিডেশন তারিখ না থাকে তাহলে নাও পেতে পারেন। আমার আপলোড করা ছবিটা একবার দেখে নিতে পারেন।</description>
     </item>
     
     <item>
@@ -35,61 +26,9 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/github-basic/</guid>
-      <description>&lt;p&gt;ওপেন সোর্স এ contribution করার জন্য  &lt;strong&gt;Github&lt;/strong&gt; এর  কোন বিকল্প খুব কমই আছে। Github খুব সম্ভবত বড়ো কোড hosting সাইট । github এ পাবলিক অথবা প্রাইভেট (সামান্য অর্থের বিনিময়ে) repository  খোলা যায়।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;আপনি কেন ওপেন সোর্স প্রোজেক্টে আপনার শ্রম দিবেন ?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;কারনটা হচ্ছে ,আপনার নিজের ভালোর জন্য , আপনি ওপেন সোর্সে আপানার যে স্কিল, শ্রম, এবং সময় দিবেন সেটা আসলে আপনার নিজেকে আরও দক্ষ করা জন্য, একটা উদাহরণ দেই ধরা যাক আপনি  atom editor এর একটা বাগ খুঁজে বের করলেন এবং  pull request সেন্ড করলেন তখন  atom এর contributor list এ আপনার নামটা উঠে যাবে, বাগটা যেহেতু আপনি খুঁজে বের করেছেন সেহেতু আপনার ডিবাগিং স্কিলটা ঝালাই হয়ে গেলো এছাড়া আপনার জব পাওয়ার জন্য ওপেন সোর্স contributor রা অগ্রাধিকার পায়।গুগল, ফেসবুক থেকে শুরু করে মাইক্রোসফট পর্যন্ত এখন ওপেন সোর্সের দিকে ঝুঁকছে। সবচেয়ে বড় কথা আপনি শিখতে পারবেন। আপনার একটা পরিচিতি হবে, একটা কমিউনিটি বিল্ডাপ হবে।&lt;/p&gt;
-
-&lt;p&gt;অনেক ওপেন সোর্স প্রোজেক্ট গিটহাবে তাদের বিশাল community নিয়ে কাজ চালিয়ে যাচ্ছে । যে কেউ পাবলিক repository এর  কোড পড়তে পারে এর জন্য কোন github অ্যাকাউন্ট প্রয়োজন হয় না, এমনকি মাউসের একটি click এ সম্পূর্ণ repository নিজের পিসিতে ক্লোন করা যায়।&lt;/p&gt;
-
-&lt;p&gt;গিটহাবে repository খোলার জন্য আপনার একটি গিটহাব অ্যাকাউন্ট লাগবে তারপর public অথবা private repository খুলতে পারবেন।নতুন repository খোলার সময় README এবং ওপেন সোর্স লাইসেন্স দিয়ে repository কে initialize করতে হয়।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Readme&lt;/strong&gt;
-ফাইলে আপনার প্রোজেক্ট সম্পর্কে বিস্তারিত লিখতে হয় যাতে সবাই পড়ে বুঝতে পারে প্রোজেক্টটি সম্পর্কে এবং যদি কেউ চায় তাহলে contribute করতে পারে।
-আমি এই লেখায় গিটহাবে ব্যাবহার করা হয় এমন কিছু টার্ম নিয়ে আলোচনা করবো কেননা গিটহাবে যেকোন প্রোজেক্টে contribute করতে গেলে বা নিজের প্রোজেক্ট খোলার জন্য এই টার্ম গুলো জানা থাকতে হবে, যেমনঃ repository, pull request, wiki , issues, commit, brach,commit, fork.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Repository&lt;/strong&gt;
-কোন নতুন প্রোজেক্ট গিটহাবে অ্যাড করার জন্য প্রথমে ওই প্রোজেক্টের একটা repository  খুলতে হবে। repository তে প্রোজেক্টের সব ফাইল,ইমেজ, সহ বিস্তারিত থাকবে। এই repository হতে পারে লোকাল কম্পিউটারে অথবা কোন ওয়েব সার্ভারে।
-repository  তে একটি readme  file থাকা উচিৎ যেখানে প্রোজেক্টটি সম্পর্কে বিস্তারিত বর্ণনা করা থাকবে।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Branch&lt;/strong&gt;
-Githab এ যখন একটি প্রোজেক্ট খোলা হয় তখন একটা master branch ক্রিয়েট হয়ে যায়। ওই master বা প্যারেন্ট branch এর সাথে প্রোজেক্ট এর সাব ফাইল বা directory অ্যাড করতে হয় ।
-ধরা যাক , আপনি কোন প্রোজেক্টের কোন branch এডিট করতে চান তাহলে আপনি একটি নতুন branch create করে প্রয়োজনীয় এডিট করে branch টি master branch এর সাথে merge করে দিবেন। এটা অনেকটা ট্রি এর মতো - master branch রুট এবং সাবডিরেক্টরি / ফাইল গুলো চাইল্ড ।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fork&lt;/strong&gt;
-ধরা যাক আপনি অন্য কোন প্রোজেক্টের এ নিজের repository তে কপি করতে চান তাহলে আপনাকে প্রোজেক্টটি fork করতে হবে । তারপর আপনি যদি চান ওই প্রোজেক্টে এর কোন branch এডিট করতে বা কোন বাগ ফিক্স করতে তাহলে সেটা করে আপনাকে একটি pull request  পাঠাতে হবে original author এর কাছে এভাবে আপনি কোন প্রোজেক্টে contribute করতে পারেন ।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Pull Request&lt;/strong&gt;
-ধরা যাক আপনি কোন ওপেন সোর্স প্রোজেক্টে contribute করতে চান, আপনি ওই প্রোজেক্টে একটি বাগ খুঁজে পেয়েছেন এবং বাগটি ফিক্স করেছেন তখন আপনাকে একটি pull  request  বিস্তারিত বর্ণনা সহ পাঠাতে হবে ওই প্রোজেক্ট যে maintain করছে তার কাছে তখন সে ওই pull request টা দেখে যদি accept  করে  তাহলে অ্যাড করে দিবে (ignore  ও করতে পারে যদি উল্টাপাল্টা request  পাঠানো হয়) মূল repository তে । বেশিরভাগ সময় pull request  অটোম্যাটিকালি প্রোজেক্টে অ্যাড হয়ে যায় কিছু ক্ষেত্রে maintainer কে ম্যানুয়ালি কিছু pull-request marge করতে হয়।&lt;/p&gt;
-
-&lt;p&gt;৩টি ধাপ রয়েছে কোন ওপেন সোর্স প্রোজেক্টে contribute করার জন্য।
-&lt;strong&gt;Fork the project&lt;/strong&gt;
-&lt;strong&gt;Create branch&lt;/strong&gt;
-&lt;strong&gt;Send Pull request.&lt;/strong&gt;
-&lt;strong&gt;Push&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;লোকাল পিসি থেকে কোন  repository কে ওয়েব repository তে upload  করার জন্য &lt;strong&gt;push&lt;/strong&gt; করতে হয়।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Issues&lt;/strong&gt;
-কোন প্রোজেক্টের যদি বাগ খুঁজে পান কোথাও কোন প্রবলেম থাকলে ওই বিষয়ে issue create করতে হয়, তখন ওই প্রোজেক্ট যারা ফলো করতেছে বা contribute করতেছে অথবা project maintainer ওই ইস্যুর উত্তর দেয়, আলোচনা করে। এটাকে bug tracker হিসেবে কল্পনা করা যায়।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Commit&lt;/strong&gt;
-যখন কোন repository এর কোন অংশ পরিবর্তন বা এডিট করা হয় তখন সেটা commit করতে হয় ।commit করার সময় summary  এবং description দিতে হয় যে কি change করা হল। commit করা মানে হল পরিবর্তনগুলো সেভ করা। commit না করে কোন Branch পুশ করতে পারবেন না।&lt;/p&gt;
-
-&lt;p&gt;এখন আপনি আপনরা পছন্দ মতো কোন প্রোজেক্টে contributor হিসেবে কাজ শুরু করে দিতে পারেন । গিটহাবে গিয়েও খুঁজে নিতে পারেন অথবা &lt;strong&gt;&lt;a href=&#34;https://www.codetriage.com&#34; target=&#34;_blank&#34;&gt;codetriage&lt;/a&gt;&lt;/strong&gt; এই সাইটে গিয়ে পছন্দ মতো প্রোজেক্ট খুঁজে নিতে পারেন খুব সহজেই , যেমন ধরা যাক আপনি শুধু সি বা জাভা পারেন তাহলে আপনি এই সাইটে গিয়ে সি, জাভা রিলেটেড প্রোজেক্ট পেয়ে যাবেন সেখানে কারা contribute করছে সহ আরও তথ্য সহজেই পেয়ে যাবেন ।&lt;/p&gt;
-
-&lt;p&gt;এছাড়া আপনি আপনার সিভিতে আপনার githab রাঙ্কিং এর লিঙ্ক অ্যাড করে দিতে পারেন এই লিঙ্ক থেকে &lt;strong&gt;&lt;a href=&#34;http://git-awards.com&#34; target=&#34;_blank&#34;&gt;github-awards&lt;/a&gt;&lt;/strong&gt;  এই লিঙ্কে গ্লোবালি এবং লোকালি আপনার রাঙ্কিং পাওয়া যাবে। আবার আপনি চাইলে আপনার গিটহাব resume ও আপনার সিভিতে অ্যাড করে দিতে পারেন এই &lt;strong&gt;&lt;a href=&#34;https://resume.github.io&#34; target=&#34;_blank&#34;&gt;github-resume&lt;/a&gt;&lt;/strong&gt; এই লিঙ্ক থেকে , লিঙ্কে গিয়ে আপনার গিটহাব আইডি দিলেই আপনাকে resume generate করে দিবে।
-আজ এই পর্যন্তই ধন্যবাদ সবাইকে।&lt;/p&gt;
-
-&lt;p&gt;Follow me on
-&lt;a href=&#34;https://github.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Githab&lt;/a&gt;|
-&lt;a href=&#34;https://twitter.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;|
-&lt;a href=&#34;https://facebook.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Facebook&lt;/a&gt;|
-&lt;a href=&#34;https://www.quora.com/profile/Shohanur-Rahaman&#34; target=&#34;_blank&#34;&gt;Quora&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;© copyright reserved by the Author.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
+      <description>ওপেন সোর্স এ contribution করার জন্য Github এর কোন বিকল্প খুব কমই আছে। Github খুব সম্ভবত বড়ো কোড hosting সাইট । github এ পাবলিক অথবা প্রাইভেট (সামান্য অর্থের বিনিময়ে) repository খোলা যায়।
+আপনি কেন ওপেন সোর্স প্রোজেক্টে আপনার শ্রম দিবেন ?
+কারনটা হচ্ছে ,আপনার নিজের ভালোর জন্য , আপনি ওপেন সোর্সে আপানার যে স্কিল, শ্রম, এবং সময় দিবেন সেটা আসলে আপনার নিজেকে আরও দক্ষ করা জন্য, একটা উদাহরণ দেই ধরা যাক আপনি atom editor এর একটা বাগ খুঁজে বের করলেন এবং pull request সেন্ড করলেন তখন atom এর contributor list এ আপনার নামটা উঠে যাবে, বাগটা যেহেতু আপনি খুঁজে বের করেছেন সেহেতু আপনার ডিবাগিং স্কিলটা ঝালাই হয়ে গেলো এছাড়া আপনার জব পাওয়ার জন্য ওপেন সোর্স contributor রা অগ্রাধিকার পায়।গুগল, ফেসবুক থেকে শুরু করে মাইক্রোসফট পর্যন্ত এখন ওপেন সোর্সের দিকে ঝুঁকছে। সবচেয়ে বড় কথা আপনি শিখতে পারবেন। আপনার একটা পরিচিতি হবে, একটা কমিউনিটি বিল্ডাপ হবে।</description>
     </item>
     
   </channel>

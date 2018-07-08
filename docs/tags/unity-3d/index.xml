@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/me/tags/unity-3d/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://shohan4556.github.io/me/tags/unity-3d/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Project Pirate Dev Log - 01</title>
@@ -15,11 +17,7 @@
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</guid>
-      <description>&lt;p&gt;So far I have created a nice and smooth third person camera with unity &lt;strong&gt;cinemachine&lt;/strong&gt; .
-This camera support collision as well. I have also created another third person camera. I am just testing multiple things which one fit well. Btw here is the demo of the &lt;strong&gt;cinemachine&lt;/strong&gt; camera. (&lt;em&gt;little glitch for recording&lt;/em&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://youtu.be/QFdgjGiLhpE&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/QFdgjGiLhpE/0.jpg&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>So far I have created a nice and smooth third person camera with unity cinemachine . This camera support collision as well. I have also created another third person camera. I am just testing multiple things which one fit well. Btw here is the demo of the cinemachine camera. (little glitch for recording)</description>
     </item>
     
     <item>
@@ -28,108 +26,8 @@ This camera support collision as well. I have also created another third person 
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/inheritable-singleton-script/</guid>
-      <description>
-
-&lt;p&gt;সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।
-নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class SingletonBase&amp;lt;T&amp;gt; : MonoBehaviour where T : MonoBehaviour {
- 
-    private static object slock = new object(); safety 
-    private static T sInstance; 
-
-    public static T Instance
-    {
-        get {
-            lock (slock) {
-                if(sInstance == null) {
-                    sInstance = GameObject.FindObjectOfType&amp;lt;T&amp;gt;(); 
-                    if(sInstance == null) {
-                        UnityEngine.Debug.LogError(&amp;quot;Expected to find an instance of the &amp;quot; + typeof(T) + &amp;quot; component in the hierarchy but none found!\n&amp;quot;
-                                     + &amp;quot;Attach the &amp;quot; + typeof(T) + &amp;quot; component to a GameObject in the hierarchy.&amp;quot;);
-
-                        Abort();
-                    }
-                    // got the instance
-                    DontDestroyOnLoad(sInstance.transform.gameObject);
-                }
-                return sInstance;
-            }
-        }
-    }
-
-    private static void Abort() {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-    }
-
-    private void Awake() {
-        if(Instance != this) {
-            Destroy(this.gameObject);
-            return;
-        }
-    }
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;little-explanation&#34;&gt;Little explanation :&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;slock  একটা অবজেক্ট ক্রিয়েট করি ।&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;Lock ( ….) { }&lt;/code&gt; প্রথমে একটি থ্রেড এই ব্লকে ঢুকবে এবং লক করে ফেলবে অন্য কোন থ্রেড কে এখানে ঢুকতে দিবে না যতক্ষণ না এর কাজ শেষ হয়। খাটি বাংলায় এই হচ্ছে মূল কথা । কাজ শেষ হলে slock অবজেক্ট কে রিলিজ করে দিবে অর্থাৎ কাজ শেষ।&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;প্রথমে ট্রাই করবো এরকম স্ক্রিপ্ট আরও আছে কিনা খোঁজার যদি না পাই তাহলে একটা এরর মেসেজ দিবো ।
-আর যদি পাই তাহলে তো ভালো।&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;ক-ভ-ব-ইনহ-র-ট-করত-হব&#34;&gt;কিভাবে ইনহেরিট করতে হবে ?&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-public class UIManager : SingletonBase&amp;lt;UIManager&amp;gt; {
-
-    [SerializeField] private MainMenu mainMenu;
-    [SerializeField] private Camera demoCamera;
- 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Debug.Log(&amp;quot;fadeout UI manager&amp;quot;);
-            mainMenu.FadeOut();
-        }
-    }
-
-    public void setDemoCameraActive(bool flag) {
-        demoCamera.gameObject.SetActive(flag);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;রেফারেন্স ঃ&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in&#34; target=&#34;_blank&#34;&gt;https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yoda.arachsys.com/csharp/singleton.html&#34; target=&#34;_blank&#34;&gt;http://www.yoda.arachsys.com/csharp/singleton.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://wiki.unity3d.com/index.php/Singleton&#34; target=&#34;_blank&#34;&gt;http://wiki.unity3d.com/index.php/Singleton&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে। নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।
+using System.Collections; using System.Collections.Generic; using UnityEngine; public class SingletonBase&amp;lt;T&amp;gt; : MonoBehaviour where T : MonoBehaviour { private static object slock = new object(); safety private static T sInstance; public static T Instance { get { lock (slock) { if(sInstance == null) { sInstance = GameObject.</description>
     </item>
     
     <item>
@@ -147,26 +45,8 @@ public class UIManager : SingletonBase&amp;lt;UIManager&amp;gt; {
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/LJs99AY.png&#34; alt=&#34;Natural Selection&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;আমি একটা মেশিন লার্নিং সিমুলেশন করি যেখানে Natural Selection বিষয়টা ছোট আকারে সিমুলেট করি।&lt;/p&gt;
-
-&lt;p&gt;এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি।  পপুলেশন সাইয হচ্ছে ১০ এবং জেনারেশন টাইম হচ্ছে ১০ সেকেন্ড। ১০ সেকেন্ড পর একটা জেনারেশন এর সব পপুলেশন ডেড হয়ে যাবে এবং এই পপুলেশনএর DNA data গুলো পরবর্তী পপুলেশনে  ইনহেরিট করবে। এখানে সেই ডাটাগুলোর priority level বেশি থাকবে যারা বেশি সময় ধরে সারভাইভ করতে পেরেছে (অর্থাৎ সবার শেষে সেটা ডেড)।  এই ডাটা গুলোরও পরবর্তীতে প্রজন্মে ইনহেরিট করার সম্ভাবনা ৫০% এবং মিউটেশন হচ্ছে  ০.১০% (বেশি মিউটেশন হলে আসল কালার টা হারিয়ে যেতে পারে তাই কম দিয়েছি)।&lt;/p&gt;
-
-&lt;p&gt;এই &lt;a href=&#34;https://streamable.com/og91d&#34; target=&#34;_blank&#34;&gt;ভিডিও&lt;/a&gt; ক্লিপে দেখুন আমি রেড কালার টা সব শেষে remove করি নবম জেনারেশনেই আমি লাল এর আর একটা শেড পাই মিউটেশন এর কারনে। যেহেতু পপুলেশন সাইজ ছোট তাই খুব অল্প সময়েই রেজাল্ট দেখা যাচ্ছে।&lt;/p&gt;
-
-&lt;p&gt;এবার এই &lt;a href=&#34;https://streamable.com/0frnu&#34; target=&#34;_blank&#34;&gt;ক্লিপে&lt;/a&gt; দেখুন এখানে পুরো সিমুলেশনটা অটোমেটেড, কোন সেলেক্টিভ পিকিং হয় নাই। পুরোটাই randomly selection। এখানে পপুলেশন সাইজ ২৫। ৪০তম জেনারেশনে গিয়ে নীল রঙের একটা শেড পাওয়া যাচ্ছে।&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/shohan4556/Genetic-Algorithm-With-Machine-Learning&#34; target=&#34;_blank&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>আমি একটা মেশিন লার্নিং সিমুলেশন করি যেখানে Natural Selection বিষয়টা ছোট আকারে সিমুলেট করি।
+এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি। পপুলেশন সাইয হচ্ছে ১০ এবং জেনারেশন টাইম হচ্ছে ১০ সেকেন্ড। ১০ সেকেন্ড পর একটা জেনারেশন এর সব পপুলেশন ডেড হয়ে যাবে এবং এই পপুলেশনএর DNA data গুলো পরবর্তী পপুলেশনে ইনহেরিট করবে। এখানে সেই ডাটাগুলোর priority level বেশি থাকবে যারা বেশি সময় ধরে সারভাইভ করতে পেরেছে (অর্থাৎ সবার শেষে সেটা ডেড)। এই ডাটা গুলোরও পরবর্তীতে প্রজন্মে ইনহেরিট করার সম্ভাবনা ৫০% এবং মিউটেশন হচ্ছে ০.</description>
     </item>
     
     <item>
@@ -175,150 +55,10 @@ public class UIManager : SingletonBase&amp;lt;UIManager&amp;gt; {
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/laser2d-doc/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://assetstore.unity.com/packages/vfx/particles/laser2d-81830&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://shohan4556.github.io/Laser2D/&#34; target=&#34;_blank&#34;&gt;web version of the doc&lt;/a&gt; - Recommended.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; Verssion : 0.02  
- Updated : December 2017 
- Developer : Shohanur Rahaman
- Contact : shohan4556@gmail.com 
- web : techshohan.me
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Four directional Laser (Top, Down, Left, Right)&lt;/li&gt;
-&lt;li&gt;Modify Laser Color&lt;/li&gt;
-&lt;li&gt;Easy to Implement&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Mobile Friendly&lt;/li&gt;
-&lt;li&gt;Great for Pixel Art Games&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;how-to-use&#34;&gt;How To Use&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;#Getting-Started&#34;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#changing-laser-color&#34;&gt;Changing Laser Color&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#understanding-inspector-variables&#34;&gt;Understanding Inspector Variables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#using-four-directional-laser&#34;&gt;Using Four Directional Laser&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Modify Code
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;#how-to-add-enemy-damage&#34;&gt;How to Add Enemy Damage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#modify-input&#34;&gt;Modify Input&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#tips&#34;&gt;Tips&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;More Features is Coming Soon&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h4&gt;
-
-&lt;p&gt;The easiest to way to see Use Laser2D create a &lt;strong&gt;Parent Gameobject&lt;/strong&gt; (that could be player/ship sprite) then &lt;strong&gt;drag the Prefab&lt;/strong&gt; and make it child of the parent object. Add the &lt;strong&gt;Sprite Light&lt;/strong&gt; material to the enemy gameobject. Play the game and Click the &lt;strong&gt;Right Mouse Button&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/3zBZ5Nx.gif&#34; alt=&#34;Getting Started&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;changing-laser-color&#34;&gt;Changing Laser Color&lt;/h4&gt;
-
-&lt;p&gt;To Change a Laser Color go through the child object &amp;gt; find the &lt;strong&gt;Laser Glow&lt;/strong&gt; gameobject and change the sprite color.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8iK3wlN.gif&#34; alt=&#34;Changing Laser Color&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;understanding-inspector-variables&#34;&gt;Understanding Inspector Variables&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KHX1Rao.png&#34; alt=&#34;Inspector&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Begin Pos :&lt;/strong&gt; This is the position where the laser beam starts from.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Enemy Hit layer :&lt;/strong&gt; you Enemy should be in Enemy Layer, you can also add multiple layers.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Size :&lt;/strong&gt; This is the invisible Ray size or Raycast Size.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Size :&lt;/strong&gt; This is the visible Laser size. Adjust the size according to your need.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Glow Size :&lt;/strong&gt; This is the Laser glow size adjust the size with &lt;strong&gt;Laser Size&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Damage :&lt;/strong&gt; This is the damage for the &lt;strong&gt;Enemy&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Duration :&lt;/strong&gt; Laser firing duration in second.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Hit Emitter :&lt;/strong&gt; Laser Hit emitter prefab.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Melt Emitter :&lt;/strong&gt; Laser Melting Prefab.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Glow :&lt;/strong&gt; Laser glowing sprite.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Dir :&lt;/strong&gt; Laser direction, use it for changing direction. Its not changeable in&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;runtime&lt;/strong&gt; you need to define it before playing the game. Available laser direction &lt;strong&gt;Top, Down, Left and Right&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;using-four-directional-laser&#34;&gt;Using Four Directional Laser&lt;/h4&gt;
-
-&lt;p&gt;The easiest way to use Four directional laser is using Prefab there are four prefabs
-&lt;strong&gt;L2D-Top, L2D-Down, L2D-Left &amp;amp; L2D-Right&lt;/strong&gt; you can use any of them.
-There is another way is &lt;strong&gt;Changing the Laser Direction.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/WlAsU9c.png&#34; alt=&#34;Top-Down&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;how-to-add-enemy-damage&#34;&gt;How to Add Enemy Damage&lt;/h4&gt;
-
-&lt;p&gt;To give damage on Enemy gameobject create a tag name as &lt;strong&gt;Enemy&lt;/strong&gt; and add it to the enemy object. Edit the code inside the &lt;strong&gt;Update&lt;/strong&gt; method.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; /*-------------------- Enemy Damage -------------------- */
-     if (hit.collider.tag == &amp;quot;Enemy&amp;quot;) {
-      hit.collider.gameObject.GetComponent&amp;lt;L2DEnemyHealth().giveDamage(laserDamage);
-   }
- /*------------------------------------------------------ */
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Tips :&lt;/em&gt; For better performance you can cache the EnemyHealth script inside Start method.&lt;/p&gt;
-
-&lt;h4 id=&#34;modify-input&#34;&gt;Modify Input&lt;/h4&gt;
-
-&lt;p&gt;To modify input go through the &lt;code&gt;LaserBeam&lt;/code&gt; script and find the &lt;code&gt;FireLaser&lt;/code&gt; function you can find there the input code. Its easy to change the code.
-Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code&gt; you can simply do it like this  from &lt;code&gt;Myscript&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    public LaserBeam laserbeam; // drag the LaserBeam gameobject
-    void Start()
-    {
-        if(laserbeam==null){
-           laserbeam =  Gameobject.FindObjectOfType&amp;lt;LaserBeam&amp;gt;();
-        }
-    }
-    
-    void Update()
-    {
-        if( Input.GetButtonDown(keyCode.Space){
-         laserbeam.FireLaser();   
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Note :&lt;/em&gt; Don&amp;rsquo;t forget to comment out the &lt;code&gt;FireLaser&lt;/code&gt; method form the &lt;code&gt;LaserBeam&lt;/code&gt; script.&lt;/p&gt;
-
-&lt;h4 id=&#34;tips&#34;&gt;Tips&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Use &lt;strong&gt;Order in Layer&lt;/strong&gt; for ordering Player sprite and Laser. I suggest you to use lower order to Player and higher order for Laser2D, it looks better than.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Download
+web version of the doc - Recommended.
+ Verssion : 0.02 Updated : December 2017 Developer : Shohanur Rahaman Contact : shohan4556@gmail.com web : techshohan.me  Features  Four directional Laser (Top, Down, Left, Right) Modify Laser Color Easy to Implement
+ Mobile Friendly Great for Pixel Art Games  How To Use  Getting Started Changing Laser Color Understanding Inspector Variables Using Four Directional Laser Modify Code  How to Add Enemy Damage Modify Input</description>
     </item>
     
     <item>
@@ -327,45 +67,8 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</guid>
-      <description>&lt;p&gt;ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip;  প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক
-বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি।
-প্লাগিন গুলার লিস্ট&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Beautify&lt;/li&gt;
-&lt;li&gt;C# (for C# support)&lt;/li&gt;
-&lt;li&gt;Debugger for Unity3D&lt;/li&gt;
-&lt;li&gt;Unity Snippets&lt;/li&gt;
-&lt;li&gt;Unity Tools&lt;/li&gt;
-&lt;li&gt;material Icon Theme&lt;/li&gt;
-&lt;li&gt;Trainling Semicolon&lt;/li&gt;
-&lt;li&gt;Markdown All in One&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;তারপর আমি যেটা করি &lt;a href=&#34;https://github.com/hbin/top-programming-fonts&#34; target=&#34;_blank&#34;&gt;Menlo&lt;/a&gt; ফন্ট ইন্সটল করি।
-ফন্ট সাইজ রাখি ১৬&lt;/p&gt;
-
-&lt;p&gt;এটা আমার ভিএস কোড এর  prefernce file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-    &amp;quot;workbench.iconTheme&amp;quot;: &amp;quot;material-icon-theme&amp;quot;,
-    &amp;quot;window.zoomLevel&amp;quot;: 0,
-    &amp;quot;editor.fontSize&amp;quot;: 16,
-    &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Menlo&amp;quot;,
-    &amp;quot;material-icon-theme.showUpdateMessage&amp;quot;: false,
-    &amp;quot;extensions.ignoreRecommendations&amp;quot;: true,
-    &amp;quot;markdown.extension.preview.autoShowPreviewToSide&amp;quot;: true
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ডার্ক থিম ব্যাবহার করি সব সময়।&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=EpYOBMrne0s&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/EpYOBMrne0s/0.jpg&#34; alt=&#34;How to configure Visual Studio Code with Unity3D&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে  মধ্যেই ব্যাবহার করি এই মুহূর্তে মনে পড়ছে না।&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip; প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি। প্লাগিন গুলার লিস্ট
+ Beautify C# (for C# support) Debugger for Unity3D Unity Snippets Unity Tools material Icon Theme Trainling Semicolon Markdown All in One  তারপর আমি যেটা করি Menlo ফন্ট ইন্সটল করি। ফন্ট সাইজ রাখি ১৬</description>
     </item>
     
     <item>
@@ -374,20 +77,12 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/game-ai-fsm/</guid>
-      <description>&lt;p&gt;Hello there, I have posted a tutorial series about Finite State Machine with Unity3D. FSM is very easy to implement and very effective is some cases.&lt;/p&gt;
+      <description>Hello there, I have posted a tutorial series about Finite State Machine with Unity3D. FSM is very easy to implement and very effective is some cases.
+Here is the tutorial series.
 
-&lt;p&gt;Here is the tutorial series.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dDQEFSk-rQM&amp;amp;list=PLWnE_CWJ15J7ajZQ8gKwed8rnetI0SdfN&#34; title=&#34;FSM with Unity3D Intro&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.imgur.com/Hp2oLiw.png&#34; alt=&#34;FSM with Unity3D Intro&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+follow me on facebook
+follow me on twitter
+follow me on github</description>
     </item>
     
     <item>
@@ -396,70 +91,12 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/unity-tips-1/</guid>
-      <description>&lt;p&gt;Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Slider&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Range(1, 100)]
-public int weight;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This code will come up with a slider in inspector.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;OnValidate()&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you may want to validate value that comes from inspector. Unity has a nice method &lt;code&gt;onValidate&lt;/code&gt; you can validate value.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public float speed;
-
-void onValidate()
-{
-    if(speed&amp;lt;=0){
-        Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;ToolTip&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you may have deliver your project to dumb client, ToolTip can make your life easier.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Tooltip(&amp;quot;drop here the screaming audio from Assets &amp;quot;)]
-public AudioClip screamAudio;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;HideInInspector&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Hide public variable form Inspector.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[HideInInspector]
-public int p = 5;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;RequireComponent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Use it for dependency script. Make your life easier.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[RequireComponent(typeof(Rigidbody))]
-public class PlayerScript : MonoBehaviour
-{
-    Rigidbody rBody;
-
-    void Start()
-    {
-        rBody = GetComponent&amp;lt;Rigidbody&amp;gt;();
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.
+Slider
+[Range(1, 100)] public int weight;  This code will come up with a slider in inspector.
+OnValidate()
+Sometimes you may want to validate value that comes from inspector. Unity has a nice method onValidate you can validate value.
+public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;); } }  ToolTip</description>
     </item>
     
     <item>
@@ -495,15 +132,7 @@ public class PlayerScript : MonoBehaviour
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/dark-inside/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Project Leader : Shohanur Rahaman
-
-&lt;ul&gt;
-&lt;li&gt;Game Art: Belal Hossain&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/shohan4556/dark-inside&#34; target=&#34;_blank&#34;&gt;View Project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Project Leader : Shohanur Rahaman Game Art: Belal Hossain View Project  </description>
     </item>
     
     <item>

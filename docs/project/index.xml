@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Sun, 25 Feb 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/me/project/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://shohan4556.github.io/me/project/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Genetic Algorithm with Machine Learning</title>
@@ -51,15 +53,7 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/dark-inside/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Project Leader : Shohanur Rahaman
-
-&lt;ul&gt;
-&lt;li&gt;Game Art: Belal Hossain&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/shohan4556/dark-inside&#34; target=&#34;_blank&#34;&gt;View Project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Project Leader : Shohanur Rahaman Game Art: Belal Hossain View Project  </description>
     </item>
     
     <item>
@@ -68,12 +62,8 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/dark-proton/</guid>
-      <description>&lt;p&gt;When I have used to work with *&lt;strong&gt;PhaserJs&lt;/strong&gt; I mostly work in night. My eyes is very sensitive so that I have tried several themes most of the themes were not suits to my eyes. So I have decided to make my own theme and made this theme which is availe on braket theme repository.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Here is the theme &lt;a href=&#34;https://github.com/shohan4556/dark-proton&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>When I have used to work with *PhaserJs I mostly work in night. My eyes is very sensitive so that I have tried several themes most of the themes were not suits to my eyes. So I have decided to make my own theme and made this theme which is availe on braket theme repository.
+ Here is the theme repository.  </description>
     </item>
     
     <item>

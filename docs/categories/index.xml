@@ -6,7 +6,9 @@
     <description>Recent content in Categories on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <atom:link href="/me/categories/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://shohan4556.github.io/me/categories/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

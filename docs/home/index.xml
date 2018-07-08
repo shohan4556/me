@@ -7,7 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/me/home/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://shohan4556.github.io/me/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://shohan4556.github.io/me/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/home/about/</guid>
+      <description>Biography Hi there, I am a tech nerd from Bangladesh who is passionate about Game Development. I have a solid skill in Unity3D Game Development. I am working as an freelance game developer now. I do code mostly. I love drawing pixelArt and reading books.
+I am available as a freelance game developer and would love to take up challenging projects. If you would like to talk about a project, opportunity, consult about something or would simply like to chat, feel free to leave a message.</description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>https://shohan4556.github.io/me/home/posts/</link>
+      <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://shohan4556.github.io/me/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>https://shohan4556.github.io/me/home/experience/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/home/experience/</guid>
+      <description> Game Development Instructor at CEED IT. Freelancer at Fiverr &amp;amp; People Per Hour. Indie Game Developer.  </description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://shohan4556.github.io/me/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0600</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://shohan4556.github.io/me/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

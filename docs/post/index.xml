@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0600</lastBuildDate>
-    <atom:link href="/me/post/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://shohan4556.github.io/me/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Project Pirate Dev Log - 01</title>
@@ -15,11 +17,7 @@
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</guid>
-      <description>&lt;p&gt;So far I have created a nice and smooth third person camera with unity &lt;strong&gt;cinemachine&lt;/strong&gt; .
-This camera support collision as well. I have also created another third person camera. I am just testing multiple things which one fit well. Btw here is the demo of the &lt;strong&gt;cinemachine&lt;/strong&gt; camera. (&lt;em&gt;little glitch for recording&lt;/em&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://youtu.be/QFdgjGiLhpE&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/QFdgjGiLhpE/0.jpg&#34; alt=&#34;Foo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>So far I have created a nice and smooth third person camera with unity cinemachine . This camera support collision as well. I have also created another third person camera. I am just testing multiple things which one fit well. Btw here is the demo of the cinemachine camera. (little glitch for recording)</description>
     </item>
     
     <item>
@@ -28,108 +26,8 @@ This camera support collision as well. I have also created another third person 
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/inheritable-singleton-script/</guid>
-      <description>
-
-&lt;p&gt;সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।
-নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class SingletonBase&amp;lt;T&amp;gt; : MonoBehaviour where T : MonoBehaviour {
- 
-    private static object slock = new object(); safety 
-    private static T sInstance; 
-
-    public static T Instance
-    {
-        get {
-            lock (slock) {
-                if(sInstance == null) {
-                    sInstance = GameObject.FindObjectOfType&amp;lt;T&amp;gt;(); 
-                    if(sInstance == null) {
-                        UnityEngine.Debug.LogError(&amp;quot;Expected to find an instance of the &amp;quot; + typeof(T) + &amp;quot; component in the hierarchy but none found!\n&amp;quot;
-                                     + &amp;quot;Attach the &amp;quot; + typeof(T) + &amp;quot; component to a GameObject in the hierarchy.&amp;quot;);
-
-                        Abort();
-                    }
-                    // got the instance
-                    DontDestroyOnLoad(sInstance.transform.gameObject);
-                }
-                return sInstance;
-            }
-        }
-    }
-
-    private static void Abort() {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-    }
-
-    private void Awake() {
-        if(Instance != this) {
-            Destroy(this.gameObject);
-            return;
-        }
-    }
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;little-explanation&#34;&gt;Little explanation :&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;slock  একটা অবজেক্ট ক্রিয়েট করি ।&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;Lock ( ….) { }&lt;/code&gt; প্রথমে একটি থ্রেড এই ব্লকে ঢুকবে এবং লক করে ফেলবে অন্য কোন থ্রেড কে এখানে ঢুকতে দিবে না যতক্ষণ না এর কাজ শেষ হয়। খাটি বাংলায় এই হচ্ছে মূল কথা । কাজ শেষ হলে slock অবজেক্ট কে রিলিজ করে দিবে অর্থাৎ কাজ শেষ।&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;প্রথমে ট্রাই করবো এরকম স্ক্রিপ্ট আরও আছে কিনা খোঁজার যদি না পাই তাহলে একটা এরর মেসেজ দিবো ।
-আর যদি পাই তাহলে তো ভালো।&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&#34;ক-ভ-ব-ইনহ-র-ট-করত-হব&#34;&gt;কিভাবে ইনহেরিট করতে হবে ?&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-public class UIManager : SingletonBase&amp;lt;UIManager&amp;gt; {
-
-    [SerializeField] private MainMenu mainMenu;
-    [SerializeField] private Camera demoCamera;
- 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Debug.Log(&amp;quot;fadeout UI manager&amp;quot;);
-            mainMenu.FadeOut();
-        }
-    }
-
-    public void setDemoCameraActive(bool flag) {
-        demoCamera.gameObject.SetActive(flag);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;রেফারেন্স ঃ&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in&#34; target=&#34;_blank&#34;&gt;https://www.codeproject.com/Articles/572263/A-Reusable-Base-Class-for-the-Singleton-Pattern-in&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yoda.arachsys.com/csharp/singleton.html&#34; target=&#34;_blank&#34;&gt;http://www.yoda.arachsys.com/csharp/singleton.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://wiki.unity3d.com/index.php/Singleton&#34; target=&#34;_blank&#34;&gt;http://wiki.unity3d.com/index.php/Singleton&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে। নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।
+using System.Collections; using System.Collections.Generic; using UnityEngine; public class SingletonBase&amp;lt;T&amp;gt; : MonoBehaviour where T : MonoBehaviour { private static object slock = new object(); safety private static T sInstance; public static T Instance { get { lock (slock) { if(sInstance == null) { sInstance = GameObject.</description>
     </item>
     
     <item>
@@ -138,26 +36,8 @@ public class UIManager : SingletonBase&amp;lt;UIManager&amp;gt; {
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/LJs99AY.png&#34; alt=&#34;Natural Selection&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;আমি একটা মেশিন লার্নিং সিমুলেশন করি যেখানে Natural Selection বিষয়টা ছোট আকারে সিমুলেট করি।&lt;/p&gt;
-
-&lt;p&gt;এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি।  পপুলেশন সাইয হচ্ছে ১০ এবং জেনারেশন টাইম হচ্ছে ১০ সেকেন্ড। ১০ সেকেন্ড পর একটা জেনারেশন এর সব পপুলেশন ডেড হয়ে যাবে এবং এই পপুলেশনএর DNA data গুলো পরবর্তী পপুলেশনে  ইনহেরিট করবে। এখানে সেই ডাটাগুলোর priority level বেশি থাকবে যারা বেশি সময় ধরে সারভাইভ করতে পেরেছে (অর্থাৎ সবার শেষে সেটা ডেড)।  এই ডাটা গুলোরও পরবর্তীতে প্রজন্মে ইনহেরিট করার সম্ভাবনা ৫০% এবং মিউটেশন হচ্ছে  ০.১০% (বেশি মিউটেশন হলে আসল কালার টা হারিয়ে যেতে পারে তাই কম দিয়েছি)।&lt;/p&gt;
-
-&lt;p&gt;এই &lt;a href=&#34;https://streamable.com/og91d&#34; target=&#34;_blank&#34;&gt;ভিডিও&lt;/a&gt; ক্লিপে দেখুন আমি রেড কালার টা সব শেষে remove করি নবম জেনারেশনেই আমি লাল এর আর একটা শেড পাই মিউটেশন এর কারনে। যেহেতু পপুলেশন সাইজ ছোট তাই খুব অল্প সময়েই রেজাল্ট দেখা যাচ্ছে।&lt;/p&gt;
-
-&lt;p&gt;এবার এই &lt;a href=&#34;https://streamable.com/0frnu&#34; target=&#34;_blank&#34;&gt;ক্লিপে&lt;/a&gt; দেখুন এখানে পুরো সিমুলেশনটা অটোমেটেড, কোন সেলেক্টিভ পিকিং হয় নাই। পুরোটাই randomly selection। এখানে পপুলেশন সাইজ ২৫। ৪০তম জেনারেশনে গিয়ে নীল রঙের একটা শেড পাওয়া যাচ্ছে।&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/shohan4556/Genetic-Algorithm-With-Machine-Learning&#34; target=&#34;_blank&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>আমি একটা মেশিন লার্নিং সিমুলেশন করি যেখানে Natural Selection বিষয়টা ছোট আকারে সিমুলেট করি।
+এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি। পপুলেশন সাইয হচ্ছে ১০ এবং জেনারেশন টাইম হচ্ছে ১০ সেকেন্ড। ১০ সেকেন্ড পর একটা জেনারেশন এর সব পপুলেশন ডেড হয়ে যাবে এবং এই পপুলেশনএর DNA data গুলো পরবর্তী পপুলেশনে ইনহেরিট করবে। এখানে সেই ডাটাগুলোর priority level বেশি থাকবে যারা বেশি সময় ধরে সারভাইভ করতে পেরেছে (অর্থাৎ সবার শেষে সেটা ডেড)। এই ডাটা গুলোরও পরবর্তীতে প্রজন্মে ইনহেরিট করার সম্ভাবনা ৫০% এবং মিউটেশন হচ্ছে ০.</description>
     </item>
     
     <item>
@@ -175,39 +55,8 @@ public class UIManager : SingletonBase&amp;lt;UIManager&amp;gt; {
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/digital-world-gaming-conf-2017/</guid>
-      <description>&lt;p&gt;কি-নোটে​ ​প্রথমেই​ ​যে​ ​বিষয়টা​ ​চলে​ ​আসছে​ ​“passion”​ ​যেটাই​ ​করেন​ ​না​ ​কেন​ ​ভালবাসা​ ​থাকতে​ ​হবে।​ ​আজকে​ ​ওয়েব​ ​ডেভ
-করলাম​ ​কাল​ ​ফ্রিলান্সিং​ ​করলাম​ ​পরশু​ ​গেমডেভ​ ​করলাম,​ ​এরকম​ ​নয়।​ ​ভালবাসা​ ​থাকতে​ ​হবে।​ &lt;strong&gt;​“আমি​ ​কি​ ​পারবো”,”​ ​আমি
-পারি​ ​না​ ​&amp;hellip;”​&lt;/strong&gt; ​এই​ ​বাক্য​ ​গুলো​ ​প্যাশনের​ ​সম্পূর্ণ​ ​বিপরীত।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ফিক্সড​ ​মাইন্ডসেট​ ​নয়​ ​গ্রোথ​ ​মাইন্ডসেট​ ​থাকতে​ ​হবে।​&lt;/strong&gt; ​​গ্রোথ​ ​মাইন্ডসেট​ ​বিষয়​ ​টা​ ​যদি​ ​সহজ​ ​ভাষায়​ ​বলি​ ​তাহলে
-এরকম​ ​আপনি​ ​যদি​ ​আপনার​ ​গোল​ ​ঠিক​ ​করে​ ​ফেলেন​ ​আপনি​ ​এবং​ ​সেভাবে​ ​স্টেপ​ ​বাই​ ​স্টেপ​ ​কাজ​ ​করতে​ ​থাকেন,​ ​প্র্যাকটিস
-করতে​ ​থাকেন​ ​তাহলে​ ​আপনার​ ​নিউরাল​ ​গ্রোথও​ ​একই​ ​সাথে​ ​হতে​ ​থাকবে।​ ​এটার​ ​সাথে​ ​রিলেটেড​ ​হচ্ছে
-&lt;strong&gt;Grit&lt;/strong&gt;(perseverance​ ​and​ ​passion​ ​for​ ​long-term​ ​goals)।​ ​আপনি​ ​এখন​ ​ফেইলর​ ​হতে​ ​পারেন​ ​কিন্তু​ ​এটা​ ​সাময়িক,
-সাময়িক​ ​ফেইলর​ ​আপনার​ ​লংটার্ম​ ​গোল​ ​থেকে​ ​বিচ্যুত​ ​করতে​ ​পারবে​ ​না। একটা​ ​বইয়ে​ ​কথাও​ ​মনে​ ​পড়তেছে​ ​এই​ ​মুহূর্তে​ ​-​ ​​&lt;em&gt;Grit:​ ​The​ ​Power​ ​of​ ​Passion​ ​and​ ​Perseverance&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ten​ ​thousand​ ​hour​ ​rule​ ​:&lt;/strong&gt;​ ​আপনি​ ​কোন​ ​একটা​ ​বিষয়ে​ ​দশ​ ​হাজার​ ​ঘণ্টা​ ​সময়​ ​দিন​ ​সত্যিকার​ ​অর্থেই​ ​আপনি​ ​ঐ​ ​বিষয়ে
-একজন​ ​এক্সপার্ট​ ​হয়ে​ ​যাবে।​ ​Talent​ ​+​ ​effort​ ​=​ ​skill​ ​+​ ​effort​ ​=​ ​achievement.&lt;/p&gt;
-
-&lt;p&gt;মাশা ভাইের স্পিচে, যে বিষয় গুলো আসছে গেম ডেভেলপমেন্টের বিভিন্ন সেক্টর, গেম ডিজাইন থেকে গেম মার্কেটিং। গেম মার্কেটিং এ তিনি জিরো বাজেট মার্কেটিং এর কথা বলছেন। indie game developer রা এমনিতেই অভাবে থাকে এখন যদি গেম মার্কেটিং এ যদি টাকা খরচ করে ফেলে তাহলেই হইছে কাজ। &lt;em&gt;(মাশা ভাই মুক্তি ক্যাম্পের একটা টিশার্ট পড়ে আসছিল এটাও মার্কেটিংের অংশ )&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;ইন্ডি গেম ডেভেলপার দের জন্য টুইটার আর রেডিট খুব কাজের ব্যক্তিগত অভিজ্ঞতা । জিরো বাজেট মার্কেটিং এর জন্য এই ভিডিও টা দেখা যেতে পারে খুব কাজের। &lt;a href=&#34;https://www.youtube.com/watch?v=SkEQtMP2CuA&#34; target=&#34;_blank&#34;&gt;Marketing Indie Games on a $0 Budget&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Agility​ ​:​&lt;/strong&gt; ​​ ​আপনার​ ​যেকোনো​ ​চেঞ্জ​ ​adapt​ ​করার​ ​ক্ষমতা​ ​থাকতে​ ​হবে।​ ​আপনার​ ​গেমের​ ​কোন​ ​একটা​ ​মেকানিজম​ ​আপনার
-কাছে​ ​ভালো​ ​মনে​ ​হলেও​ ​প্লেয়ারদের​ ​এটা​ ​ভালো​ ​লাগে​ ​নাই,​ ​আপনাকে​ ​চেঞ্জ​ ​করতে​ ​হবে।​ ​আপনার​ ​গেম​ ​রিলিজের​ ​শেষ​ ​মুহূর্তে
-গিয়েও​ ​কোন​ ​চেঞ্জ​ ​করতে​ ​হতে​ ​পারে।&lt;/p&gt;
-
-&lt;p&gt;কিছু প্রশ্ন ছিল, গেম ডিজাইনার হিসেবে কিভাবে ক্যারিয়ার বা কিভাবে শেখা যায়, মাশা ভাইয়ের সাজেশন ছিল বিভিন্ন বই এবং extracredit এর গেম ডিজাইন এর ভিডিও গুলো। আর একটা প্রশ্নের কথা মনে পড়তেছে, কিভাবে ম্যাসিভ অডিয়েন্স পাওয়া যায়, এখানে অনেক গুলো সাজেশন ছিল, যেমন বাংলাদেশ বা সাউথ এশিয়ান রিজিওন কে টার্গেট করে গেম বানানো যেতে পার, লোকালাইজেশন করে বিভিন্ন রিজিওনাল সাইটে গেম পাবলিশ করা যেতে পারে অথবা আউট অফ বক্স কোন আইডিয়া নিয়ে গেম ডেভেলপ করা যেতে পারে।&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;এই লেখাটা স্মৃতি থেকে লেখা, অনেক পয়েন্ট বাদ পড়ে গেছে আবার নতুন পয়েন্ট নিজের মত করে অ্যাড করে দিয়েছি।&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>কি-নোটে​ ​প্রথমেই​ ​যে​ ​বিষয়টা​ ​চলে​ ​আসছে​ ​“passion”​ ​যেটাই​ ​করেন​ ​না​ ​কেন​ ​ভালবাসা​ ​থাকতে​ ​হবে।​ ​আজকে​ ​ওয়েব​ ​ডেভ করলাম​ ​কাল​ ​ফ্রিলান্সিং​ ​করলাম​ ​পরশু​ ​গেমডেভ​ ​করলাম,​ ​এরকম​ ​নয়।​ ​ভালবাসা​ ​থাকতে​ ​হবে।​ ​“আমি​ ​কি​ ​পারবো”,”​ ​আমি পারি​ ​না​ ​&amp;hellip;”​ ​এই​ ​বাক্য​ ​গুলো​ ​প্যাশনের​ ​সম্পূর্ণ​ ​বিপরীত।
+ফিক্সড​ ​মাইন্ডসেট​ ​নয়​ ​গ্রোথ​ ​মাইন্ডসেট​ ​থাকতে​ ​হবে।​ ​​গ্রোথ​ ​মাইন্ডসেট​ ​বিষয়​ ​টা​ ​যদি​ ​সহজ​ ​ভাষায়​ ​বলি​ ​তাহলে এরকম​ ​আপনি​ ​যদি​ ​আপনার​ ​গোল​ ​ঠিক​ ​করে​ ​ফেলেন​ ​আপনি​ ​এবং​ ​সেভাবে​ ​স্টেপ​ ​বাই​ ​স্টেপ​ ​কাজ​ ​করতে​ ​থাকেন,​ ​প্র্যাকটিস করতে​ ​থাকেন​ ​তাহলে​ ​আপনার​ ​নিউরাল​ ​গ্রোথও​ ​একই​ ​সাথে​ ​হতে​ ​থাকবে।​ ​এটার​ ​সাথে​ ​রিলেটেড​ ​হচ্ছে Grit(perseverance​ ​and​ ​passion​ ​for​ ​long-term​ ​goals)।​ ​আপনি​ ​এখন​ ​ফেইলর​ ​হতে​ ​পারেন​ ​কিন্তু​ ​এটা​ ​সাময়িক, সাময়িক​ ​ফেইলর​ ​আপনার​ ​লংটার্ম​ ​গোল​ ​থেকে​ ​বিচ্যুত​ ​করতে​ ​পারবে​ ​না। একটা​ ​বইয়ে​ ​কথাও​ ​মনে​ ​পড়তেছে​ ​এই​ ​মুহূর্তে​ ​-​ ​​Grit:​ ​The​ ​Power​ ​of​ ​Passion​ ​and​ ​Perseverance</description>
     </item>
     
     <item>
@@ -216,150 +65,10 @@ public class UIManager : SingletonBase&amp;lt;UIManager&amp;gt; {
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/laser2d-doc/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://assetstore.unity.com/packages/vfx/particles/laser2d-81830&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://shohan4556.github.io/Laser2D/&#34; target=&#34;_blank&#34;&gt;web version of the doc&lt;/a&gt; - Recommended.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; Verssion : 0.02  
- Updated : December 2017 
- Developer : Shohanur Rahaman
- Contact : shohan4556@gmail.com 
- web : techshohan.me
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Four directional Laser (Top, Down, Left, Right)&lt;/li&gt;
-&lt;li&gt;Modify Laser Color&lt;/li&gt;
-&lt;li&gt;Easy to Implement&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Mobile Friendly&lt;/li&gt;
-&lt;li&gt;Great for Pixel Art Games&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;how-to-use&#34;&gt;How To Use&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;#Getting-Started&#34;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#changing-laser-color&#34;&gt;Changing Laser Color&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#understanding-inspector-variables&#34;&gt;Understanding Inspector Variables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#using-four-directional-laser&#34;&gt;Using Four Directional Laser&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Modify Code
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;#how-to-add-enemy-damage&#34;&gt;How to Add Enemy Damage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#modify-input&#34;&gt;Modify Input&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#tips&#34;&gt;Tips&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;More Features is Coming Soon&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h4&gt;
-
-&lt;p&gt;The easiest to way to see Use Laser2D create a &lt;strong&gt;Parent Gameobject&lt;/strong&gt; (that could be player/ship sprite) then &lt;strong&gt;drag the Prefab&lt;/strong&gt; and make it child of the parent object. Add the &lt;strong&gt;Sprite Light&lt;/strong&gt; material to the enemy gameobject. Play the game and Click the &lt;strong&gt;Right Mouse Button&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/3zBZ5Nx.gif&#34; alt=&#34;Getting Started&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;changing-laser-color&#34;&gt;Changing Laser Color&lt;/h4&gt;
-
-&lt;p&gt;To Change a Laser Color go through the child object &amp;gt; find the &lt;strong&gt;Laser Glow&lt;/strong&gt; gameobject and change the sprite color.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8iK3wlN.gif&#34; alt=&#34;Changing Laser Color&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;understanding-inspector-variables&#34;&gt;Understanding Inspector Variables&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KHX1Rao.png&#34; alt=&#34;Inspector&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Begin Pos :&lt;/strong&gt; This is the position where the laser beam starts from.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Enemy Hit layer :&lt;/strong&gt; you Enemy should be in Enemy Layer, you can also add multiple layers.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Size :&lt;/strong&gt; This is the invisible Ray size or Raycast Size.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Size :&lt;/strong&gt; This is the visible Laser size. Adjust the size according to your need.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Glow Size :&lt;/strong&gt; This is the Laser glow size adjust the size with &lt;strong&gt;Laser Size&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Damage :&lt;/strong&gt; This is the damage for the &lt;strong&gt;Enemy&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ray Duration :&lt;/strong&gt; Laser firing duration in second.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Hit Emitter :&lt;/strong&gt; Laser Hit emitter prefab.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Melt Emitter :&lt;/strong&gt; Laser Melting Prefab.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Glow :&lt;/strong&gt; Laser glowing sprite.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Laser Dir :&lt;/strong&gt; Laser direction, use it for changing direction. Its not changeable in&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;runtime&lt;/strong&gt; you need to define it before playing the game. Available laser direction &lt;strong&gt;Top, Down, Left and Right&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;using-four-directional-laser&#34;&gt;Using Four Directional Laser&lt;/h4&gt;
-
-&lt;p&gt;The easiest way to use Four directional laser is using Prefab there are four prefabs
-&lt;strong&gt;L2D-Top, L2D-Down, L2D-Left &amp;amp; L2D-Right&lt;/strong&gt; you can use any of them.
-There is another way is &lt;strong&gt;Changing the Laser Direction.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/WlAsU9c.png&#34; alt=&#34;Top-Down&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;how-to-add-enemy-damage&#34;&gt;How to Add Enemy Damage&lt;/h4&gt;
-
-&lt;p&gt;To give damage on Enemy gameobject create a tag name as &lt;strong&gt;Enemy&lt;/strong&gt; and add it to the enemy object. Edit the code inside the &lt;strong&gt;Update&lt;/strong&gt; method.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; /*-------------------- Enemy Damage -------------------- */
-     if (hit.collider.tag == &amp;quot;Enemy&amp;quot;) {
-      hit.collider.gameObject.GetComponent&amp;lt;L2DEnemyHealth().giveDamage(laserDamage);
-   }
- /*------------------------------------------------------ */
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Tips :&lt;/em&gt; For better performance you can cache the EnemyHealth script inside Start method.&lt;/p&gt;
-
-&lt;h4 id=&#34;modify-input&#34;&gt;Modify Input&lt;/h4&gt;
-
-&lt;p&gt;To modify input go through the &lt;code&gt;LaserBeam&lt;/code&gt; script and find the &lt;code&gt;FireLaser&lt;/code&gt; function you can find there the input code. Its easy to change the code.
-Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code&gt; you can simply do it like this  from &lt;code&gt;Myscript&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    public LaserBeam laserbeam; // drag the LaserBeam gameobject
-    void Start()
-    {
-        if(laserbeam==null){
-           laserbeam =  Gameobject.FindObjectOfType&amp;lt;LaserBeam&amp;gt;();
-        }
-    }
-    
-    void Update()
-    {
-        if( Input.GetButtonDown(keyCode.Space){
-         laserbeam.FireLaser();   
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Note :&lt;/em&gt; Don&amp;rsquo;t forget to comment out the &lt;code&gt;FireLaser&lt;/code&gt; method form the &lt;code&gt;LaserBeam&lt;/code&gt; script.&lt;/p&gt;
-
-&lt;h4 id=&#34;tips&#34;&gt;Tips&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Use &lt;strong&gt;Order in Layer&lt;/strong&gt; for ordering Player sprite and Laser. I suggest you to use lower order to Player and higher order for Laser2D, it looks better than.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Download
+web version of the doc - Recommended.
+ Verssion : 0.02 Updated : December 2017 Developer : Shohanur Rahaman Contact : shohan4556@gmail.com web : techshohan.me  Features  Four directional Laser (Top, Down, Left, Right) Modify Laser Color Easy to Implement
+ Mobile Friendly Great for Pixel Art Games  How To Use  Getting Started Changing Laser Color Understanding Inspector Variables Using Four Directional Laser Modify Code  How to Add Enemy Damage Modify Input</description>
     </item>
     
     <item>
@@ -368,45 +77,8 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</guid>
-      <description>&lt;p&gt;ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip;  প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক
-বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি।
-প্লাগিন গুলার লিস্ট&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Beautify&lt;/li&gt;
-&lt;li&gt;C# (for C# support)&lt;/li&gt;
-&lt;li&gt;Debugger for Unity3D&lt;/li&gt;
-&lt;li&gt;Unity Snippets&lt;/li&gt;
-&lt;li&gt;Unity Tools&lt;/li&gt;
-&lt;li&gt;material Icon Theme&lt;/li&gt;
-&lt;li&gt;Trainling Semicolon&lt;/li&gt;
-&lt;li&gt;Markdown All in One&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;তারপর আমি যেটা করি &lt;a href=&#34;https://github.com/hbin/top-programming-fonts&#34; target=&#34;_blank&#34;&gt;Menlo&lt;/a&gt; ফন্ট ইন্সটল করি।
-ফন্ট সাইজ রাখি ১৬&lt;/p&gt;
-
-&lt;p&gt;এটা আমার ভিএস কোড এর  prefernce file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-    &amp;quot;workbench.iconTheme&amp;quot;: &amp;quot;material-icon-theme&amp;quot;,
-    &amp;quot;window.zoomLevel&amp;quot;: 0,
-    &amp;quot;editor.fontSize&amp;quot;: 16,
-    &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Menlo&amp;quot;,
-    &amp;quot;material-icon-theme.showUpdateMessage&amp;quot;: false,
-    &amp;quot;extensions.ignoreRecommendations&amp;quot;: true,
-    &amp;quot;markdown.extension.preview.autoShowPreviewToSide&amp;quot;: true
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ডার্ক থিম ব্যাবহার করি সব সময়।&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=EpYOBMrne0s&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/EpYOBMrne0s/0.jpg&#34; alt=&#34;How to configure Visual Studio Code with Unity3D&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে  মধ্যেই ব্যাবহার করি এই মুহূর্তে মনে পড়ছে না।&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip; প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি। প্লাগিন গুলার লিস্ট
+ Beautify C# (for C# support) Debugger for Unity3D Unity Snippets Unity Tools material Icon Theme Trainling Semicolon Markdown All in One  তারপর আমি যেটা করি Menlo ফন্ট ইন্সটল করি। ফন্ট সাইজ রাখি ১৬</description>
     </item>
     
     <item>
@@ -415,20 +87,12 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/game-ai-fsm/</guid>
-      <description>&lt;p&gt;Hello there, I have posted a tutorial series about Finite State Machine with Unity3D. FSM is very easy to implement and very effective is some cases.&lt;/p&gt;
+      <description>Hello there, I have posted a tutorial series about Finite State Machine with Unity3D. FSM is very easy to implement and very effective is some cases.
+Here is the tutorial series.
 
-&lt;p&gt;Here is the tutorial series.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dDQEFSk-rQM&amp;amp;list=PLWnE_CWJ15J7ajZQ8gKwed8rnetI0SdfN&#34; title=&#34;FSM with Unity3D Intro&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.imgur.com/Hp2oLiw.png&#34; alt=&#34;FSM with Unity3D Intro&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+follow me on facebook
+follow me on twitter
+follow me on github</description>
     </item>
     
     <item>
@@ -437,70 +101,12 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/unity-tips-1/</guid>
-      <description>&lt;p&gt;Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Slider&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Range(1, 100)]
-public int weight;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This code will come up with a slider in inspector.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;OnValidate()&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you may want to validate value that comes from inspector. Unity has a nice method &lt;code&gt;onValidate&lt;/code&gt; you can validate value.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public float speed;
-
-void onValidate()
-{
-    if(speed&amp;lt;=0){
-        Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;ToolTip&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you may have deliver your project to dumb client, ToolTip can make your life easier.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Tooltip(&amp;quot;drop here the screaming audio from Assets &amp;quot;)]
-public AudioClip screamAudio;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;HideInInspector&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Hide public variable form Inspector.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[HideInInspector]
-public int p = 5;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;RequireComponent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Use it for dependency script. Make your life easier.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[RequireComponent(typeof(Rigidbody))]
-public class PlayerScript : MonoBehaviour
-{
-    Rigidbody rBody;
-
-    void Start()
-    {
-        rBody = GetComponent&amp;lt;Rigidbody&amp;gt;();
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.
+Slider
+[Range(1, 100)] public int weight;  This code will come up with a slider in inspector.
+OnValidate()
+Sometimes you may want to validate value that comes from inspector. Unity has a nice method onValidate you can validate value.
+public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;); } }  ToolTip</description>
     </item>
     
     <item>
@@ -509,100 +115,9 @@ public class PlayerScript : MonoBehaviour
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/generic-class/</guid>
-      <description>&lt;p&gt;Generic class same as typical class in C# except Generic type. So what the f**k is generic type ? Generic type means it is not specified any particular &lt;strong&gt;type&lt;/strong&gt;.
-Let&amp;rsquo;s see an example of an ordinary class&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class MyOrdinaryClass{
-    // properties and methods goes here
-}
-
-var myObj1 = new MyOrdinaryClass();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So what we did here, we have instantiated an object &lt;strong&gt;myObj1&lt;/strong&gt; type of &lt;strong&gt;MyOrdinaryClass&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here is an example of generic class&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class MyGenericClass &amp;lt;T&amp;gt; {
-    // properties and methods goes here, no special same as ordinary class 
-}
-
-   var myObj2 = new MyGenericClass&amp;lt;int&amp;gt; ();
-   var myObj3 = new MyGenericClass&amp;lt;string&amp;gt; ();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;There must be a &lt;code&gt;&amp;lt;T&amp;gt;&lt;/code&gt; after the name of generic class, this is how you have to define generic class.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Look at this example, we have instantiate the same class but &lt;strong&gt;with different type (integer and string)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;So In simple term Generic class allow you to write class that can work
-with any data type.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The most common use of generic class is &lt;strong&gt;List&lt;/strong&gt;
-Here is another example&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; var obj1 = new MyGenericClass&amp;lt;int&amp;gt; ();
- var obj2 = new MyGenericClass&amp;lt;string&amp;gt; ();
-
- var Gobj1  = new List&amp;lt;string&amp;gt; ();
- var Gobj2 = new List&amp;lt;int&amp;gt; ();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;sample program to follow :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    namespace GenericClass {
-
-    class MyGenericClass &amp;lt;T&amp;gt; {
-        public void sayHello ( ) {
-            Console.WriteLine (&amp;quot;Hello World&amp;quot;);
-        }
-    }
-
-
-    class Program {
-        static void Main ( string[] args ) {
-
-            var myObj2 = new MyGenericClass&amp;lt;int&amp;gt; ();
-            var myObj3 = new MyGenericClass&amp;lt;string&amp;gt; ();
-
-            myObj2.sayHello ();
-            myObj3.sayHello ();
-
-            var obj1 = new MyGenericClass&amp;lt;int&amp;gt; ();
-            var obj2 = new MyGenericClass&amp;lt;string&amp;gt; ();
-
-            var Gobj1  = new List&amp;lt;string&amp;gt; ();
-            var Gobj2 = new List&amp;lt;int&amp;gt; ();
-
-
-            Console.ReadKey ();
-
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Advantages of using Generic Class :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    1. Reusing same class multiple times 
-
-    2. Performance 
-
-    3. Type Safety 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Generic class same as typical class in C# except Generic type. So what the f**k is generic type ? Generic type means it is not specified any particular type. Let&amp;rsquo;s see an example of an ordinary class
+class MyOrdinaryClass{ // properties and methods goes here } var myObj1 = new MyOrdinaryClass();  So what we did here, we have instantiated an object myObj1 type of MyOrdinaryClass.
+Here is an example of generic class</description>
     </item>
     
     <item>
@@ -611,61 +126,8 @@ Here is another example&lt;/p&gt;
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/are-we-happy/</guid>
-      <description>&lt;p&gt;কোন একটা বিষয়ে লেখার সবচেয়ে কঠিন বিষয় হচ্ছে, প্রথম লাইনটা লেখা। আমি অনেকদিন ধরেই ভাবছি আমি কি সুখি? চিন্তার সুতোটা শেষ পর্যন্ত চলে গেছে
-&amp;ldquo;আমরা&amp;rdquo; তে অর্থাৎ আমরা কি সুখি ?&lt;/p&gt;
-
-&lt;p&gt;এক জন গ্র্যাজুয়েট কে যদি এই মুহূর্তে যদি প্রশ্ন করা হয়, আপনার জীবনের গোল কি ? উত্তর আসতে পারে, Healthy Job, Business or Higher Education &amp;hellip; ব্লা ব্লা &amp;hellip;  তারপর ? তারপর আবার কি সুন্দরী  একটা বউ অথবা  হ্যান্ডসাম জামাই। লাইফ সাকসেস !! । এর বাইরে খুব বেশি উত্তর আসবে না।  আরও গভীরে যান, যদি প্রশ্ন করা হয় এই বিজনেস বা হাইয়ার এডুকেশন বা ভালো জব করে কি হবে ?  টাকা পয়সা কামাবো, তারপর ? তারপর আবার কি সুখে শান্তিতে জীবন কাটাবো ।&lt;/p&gt;
-
-&lt;p&gt;এখন ধরা যাক আপনি ভালো জব করেন, সুন্দরী একটা বউও জোগাড় করে ফেলেছেন, কিন্তু আপনি ব্যক্তি জীবনে অসুখী । তাহলে এইযে আপনি জীবনের অর্ধেক সময় নষ্ট করে ফেললেন এগুলার পিছনে সেটার কি হবে ?&lt;/p&gt;
-
-&lt;p&gt;টাকা-পয়সাকে মানুষকে যতটা গুরুত্বপূর্ণ মনে করে আসলে টাকার গুরুত্ব এর চেয়ে অনেক কম। জীবনে খুব অল্প টাকায়ও জীবনে সুখি থাকা যায়। সমস্যা যেটা হয়, আমাদের  expectation লেভেলটা অনেক বেশি।  &lt;strong&gt;The biggest factor in happiness is the gap between what we have and what we want.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;শোন হিমু কোনরকম উচ্চাশা রাখবি না। টাকা-পয়সা করতে হবে, বড় হতে হবে, এইসব নিয়ে মোটেও ভাববি না। সমস্ত কষ্টের মূলে আছে আমাদের উচ্চাশা। আমার উচ্চাশা
-ছিল বলে প্রথমদিকে খুবই কষ্ট পেয়েছি।  শেষের দিকে উচ্চাশা ত্যাগ করতে পেরেছিলাম তাই খানিকটা আনন্দে ছিলাম। আনন্দে থাকাটাই বড় কথা। সবসময় আনন্দে থাকতে
-চেষ্টা করবি।&amp;rdquo;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ndash; হিমুর বাবা (ময়ূরাক্ষী)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;২০০৪ অথবা ২০০৫ সালের কথা চিন্তা করা যাক আমি তখন একটা ফিচার ফোন পেলেই খুশি । কিন্তু এখন আমার স্মার্ট ফনেও হচ্ছে না আমার আইফোন লাগবে।
-একসময় আমাদের ১৫০ টাকা দামের ক্যাসিও ঘড়িতেই চলে যেত এখন আমাদের লাগবে সেজান, টাইটান আই মিন &amp;ldquo;Class&amp;rdquo;.
-এর কারন কি ? আমি এখন কম্পেয়ার করতেছি আমার আশে পাশের মানুষ জনের সাথে। এর পিছনে সাথে মিডিয়ার ভুমিকাও অনেক, আমরা যোগাযোগ মাধ্যম গুলোতে বিজ্ঞাপন দেখতেছি আমাদের এক্সপেকটেশন লেভেল বেড়ে যাচ্ছে ।  আমরা ফেসবুক, টুইটারে বন্ধু বান্ধব, স্বজনদের কাছাকাছি যাচ্ছি তাদের সাথেও কম্পেয়ার করতেছি, দিনশেষে একরাশ হতাশা নিয়ে ঘুমাতে যাচ্ছি। সময়ের সাথে অসুখীর কার্ভটা শুধু বেড়েই যাচ্ছে।&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;“But are we happier? Did the wealth humankind accumulated over the last five centuries translate into a new-found contentment? … Was the late Neil Armstrong, whose footprint remains intact on the windless moon, happier than the nameless hunter-gatherer who 30,000 years ago left her handprint on a wall in Chauvet Cave? If not, what was the point of developing agriculture, cities, writing, coinage, empires, science and industry?”&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ndash;  Sapiens: A Brief History of Humankind,&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;ফোকাস ইলুশন - আমরা মনে করি এই জিনিসটা আমার জীবনে দরকার ভালো থাকার জন্য, আমরা ওভার ফোকাস করে ফেলি। কিন্তু আসলে সেই জিনিসটা না হলে বা কিছুটা কম হলেও ক্ষতি নাই। আপনার সুন্দর চকে চকে গাড়ি দরকার বলে আপনি মনে করতেছেন কিন্তু এটা ভাবছেন না যে আপনাকে এই গাড়ি নিয়েও যানজটে বসে থাকতে হবে, ড্রাইভার রাখতে হবে অথবা প্রতি মাসে গাড়ির সার্ভিসিং বাবদ অনেক গুলো টাকা আপনার পকেট থেকে বের হয়ে যাবে ।&lt;/p&gt;
-
-&lt;p&gt;আমরা জীবনেরর অনেক সময় নষ্ট করে ফেলি এই মরীচিকার পিছে ছুটে, আমারা ভাবি একটা সুন্দর জীবনের জন্য আমাদের X,Y,Z দরকার কিন্তু আমরা ভেবে দেখি না
-আসলেই কি সেগুলো আমাদের জীবনে বড় ধরনের কোন পরিবর্তন করতে পারে, &lt;strong&gt;সুখি রাখতে পারে&lt;/strong&gt;।&lt;/p&gt;
-
-&lt;p&gt;এবার আসা যাক কিভাবে আপনি কিছুটা হ্যাপি থাকতে পারেন ,&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;কখনোই কম্পেয়ার করবেন না&lt;/li&gt;
-&lt;li&gt;আপনার আশে পাশের মানুষ আপনাকে নিয়ে কি ভাবল সেটা নিয়ে আপনার কিছুটা কম ভাবলে অথবা না ভাবলেও চলে।&lt;/li&gt;
-&lt;li&gt;ভাবুন আপনি যে সুযোগ সুবিধা গুলো ভোগ করছেন অনেক মানুষ সেগুলো পাচ্ছে না।&lt;/li&gt;
-&lt;li&gt;আপনার ব্যর্থতাকে মেনে নিতে শিখুন, অজুহাত খুজবেন না। আপনি এটা করতে পারেন নাই কারন এটার করার যোগ্যতা আপনার নাই অথবা আপনি পর্যাপ্ত চেষ্টা করেন নাই।
-নিজের ভুল গুলো নিজেই ধরতে শিখুন।&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;When I was 5 years old, my mother always told me that happiness was the key to life.
-When I went school, they asked me what I wanted to be when I grew up. I wrote down &amp;ldquo;Happy&amp;rdquo;. They told me I didn&amp;rsquo;t understand the assignment, and I told them they didn&amp;rsquo;t understand life.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ndash; John Lennon&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>কোন একটা বিষয়ে লেখার সবচেয়ে কঠিন বিষয় হচ্ছে, প্রথম লাইনটা লেখা। আমি অনেকদিন ধরেই ভাবছি আমি কি সুখি? চিন্তার সুতোটা শেষ পর্যন্ত চলে গেছে &amp;ldquo;আমরা&amp;rdquo; তে অর্থাৎ আমরা কি সুখি ?
+এক জন গ্র্যাজুয়েট কে যদি এই মুহূর্তে যদি প্রশ্ন করা হয়, আপনার জীবনের গোল কি ? উত্তর আসতে পারে, Healthy Job, Business or Higher Education &amp;hellip; ব্লা ব্লা &amp;hellip; তারপর ? তারপর আবার কি সুন্দরী একটা বউ অথবা হ্যান্ডসাম জামাই। লাইফ সাকসেস !</description>
     </item>
     
     <item>
@@ -674,16 +136,7 @@ When I went school, they asked me what I wanted to be when I grew up. I wrote do
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/my-honest-interview-p1/</guid>
-      <description>
-
-&lt;h2 id=&#34;প-রশ-ন-আপন-প-চ-বছর-পর-ন-জ-ক-ক-থ-য়-দ-খত-চ-ন&#34;&gt;প্রশ্ন: আপনি পাঁচ বছর পর নিজেকে কোথায় দেখতে চান ?&lt;/h2&gt;
-
-&lt;p&gt;এই প্রশ্নটা কি ঠিক কি কারনে করা হয় আমার জানা নেই, আমার উল্টা প্রশ্নকর্তাকে প্রশ্ন করতে ইচ্ছা করে, আপনি পাঁচ বছর আগে নিজেকে কোথায় দেখতে চেয়েছিলেন পাঁচ বছর পর এখন কি ঠিক সেই জায়গায় বাছাকাছি জায়গায় আছেন? আগামী পাঁচ বছর পর আমি কি করবো, কি হবো, কই যাবো সেটা কে বলতে পারে ? পাঁচ বছর পর আমি অমুক কোম্পানির সিও হব, অমুক  **ল ছিঁড়বো এগুলার কোন মানেই নাই।&lt;/p&gt;
-
-&lt;p&gt;আমি পাঁচ বছর পর কি করব সেটা সময়ই বলে দিবে, আমি শুধুমাত্র &lt;strong&gt;সঠিক সময়ে&lt;/strong&gt; সঠিক &lt;strong&gt;সিধান্তটা&lt;/strong&gt; নিতে চাই ।&lt;/p&gt;
-
-&lt;p&gt;ধন্যবাদ আমার এই শিট পোস্ট পড়ার জনন।&lt;/p&gt;
-</description>
+      <description>প্রশ্ন: আপনি পাঁচ বছর পর নিজেকে কোথায় দেখতে চান ? এই প্রশ্নটা কি ঠিক কি কারনে করা হয় আমার জানা নেই, আমার উল্টা প্রশ্নকর্তাকে প্রশ্ন করতে ইচ্ছা করে, আপনি পাঁচ বছর আগে নিজেকে কোথায় দেখতে চেয়েছিলেন পাঁচ বছর পর এখন কি ঠিক সেই জায়গায় বাছাকাছি জায়গায় আছেন? আগামী পাঁচ বছর পর আমি কি করবো, কি হবো, কই যাবো সেটা কে বলতে পারে ? পাঁচ বছর পর আমি অমুক কোম্পানির সিও হব, অমুক **ল ছিঁড়বো এগুলার কোন মানেই নাই।</description>
     </item>
     
     <item>
@@ -692,18 +145,7 @@ When I went school, they asked me what I wanted to be when I grew up. I wrote do
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/how-to-get-github-student-pack/</guid>
-      <description>&lt;p&gt;গিটহাব ১৮+ যেকোনো স্টুডেন্টকে তাদের স্টুডেন্ট প্যাকটা ফ্রি দেয়। এই প্যাকেজে অনেক প্রিমিয়াম ফিচার  ইনক্লুডেড যেমন ২ বছর এর জন্য যেমন, গিটহাবে আনলিমিটেড প্রাইভেট রিপো খুলতে পারবে, একটা .me ফ্রি ডোমেইন, হ্যাকহ্যান্ড এ ৩০৳ এর ফ্রি সার্ভিস নিতে পারবে, গিটক্রাকেন প্রো ১ বছর এর জন্য ফ্রি ব্যাবহার করতে পারবে সহ আরও অনেক কিছু। এই প্যাক নিতে যেটা করতে হবে এই লিঙ্কে (&lt;a href=&#34;https://education.github.com/&#34; target=&#34;_blank&#34;&gt;https://education.github.com/&lt;/a&gt;) গিয়ে কলেজ অথবা ইউনিভারসিটির ভেরিফাইড মেইল (educational mail) দিয়ে একটা ফর্ম সাবমিট করতে হয়, তারপর ২৪ ঘণ্টার এর মধ্যে রিভিউ হয়ে কনফার্মেশন মেইল আসবে।  বাংলাদেশের অধিঙ্কাংশ শিক্ষা প্রতিষ্ঠান শিক্ষার্থীদের জন্য কোন মেইল সার্ভিস প্রভাইড করে না। আপনি যদি জিমেইল, বা ইয়াহু মেইল দেন তাহলে না পাওয়ার সম্ভাবনা বেশি। এজন্য আপনাকে আপনার আইডি কার্ড এর একটা ছবি তুলে দিতে হবে  যেখানে ভেলিডেশন তারিখটা দেখা যায়। এটা ইম্পরট্যান্ট যদি ভেলিডেশন তারিখ না থাকে তাহলে নাও পেতে পারেন। আমার আপলোড করা &lt;a href=&#34;https://www.dropbox.com/s/5f58dy8rbe7xdhn/My-ID-CARD.png?dl=0&#34; target=&#34;_blank&#34;&gt;ছবিটা&lt;/a&gt; একবার দেখে নিতে পারেন।&lt;/p&gt;
-
-&lt;p&gt;ধন্যবাদ ।&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>গিটহাব ১৮+ যেকোনো স্টুডেন্টকে তাদের স্টুডেন্ট প্যাকটা ফ্রি দেয়। এই প্যাকেজে অনেক প্রিমিয়াম ফিচার ইনক্লুডেড যেমন ২ বছর এর জন্য যেমন, গিটহাবে আনলিমিটেড প্রাইভেট রিপো খুলতে পারবে, একটা .me ফ্রি ডোমেইন, হ্যাকহ্যান্ড এ ৩০৳ এর ফ্রি সার্ভিস নিতে পারবে, গিটক্রাকেন প্রো ১ বছর এর জন্য ফ্রি ব্যাবহার করতে পারবে সহ আরও অনেক কিছু। এই প্যাক নিতে যেটা করতে হবে এই লিঙ্কে (https://education.github.com/) গিয়ে কলেজ অথবা ইউনিভারসিটির ভেরিফাইড মেইল (educational mail) দিয়ে একটা ফর্ম সাবমিট করতে হয়, তারপর ২৪ ঘণ্টার এর মধ্যে রিভিউ হয়ে কনফার্মেশন মেইল আসবে। বাংলাদেশের অধিঙ্কাংশ শিক্ষা প্রতিষ্ঠান শিক্ষার্থীদের জন্য কোন মেইল সার্ভিস প্রভাইড করে না। আপনি যদি জিমেইল, বা ইয়াহু মেইল দেন তাহলে না পাওয়ার সম্ভাবনা বেশি। এজন্য আপনাকে আপনার আইডি কার্ড এর একটা ছবি তুলে দিতে হবে যেখানে ভেলিডেশন তারিখটা দেখা যায়। এটা ইম্পরট্যান্ট যদি ভেলিডেশন তারিখ না থাকে তাহলে নাও পেতে পারেন। আমার আপলোড করা ছবিটা একবার দেখে নিতে পারেন।</description>
     </item>
     
     <item>
@@ -712,61 +154,9 @@ When I went school, they asked me what I wanted to be when I grew up. I wrote do
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/github-basic/</guid>
-      <description>&lt;p&gt;ওপেন সোর্স এ contribution করার জন্য  &lt;strong&gt;Github&lt;/strong&gt; এর  কোন বিকল্প খুব কমই আছে। Github খুব সম্ভবত বড়ো কোড hosting সাইট । github এ পাবলিক অথবা প্রাইভেট (সামান্য অর্থের বিনিময়ে) repository  খোলা যায়।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;আপনি কেন ওপেন সোর্স প্রোজেক্টে আপনার শ্রম দিবেন ?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;কারনটা হচ্ছে ,আপনার নিজের ভালোর জন্য , আপনি ওপেন সোর্সে আপানার যে স্কিল, শ্রম, এবং সময় দিবেন সেটা আসলে আপনার নিজেকে আরও দক্ষ করা জন্য, একটা উদাহরণ দেই ধরা যাক আপনি  atom editor এর একটা বাগ খুঁজে বের করলেন এবং  pull request সেন্ড করলেন তখন  atom এর contributor list এ আপনার নামটা উঠে যাবে, বাগটা যেহেতু আপনি খুঁজে বের করেছেন সেহেতু আপনার ডিবাগিং স্কিলটা ঝালাই হয়ে গেলো এছাড়া আপনার জব পাওয়ার জন্য ওপেন সোর্স contributor রা অগ্রাধিকার পায়।গুগল, ফেসবুক থেকে শুরু করে মাইক্রোসফট পর্যন্ত এখন ওপেন সোর্সের দিকে ঝুঁকছে। সবচেয়ে বড় কথা আপনি শিখতে পারবেন। আপনার একটা পরিচিতি হবে, একটা কমিউনিটি বিল্ডাপ হবে।&lt;/p&gt;
-
-&lt;p&gt;অনেক ওপেন সোর্স প্রোজেক্ট গিটহাবে তাদের বিশাল community নিয়ে কাজ চালিয়ে যাচ্ছে । যে কেউ পাবলিক repository এর  কোড পড়তে পারে এর জন্য কোন github অ্যাকাউন্ট প্রয়োজন হয় না, এমনকি মাউসের একটি click এ সম্পূর্ণ repository নিজের পিসিতে ক্লোন করা যায়।&lt;/p&gt;
-
-&lt;p&gt;গিটহাবে repository খোলার জন্য আপনার একটি গিটহাব অ্যাকাউন্ট লাগবে তারপর public অথবা private repository খুলতে পারবেন।নতুন repository খোলার সময় README এবং ওপেন সোর্স লাইসেন্স দিয়ে repository কে initialize করতে হয়।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Readme&lt;/strong&gt;
-ফাইলে আপনার প্রোজেক্ট সম্পর্কে বিস্তারিত লিখতে হয় যাতে সবাই পড়ে বুঝতে পারে প্রোজেক্টটি সম্পর্কে এবং যদি কেউ চায় তাহলে contribute করতে পারে।
-আমি এই লেখায় গিটহাবে ব্যাবহার করা হয় এমন কিছু টার্ম নিয়ে আলোচনা করবো কেননা গিটহাবে যেকোন প্রোজেক্টে contribute করতে গেলে বা নিজের প্রোজেক্ট খোলার জন্য এই টার্ম গুলো জানা থাকতে হবে, যেমনঃ repository, pull request, wiki , issues, commit, brach,commit, fork.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Repository&lt;/strong&gt;
-কোন নতুন প্রোজেক্ট গিটহাবে অ্যাড করার জন্য প্রথমে ওই প্রোজেক্টের একটা repository  খুলতে হবে। repository তে প্রোজেক্টের সব ফাইল,ইমেজ, সহ বিস্তারিত থাকবে। এই repository হতে পারে লোকাল কম্পিউটারে অথবা কোন ওয়েব সার্ভারে।
-repository  তে একটি readme  file থাকা উচিৎ যেখানে প্রোজেক্টটি সম্পর্কে বিস্তারিত বর্ণনা করা থাকবে।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Branch&lt;/strong&gt;
-Githab এ যখন একটি প্রোজেক্ট খোলা হয় তখন একটা master branch ক্রিয়েট হয়ে যায়। ওই master বা প্যারেন্ট branch এর সাথে প্রোজেক্ট এর সাব ফাইল বা directory অ্যাড করতে হয় ।
-ধরা যাক , আপনি কোন প্রোজেক্টের কোন branch এডিট করতে চান তাহলে আপনি একটি নতুন branch create করে প্রয়োজনীয় এডিট করে branch টি master branch এর সাথে merge করে দিবেন। এটা অনেকটা ট্রি এর মতো - master branch রুট এবং সাবডিরেক্টরি / ফাইল গুলো চাইল্ড ।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fork&lt;/strong&gt;
-ধরা যাক আপনি অন্য কোন প্রোজেক্টের এ নিজের repository তে কপি করতে চান তাহলে আপনাকে প্রোজেক্টটি fork করতে হবে । তারপর আপনি যদি চান ওই প্রোজেক্টে এর কোন branch এডিট করতে বা কোন বাগ ফিক্স করতে তাহলে সেটা করে আপনাকে একটি pull request  পাঠাতে হবে original author এর কাছে এভাবে আপনি কোন প্রোজেক্টে contribute করতে পারেন ।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Pull Request&lt;/strong&gt;
-ধরা যাক আপনি কোন ওপেন সোর্স প্রোজেক্টে contribute করতে চান, আপনি ওই প্রোজেক্টে একটি বাগ খুঁজে পেয়েছেন এবং বাগটি ফিক্স করেছেন তখন আপনাকে একটি pull  request  বিস্তারিত বর্ণনা সহ পাঠাতে হবে ওই প্রোজেক্ট যে maintain করছে তার কাছে তখন সে ওই pull request টা দেখে যদি accept  করে  তাহলে অ্যাড করে দিবে (ignore  ও করতে পারে যদি উল্টাপাল্টা request  পাঠানো হয়) মূল repository তে । বেশিরভাগ সময় pull request  অটোম্যাটিকালি প্রোজেক্টে অ্যাড হয়ে যায় কিছু ক্ষেত্রে maintainer কে ম্যানুয়ালি কিছু pull-request marge করতে হয়।&lt;/p&gt;
-
-&lt;p&gt;৩টি ধাপ রয়েছে কোন ওপেন সোর্স প্রোজেক্টে contribute করার জন্য।
-&lt;strong&gt;Fork the project&lt;/strong&gt;
-&lt;strong&gt;Create branch&lt;/strong&gt;
-&lt;strong&gt;Send Pull request.&lt;/strong&gt;
-&lt;strong&gt;Push&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;লোকাল পিসি থেকে কোন  repository কে ওয়েব repository তে upload  করার জন্য &lt;strong&gt;push&lt;/strong&gt; করতে হয়।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Issues&lt;/strong&gt;
-কোন প্রোজেক্টের যদি বাগ খুঁজে পান কোথাও কোন প্রবলেম থাকলে ওই বিষয়ে issue create করতে হয়, তখন ওই প্রোজেক্ট যারা ফলো করতেছে বা contribute করতেছে অথবা project maintainer ওই ইস্যুর উত্তর দেয়, আলোচনা করে। এটাকে bug tracker হিসেবে কল্পনা করা যায়।&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Commit&lt;/strong&gt;
-যখন কোন repository এর কোন অংশ পরিবর্তন বা এডিট করা হয় তখন সেটা commit করতে হয় ।commit করার সময় summary  এবং description দিতে হয় যে কি change করা হল। commit করা মানে হল পরিবর্তনগুলো সেভ করা। commit না করে কোন Branch পুশ করতে পারবেন না।&lt;/p&gt;
-
-&lt;p&gt;এখন আপনি আপনরা পছন্দ মতো কোন প্রোজেক্টে contributor হিসেবে কাজ শুরু করে দিতে পারেন । গিটহাবে গিয়েও খুঁজে নিতে পারেন অথবা &lt;strong&gt;&lt;a href=&#34;https://www.codetriage.com&#34; target=&#34;_blank&#34;&gt;codetriage&lt;/a&gt;&lt;/strong&gt; এই সাইটে গিয়ে পছন্দ মতো প্রোজেক্ট খুঁজে নিতে পারেন খুব সহজেই , যেমন ধরা যাক আপনি শুধু সি বা জাভা পারেন তাহলে আপনি এই সাইটে গিয়ে সি, জাভা রিলেটেড প্রোজেক্ট পেয়ে যাবেন সেখানে কারা contribute করছে সহ আরও তথ্য সহজেই পেয়ে যাবেন ।&lt;/p&gt;
-
-&lt;p&gt;এছাড়া আপনি আপনার সিভিতে আপনার githab রাঙ্কিং এর লিঙ্ক অ্যাড করে দিতে পারেন এই লিঙ্ক থেকে &lt;strong&gt;&lt;a href=&#34;http://git-awards.com&#34; target=&#34;_blank&#34;&gt;github-awards&lt;/a&gt;&lt;/strong&gt;  এই লিঙ্কে গ্লোবালি এবং লোকালি আপনার রাঙ্কিং পাওয়া যাবে। আবার আপনি চাইলে আপনার গিটহাব resume ও আপনার সিভিতে অ্যাড করে দিতে পারেন এই &lt;strong&gt;&lt;a href=&#34;https://resume.github.io&#34; target=&#34;_blank&#34;&gt;github-resume&lt;/a&gt;&lt;/strong&gt; এই লিঙ্ক থেকে , লিঙ্কে গিয়ে আপনার গিটহাব আইডি দিলেই আপনাকে resume generate করে দিবে।
-আজ এই পর্যন্তই ধন্যবাদ সবাইকে।&lt;/p&gt;
-
-&lt;p&gt;Follow me on
-&lt;a href=&#34;https://github.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Githab&lt;/a&gt;|
-&lt;a href=&#34;https://twitter.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;|
-&lt;a href=&#34;https://facebook.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Facebook&lt;/a&gt;|
-&lt;a href=&#34;https://www.quora.com/profile/Shohanur-Rahaman&#34; target=&#34;_blank&#34;&gt;Quora&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;© copyright reserved by the Author.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
+      <description>ওপেন সোর্স এ contribution করার জন্য Github এর কোন বিকল্প খুব কমই আছে। Github খুব সম্ভবত বড়ো কোড hosting সাইট । github এ পাবলিক অথবা প্রাইভেট (সামান্য অর্থের বিনিময়ে) repository খোলা যায়।
+আপনি কেন ওপেন সোর্স প্রোজেক্টে আপনার শ্রম দিবেন ?
+কারনটা হচ্ছে ,আপনার নিজের ভালোর জন্য , আপনি ওপেন সোর্সে আপানার যে স্কিল, শ্রম, এবং সময় দিবেন সেটা আসলে আপনার নিজেকে আরও দক্ষ করা জন্য, একটা উদাহরণ দেই ধরা যাক আপনি atom editor এর একটা বাগ খুঁজে বের করলেন এবং pull request সেন্ড করলেন তখন atom এর contributor list এ আপনার নামটা উঠে যাবে, বাগটা যেহেতু আপনি খুঁজে বের করেছেন সেহেতু আপনার ডিবাগিং স্কিলটা ঝালাই হয়ে গেলো এছাড়া আপনার জব পাওয়ার জন্য ওপেন সোর্স contributor রা অগ্রাধিকার পায়।গুগল, ফেসবুক থেকে শুরু করে মাইক্রোসফট পর্যন্ত এখন ওপেন সোর্সের দিকে ঝুঁকছে। সবচেয়ে বড় কথা আপনি শিখতে পারবেন। আপনার একটা পরিচিতি হবে, একটা কমিউনিটি বিল্ডাপ হবে।</description>
     </item>
     
   </channel>

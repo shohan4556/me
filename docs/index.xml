@@ -10,6 +10,180 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Object Oriented C# - 01</title>
+      <link>https://shohan4556.github.io/me/post/oo-c-sharp-1/</link>
+      <pubDate>Mon, 09 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/oo-c-sharp-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;Today we will learn the OOP concept of C#.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Class&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Inheritance&lt;/li&gt;
+&lt;li&gt;Composition&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Class&lt;/strong&gt;
+&lt;img src=&#34;https://i.imgur.com/1jdDF53.png&#34; alt=&#34;Imgur&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Class is a template or blueprint of an object, it contain variables and method (behaviour). Class encapsulate date (stored in field and behaviour). Object is an instance of a class. Class don&amp;rsquo;t allocate memory, object does.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Constructor&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A constructor is a method that is called when an instance of a class is created.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;We use constructors to put an object in an early state.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;As a best practice, define a constructor only when an object “needs” to be initialised or it won’t be able to do its job.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Constructors do not have a return type, not even void, and they should have the exact same name as the class.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Car {
+  
+  public string Color;
+  public string manufacturer;
+
+// constructor
+  public Car(string _color, string _manufacturer){
+    Color = _color;
+    manufacturer = _manufacturer;
+  }
+
+  public void Drive(){
+    // car can drive
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Property&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;→ A property is a kind of class member that is used for providing access to fields of a class&lt;/p&gt;
+
+&lt;p&gt;→ A property encapsulates a get and a set method.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Car {
+  
+  private string _color;
+  public string Manufacturer { get; set; }
+   
+  public string Color
+  {
+    get{ return _color; }
+    set { _color = value; }
+  }
+
+  public void Drive(){
+    // car can drive
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Inheritance&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/zmzABEd.jpg&#34; alt=&#34;Imgur&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;→ A kind of relationship between two classes that allows one to inherit code from the other class.&lt;/p&gt;
+
+&lt;p&gt;→ Is-A relationship.&lt;/p&gt;
+
+&lt;p&gt;→ Code reusability is the major benifit of using Inheritance.&lt;/p&gt;
+
+&lt;p&gt;→ Example :  A car is a vehicle. (parent class vehicle, child class car).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Public class Vehicle{
+    // share common attribute 
+}
+
+Public class speedBoat : Vehicle{
+    // code specific to speedBoat
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Composition&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/p07mUw0.png&#34; alt=&#34;Imgur&#34; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Gold fish dont walk&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;→ Composition is just like Inheritance, another kind of relationship between two classes that allows one to contain other.&lt;/p&gt;
+
+&lt;p&gt;→ Has-a relationship&lt;/p&gt;
+
+&lt;p&gt;→ Example : Car/Speedboat has an engine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Car{
+   public string name;
+// has an engine 
+}
+
+public class SpeedBoat{
+  
+  private Engine engine;
+  
+// constructor
+  public speedBoat(Engine _engine){
+    engine = _engine;
+  }
+
+  public void Drive(){
+    engine.StartEngine(); // from Engine class 
+    Console.WriteLine(&amp;quot;Driving speed boat&amp;quot;);
+  }
+}
+
+
+public class Engine(){
+  public void StartEngine(){
+      Console.WriteLine(&amp;quot;Engine Started&amp;quot;);
+  }
+}
+
+ // form main class
+  SpeedBoat myboat = new SpeedBoat(new Engine()); // composition
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Problems with inheritance&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;• Easily abused by amateur designers / developers&lt;/p&gt;
+
+&lt;p&gt;• Leads to large complex/large hierarchies&lt;/p&gt;
+
+&lt;p&gt;• Such hierarchies are very fragile and a change may affect many classes&lt;/p&gt;
+
+&lt;p&gt;• Results in tight coupling&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Benefits of composition&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;• Flexible&lt;/p&gt;
+
+&lt;p&gt;• Leads to loose coupling&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Having said all that, it doesn’t mean inheritance should be avoided at all times. In fact,
+it’s great to use inheritance when dealing with very stable classes on top of small
+hierarchies. As the hierarchy grows (or variations of classes increase), the hierarchy,
+however, becomes fragile. And that’s where composition can give you a better design.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Project Pirate Dev Log - 01</title>
       <link>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</link>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
@@ -551,20 +725,6 @@ public class PlayerScript : MonoBehaviour
 &lt;li&gt;Project Leader : Shohanur Rahaman&lt;/li&gt;
 &lt;li&gt;Game Art: Belal Hossain&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/shohan4556/dark-inside&#34; target=&#34;_blank&#34;&gt;View Project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dark Proton</title>
-      <link>https://shohan4556.github.io/me/project/dark-proton/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/dark-proton/</guid>
-      <description>&lt;p&gt;When I have used to work with *&lt;strong&gt;PhaserJs&lt;/strong&gt; I mostly work in night. My eyes is very sensitive so that I have tried several themes most of the themes were not suits to my eyes. So I have decided to make my own theme and made this theme which is availe on braket theme repository.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Here is the theme &lt;a href=&#34;https://github.com/shohan4556/dark-proton&#34; target=&#34;_blank&#34;&gt;repository&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

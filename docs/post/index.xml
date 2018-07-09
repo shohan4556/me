@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>Object Oriented C# - 01</title>
+      <link>https://shohan4556.github.io/me/post/oo-c-sharp-1/</link>
+      <pubDate>Mon, 09 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/oo-c-sharp-1/</guid>
+      <description>Overview Today we will learn the OOP concept of C#.
+ Class
+ Inheritance Composition  Class Class is a template or blueprint of an object, it contain variables and method (behaviour). Class encapsulate date (stored in field and behaviour). Object is an instance of a class. Class don&amp;rsquo;t allocate memory, object does.
+Constructor
+A constructor is a method that is called when an instance of a class is created.</description>
+    </item>
+    
+    <item>
       <title>Project Pirate Dev Log - 01</title>
       <link>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</link>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>

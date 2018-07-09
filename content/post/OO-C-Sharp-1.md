@@ -5,7 +5,10 @@ tags = ["Coding", "C-Sharp"]
 title = "Object Oriented C# - 01"
 math = false
 summary = """
-Object oriented programming with C#. we 
+Having said all that, it doesn’t mean inheritance should be avoided at all times. In fact,
+it’s great to use inheritance when dealing with very stable classes on top of small
+hierarchies. As the hierarchy grows (or variations of classes increase), the hierarchy,
+however, becomes fragile. And that’s where composition can give you a better design.
 """
 
 [header]

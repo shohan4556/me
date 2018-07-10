@@ -2,7 +2,7 @@
 date = "2018-07-09T00:00:00"
 draft = false
 tags = ["Coding", "C-Sharp"]
-title = "Object Oriented C# - 01"
+title = "Object Oriented C# - Class, Inheritance, Composition"
 math = false
 summary = """
 Having said all that, it doesn’t mean inheritance should be avoided at all times. In fact,

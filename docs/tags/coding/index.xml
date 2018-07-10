@@ -6,13 +6,29 @@
     <description>Recent content in Coding on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Mon, 09 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Object Oriented C# - 01</title>
+      <title>Object Oriented C# - (Polymorphism, Interface &amp; Abstract Class</title>
+      <link>https://shohan4556.github.io/me/post/oo-c-sharp-2/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/oo-c-sharp-2/</guid>
+      <description>Overview In this post I will discuss about
+ Polymorphism
+ Interface Abstract Class  Polymorphism
+ Polymorphism =Poly + morphism = Multiple + forms.
+ Polymorphism can be achieved by method overriding and also by virtual method
+→ What is method overriding ?
+ Method overriding means changing the implementation of an Inherited method.
+ If a declare a method as virtual in the base class, we can override it in a derived class.</description>
+    </item>
+    
+    <item>
+      <title>Object Oriented C# - Class, Inheritance, Composition</title>
       <link>https://shohan4556.github.io/me/post/oo-c-sharp-1/</link>
       <pubDate>Mon, 09 Jul 2018 00:00:00 +0000</pubDate>
       

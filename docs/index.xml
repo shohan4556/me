@@ -10,7 +10,173 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Object Oriented C# - 01</title>
+      <title>Object Oriented C# - (Polymorphism, Interface &amp; Abstract Class</title>
+      <link>https://shohan4556.github.io/me/post/oo-c-sharp-2/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/oo-c-sharp-2/</guid>
+      <description>
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;In this post I will discuss about&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Polymorphism&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Interface&lt;/li&gt;
+&lt;li&gt;Abstract Class&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Polymorphism&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Polymorphism =Poly + morphism = Multiple + forms.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/3Bf7vcg.jpg&#34; alt=&#34;Imgur&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Polymorphism can be achieved by method overriding and also by virtual method&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;→ What is method overriding ?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Method overriding means changing the implementation of an Inherited method.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If a declare a method as virtual in the base class, we can override it in a derived class.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Shape
+{
+ public virtual Draw()
+ {
+ // Default implementation for all derived classes
+ }
+}
+
+public class Circle : Shape
+{
+ public override Draw()
+ {
+ // Changed implementation
+ }
+}
+public class Rectangle : Shape
+{
+  public override Draw()
+  {
+    // change implementation
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Interface&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;→ Interface is type of which is contain property, method that has no implementation. An interface is simply a declaration of the capabilities (or services) that a class should provide.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Naming convention of interface name starts with a Capital I&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;No implementation&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;An interface can only declare methods and properties, but not fields (because fields are about implementation detail).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;No access modifier (private, public)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;
+public interface ITaxCalculator 
+{
+    // int Tax; 
+    int Tax {get; set;}
+    int calculate(); // no implementation and no access modifier 
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Why use Interface ?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;→ Flexibility in implementation&lt;/p&gt;
+
+&lt;p&gt;→ Interfaces are better suited to situations in which your applications require many possibly unrelated object types to provide certain functionality.&lt;/p&gt;
+
+&lt;p&gt;→ you can use multiple implementation of a same Interface.&lt;/p&gt;
+
+&lt;p&gt;→ Interfaces help building loosely coupled applications. We reduce the coupling between
+two classes by putting an interface between them. This way, if one of these classes
+changes, it will have no impact on the class that is dependent on that (as long as the
+interface is kept the same)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Benefit of using Interface&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;→ we can use interface to change our application behaviour by extending its code, rather than changing existing code.&lt;/p&gt;
+
+&lt;p&gt;→ Different implementation of that interface at runtime (kind of polymorphism)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Interfaces and Inheritance&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;→ One of the common misconceptions about interfaces is that they are used to
+implement multiple inheritance in C#. This is fundamentally wrong, yet many books
+and videos make such a false claim.&lt;/p&gt;
+
+&lt;p&gt;→  With inheritance, we write code once and reuse it without the need to type all that
+code again.&lt;/p&gt;
+
+&lt;p&gt;→  With interfaces, we simply declare the methods and properties the implementing class should contain. Then we need to type all that declaration along with the actual implementation in that class. So, code is not inherited, even the declaration of the members!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Abstract Class&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Abstract modifier states that a class or a member &lt;strong&gt;misses implementation&lt;/strong&gt;. We use abstract members when it doesn’t make sense to implement them in a base class. When a class member is declared as abstract, that class needs to be declared as abstract as well. That means that class is not complete. In derived classes, we must need to override (implement) the abstract members in the base class.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public abstract class Shape
+{
+    int area;
+    
+    // define behavior, implement this for everybody
+    int GetArea()
+    {
+        return this.area;
+    }
+    
+// That can be very different, force them to provide their own implementation.
+  public abstract void Draw(); 
+}
+
+public class Circle : Shape
+{
+  public override void Draw()
+  {
+    // implementation for circle 
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It is impossible to define Shape because the concept of shape is abstract (hide the essential details, shows only the features or in other word the outside view).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Difference Between Interface and Abstract Class&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;An &lt;strong&gt;Interface&lt;/strong&gt; is a contract: The person writing the interface says, &amp;ldquo;hey, I accept things looking that way&amp;rdquo;, and the person using the interface says &amp;ldquo;OK, the class I write looks that way&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;An interface is an empty shell. There are only the signatures of the methods, which implies that the methods do not have a body. The interface can&amp;rsquo;t do anything. It&amp;rsquo;s just a pattern.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstract classes&lt;/strong&gt; look a lot like interfaces, but they have something more, &lt;strong&gt;You can define a behavior for them&lt;/strong&gt;. It&amp;rsquo;s more about a person saying, &amp;ldquo;these classes should look like that, and they have that in common, so fill in the blanks!&amp;rdquo;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Object Oriented C# - Class, Inheritance, Composition</title>
       <link>https://shohan4556.github.io/me/post/oo-c-sharp-1/</link>
       <pubDate>Mon, 09 Jul 2018 00:00:00 +0000</pubDate>
       
@@ -711,22 +877,6 @@ public class PlayerScript : MonoBehaviour
       
       <guid>https://shohan4556.github.io/me/project/captain-bland/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Dark Inside</title>
-      <link>https://shohan4556.github.io/me/project/dark-inside/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/dark-inside/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/sfoyVC5.png&#34; alt=&#34;Dark Inside&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Project Leader : Shohanur Rahaman&lt;/li&gt;
-&lt;li&gt;Game Art: Belal Hossain&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/shohan4556/dark-inside&#34; target=&#34;_blank&#34;&gt;View Project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>

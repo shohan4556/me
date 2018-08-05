@@ -6,10 +6,21 @@
     <description>Recent content in Projects on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Sun, 25 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RPG Dialogue System</title>
+      <link>https://shohan4556.github.io/me/project/rpg_dialogue_system/</link>
+      <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/rpg_dialogue_system/</guid>
+      <description> Used Tech : Cinemachine, Yarn Spinner.
+ View Project
+  </description>
+    </item>
     
     <item>
       <title>Genetic Algorithm with Machine Learning</title>

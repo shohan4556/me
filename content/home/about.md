@@ -38,6 +38,6 @@ weight = 1
 
 # Biography
 
-Hi there, I am a tech nerd from Bangladesh who is passionate about Game Development. I have a solid skill in Unity3D Game Development. I am working as an freelance game developer now. I do code mostly. I love drawing pixelArt and reading books.
+Indie game developer. Specialized in 2D and 3D gameplay programming with Unity3D. Solid foundation in programming (C#). Expert user of GitHub. Good at Game-Design. More than 2 years working within Unity3D.
 
 I am available as a freelance game developer and would love to take up challenging projects. If you would like to talk about a project, opportunity, consult about something or would simply like to chat, feel free to leave a message.

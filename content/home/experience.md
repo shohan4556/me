@@ -13,7 +13,7 @@ widget = "custom"
 weight = 60
 
 +++
-
+- Game Developer @B2M Games
 - Game Development Instructor at CEED IT.
 - Freelancer at Fiverr & People Per Hour.
 - Indie Game Developer.

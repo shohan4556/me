@@ -21,7 +21,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Shohanur Rahaman"
-  role = "Indie Game Developer"
+  role = "Game Developer"
   organization = ""
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)

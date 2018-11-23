@@ -130,6 +130,21 @@ defaultContentLanguageInSubdir = false
     link = "mailto:shohan4556@egmail.com"
 
   [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "https://www.linkedin.com/in/shohanr/"
+	
+   [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/shohan4556"
+
+  [[params.social]]
+    icon = "youtube"
+    icon_pack = "fa"
+    link = "https://www.youtube.com/channel/UCCgHi_npwCcDLGLZghodj2A?view_as=subscriber"
+	
+  [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
     link = "//twitter.com/shohan4556"
@@ -139,15 +154,7 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "https://www.quora.com/profile/Shohanur-Rahaman"	
 	
-  [[params.social]]
-    icon = "linkedin"
-    icon_pack = "fa"
-    link = "https://www.linkedin.com/in/shohanr/"
 
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/shohan4556"
 
 
 # Navigation Links

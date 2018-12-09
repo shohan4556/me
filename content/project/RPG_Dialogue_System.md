@@ -26,11 +26,11 @@ caption = "My caption :smile:"
 
 +++
 
-![View](http://i3.ytimg.com/vi/AQSm9em5ZG0/hqdefault.jpg)
+![View](http://i3.ytimg.com/vi/SsZ85rwn6yg/maxresdefault.jpg)
 
  * Used Tech : Cinemachine, Yarn Spinner.
  
- * [View Project](https://youtu.be/AQSm9em5ZG0)
+ * [View Project](https://www.youtube.com/watch?v=SsZ85rwn6yg)
  
  
  

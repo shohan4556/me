@@ -10,12 +10,28 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Cinematic Cut Scenes</title>
+      <link>https://shohan4556.github.io/me/project/rpg_cutscenes/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/rpg_cutscenes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://i3.ytimg.com/vi/_HWDSbN2RTg/maxresdefault.jpg&#34; alt=&#34;View&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Used Tech : Cinemachine, Yarn Spinner.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_HWDSbN2RTg&#34; target=&#34;_blank&#34;&gt;View Project&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>RPG Dialogue System</title>
       <link>https://shohan4556.github.io/me/project/rpg_dialogue_system/</link>
       <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/rpg_dialogue_system/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://i3.ytimg.com/vi/SsZ85rwn6yg/hqdefault.jpg&#34; alt=&#34;View&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;http://i3.ytimg.com/vi/SsZ85rwn6yg/maxresdefault.jpg&#34; alt=&#34;View&#34; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Used Tech : Cinemachine, Yarn Spinner.&lt;/p&gt;&lt;/li&gt;
@@ -874,15 +890,6 @@ public class PlayerScript : MonoBehaviour
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/quiz-game/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Boid/Flocking Agent</title>
-      <link>https://shohan4556.github.io/me/project/boid/</link>
-      <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/boid/</guid>
       <description></description>
     </item>
     

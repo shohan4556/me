@@ -6,10 +6,21 @@
     <description>Recent content in Unity 3d on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/tags/unity-3d/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cinematic Cut Scenes</title>
+      <link>https://shohan4556.github.io/me/project/rpg_cutscenes/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/rpg_cutscenes/</guid>
+      <description> Used Tech : Cinemachine, Yarn Spinner.
+ View Project
+  </description>
+    </item>
     
     <item>
       <title>RPG Dialogue System</title>

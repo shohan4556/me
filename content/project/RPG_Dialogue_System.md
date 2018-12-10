@@ -9,7 +9,7 @@ title = "RPG Dialogue System"
 summary = "RPG Dialogue System"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "Dialogue_System.png"
+image_preview = "rpg-talk.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -21,12 +21,12 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-# image = "Dialogue_System.png"
+# image = "rpg-talk.png"
 caption = "My caption :smile:"
 
 +++
 
-![View](http://i3.ytimg.com/vi/SsZ85rwn6yg/maxresdefault.jpg)
+![View](http://i3.ytimg.com/vi/SsZ85rwn6yg/hqdefault.jpg)
 
  * Used Tech : Cinemachine, Yarn Spinner.
  

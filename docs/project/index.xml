@@ -6,10 +6,24 @@
     <description>Recent content in Projects on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Mon, 10 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Duel Gunslinger : 2 Player Game</title>
+      <link>https://shohan4556.github.io/me/project/duel_gunslinger/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/duel_gunslinger/</guid>
+      <description>Duel Gunslinger is a fast paced duel shooting game. You need at least two players to play the game.Duel gunslinger have two gameplay mode, gunslinger and quick draw. Each game-mode will give you a unique thrill. Duels gunslinger will tests your accuracy, timing and speed.
+How to play :
+Gunslinger :
+✋ A player stands on each side of the device
+✋ Each player have 4 bullets
+✋ Once the game starts, one player shoot the other player</description>
+    </item>
     
     <item>
       <title>Cinematic Cut Scenes</title>

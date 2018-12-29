@@ -10,6 +10,48 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Duel Gunslinger : 2 Player Game</title>
+      <link>https://shohan4556.github.io/me/project/duel_gunslinger/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/duel_gunslinger/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/iJkv4yY.png&#34; alt=&#34;View&#34; /&gt;
+Duel Gunslinger is a fast paced duel shooting game. You need at least two players to play the game.Duel gunslinger have two gameplay mode, gunslinger and quick draw. Each game-mode will give you a unique thrill. Duels gunslinger will tests your accuracy, timing and speed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;How to play :&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gunslinger :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;✋ A player stands on each side of the device&lt;/p&gt;
+
+&lt;p&gt;✋ Each player have 4 bullets&lt;/p&gt;
+
+&lt;p&gt;✋ Once the game starts, one player shoot the other player&lt;/p&gt;
+
+&lt;p&gt;✋ Player can shoot by tapping the button of their side&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tips : Focus on timing and speed.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quick Draw :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;✋ Each player have one bullet&lt;/p&gt;
+
+&lt;p&gt;✋ Each player get 5 seconds to shoot&lt;/p&gt;
+
+&lt;p&gt;✋ One bullet, 5 seconds, One kill&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tips : wait for your chance&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/XVG4fWD.png&#34; alt=&#34;View&#34; /&gt;
+&lt;img src=&#34;https://i.imgur.com/AmMbhte.png&#34; alt=&#34;View&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/gp/product/B07MP2G6Y5&#34; target=&#34;_blank&#34;&gt;Play the game&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Cinematic Cut Scenes</title>
       <link>https://shohan4556.github.io/me/project/rpg_cutscenes/</link>
       <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
@@ -882,15 +924,6 @@ public class PlayerScript : MonoBehaviour
 
 &lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Quiz Game Prototype</title>
-      <link>https://shohan4556.github.io/me/project/quiz-game/</link>
-      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/project/quiz-game/</guid>
-      <description></description>
     </item>
     
   </channel>

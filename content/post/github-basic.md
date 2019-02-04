@@ -1,7 +1,7 @@
 +++
 date = "2017-01-01T00:00:00"
 draft = false
-tags = ["ওপেন সোর্স", "গিটহাব", github]
+tags = ["ওপেন সোর্স", "গিটহাব"]
 title = "গিটহাব  সহজিয়া"
 math = false
 summary = """

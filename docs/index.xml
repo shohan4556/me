@@ -10,6 +10,38 @@
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How To Setup Git with Google Drive, Dropbox, Onedrive</title>
+      <link>https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/</link>
+      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;step - 01 :&lt;/strong&gt; Install google drive, dropbox on your local PC and enable sync.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;step - 02 :&lt;/strong&gt; install and configure git on your PC.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;step - 03 :&lt;/strong&gt; create a folder on google-drive and open &lt;code&gt;git-bash&lt;/code&gt; there&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;step - 04 :&lt;/strong&gt; write git command &lt;code&gt;git init --bare&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;step - 05 :&lt;/strong&gt; Initialize a git repo outside of google-drive&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;step - 06:&lt;/strong&gt; now connect google drive repo with your the repo that you just created outside of google drive.
+&lt;code&gt;git remote add origin &amp;quot;/C/Users/JoeUser/Google Drive/git/project1.git&amp;quot;&lt;/code&gt; (note if the url does not have any space then remove double quote)
+to check if the remote added &lt;code&gt;git remote -v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;step - 07 :&lt;/strong&gt; If remote added without any error then push your local changes &lt;code&gt;git push -u origin master&lt;/code&gt;
+And you done. now you can make changes and push your local changes to google-drive repo.
+If you want to clone that repo then simply &lt;code&gt;git clone &amp;quot;/C/Users/JoeUser/Google Drive/git/project1.git&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=T2aJP5MOxug&#34; target=&#34;_blank&#34;&gt;video tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow me on
+&lt;a href=&#34;https://github.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Githab&lt;/a&gt;|
+&lt;a href=&#34;https://twitter.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;|
+&lt;a href=&#34;https://facebook.com/shohan4556/&#34; target=&#34;_blank&#34;&gt;Facebook&lt;/a&gt;|
+&lt;a href=&#34;https://www.quora.com/profile/Shohanur-Rahaman&#34; target=&#34;_blank&#34;&gt;Quora&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;© copyright reserved by the Author.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Duel Gunslinger : 2 Player Game</title>
       <link>https://shohan4556.github.io/me/project/duel_gunslinger/</link>
       <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
@@ -843,78 +875,6 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
 &lt;p&gt;Here is the tutorial series.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dDQEFSk-rQM&amp;amp;list=PLWnE_CWJ15J7ajZQ8gKwed8rnetI0SdfN&#34; title=&#34;FSM with Unity3D Intro&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.imgur.com/Hp2oLiw.png&#34; alt=&#34;FSM with Unity3D Intro&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Unity Tips - 01</title>
-      <link>https://shohan4556.github.io/me/post/unity-tips-1/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/post/unity-tips-1/</guid>
-      <description>&lt;p&gt;Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Slider&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Range(1, 100)]
-public int weight;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This code will come up with a slider in inspector.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;OnValidate()&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you may want to validate value that comes from inspector. Unity has a nice method &lt;code&gt;onValidate&lt;/code&gt; you can validate value.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public float speed;
-
-void onValidate()
-{
-    if(speed&amp;lt;=0){
-        Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;ToolTip&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you may have deliver your project to dumb client, ToolTip can make your life easier.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Tooltip(&amp;quot;drop here the screaming audio from Assets &amp;quot;)]
-public AudioClip screamAudio;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;HideInInspector&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Hide public variable form Inspector.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[HideInInspector]
-public int p = 5;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;RequireComponent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Use it for dependency script. Make your life easier.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[RequireComponent(typeof(Rigidbody))]
-public class PlayerScript : MonoBehaviour
-{
-    Rigidbody rBody;
-
-    void Start()
-    {
-        rBody = GetComponent&amp;lt;Rigidbody&amp;gt;();
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;hr /&gt;
 

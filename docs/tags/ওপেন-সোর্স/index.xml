@@ -6,10 +6,19 @@
     <description>Recent content in ওপেন সোর্স on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/tags/%E0%A6%93%E0%A6%AA%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How To Setup Git with Google Drive, Dropbox, Onedrive</title>
+      <link>https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/</link>
+      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/</guid>
+      <description>step - 01 : Install google drive, dropbox on your local PC and enable sync. step - 02 : install and configure git on your PC. step - 03 : create a folder on google-drive and open git-bash there step - 04 : write git command git init --bare step - 05 : Initialize a git repo outside of google-drive step - 06: now connect google drive repo with your the repo that you just created outside of google drive.</description>
+    </item>
     
     <item>
       <title>গিটহাব  সহজিয়া</title>

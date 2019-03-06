@@ -36,9 +36,9 @@ weight = 1
  
 +++
 
-# Biography
+# About Me
 
-Indie game developer. Specialized in 2D and 3D gameplay programming with Unity3D. Solid foundation in programming (C#). Expert user of GitHub. Good at Game-Design. More than 2 years working within Unity3D.
+Indie game developer. Specialized in 2D and 3D gameplay programming with Unity3D. Solid foundation in programming (C#). Expert user of GitHub. Good at Game-Design. More than 3 years working within Unity3D.
 [see my github profile visualization](https://sourcerer.io/shohan4556)
 
-I am available as a freelance game developer and would love to take up challenging projects. If you would like to talk about a project, opportunity, consult about something or would simply like to chat, feel free to leave a message.
+I am available as a freelance game developer and would love to take up challenging projects. If you would like to talk about a project, opportunity, consult about something feel free to leave a message.

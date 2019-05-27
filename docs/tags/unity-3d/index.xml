@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Unity 3d on Hello !</title>
+    <title>Unity-3D on Hello !</title>
     <link>https://shohan4556.github.io/me/tags/unity-3d/</link>
-    <description>Recent content in Unity 3d on Hello !</description>
+    <description>Recent content in Unity-3D on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/tags/unity-3d/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Boom Swipe : Arcade Game</title>
+      <link>https://shohan4556.github.io/me/project/boom-swipe/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/boom-swipe/</guid>
+      <description>Boom Swipe : Arcade Game</description>
+    </item>
     
     <item>
       <title>Duel Gunslinger : 2 Player Game</title>
@@ -17,12 +26,7 @@
       <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/duel_gunslinger/</guid>
-      <description>Duel Gunslinger is a fast paced duel shooting game. You need at least two players to play the game.Duel gunslinger have two gameplay mode, gunslinger and quick draw. Each game-mode will give you a unique thrill. Duels gunslinger will tests your accuracy, timing and speed.
-How to play :
-Gunslinger :
-✋ A player stands on each side of the device
-✋ Each player have 4 bullets
-✋ Once the game starts, one player shoot the other player</description>
+      <description>Duel Gunslinger is a fast paced duel shooting 2 player game. Duels gunslinger will tests your accuracy, timing and speed.</description>
     </item>
     
     <item>
@@ -31,9 +35,7 @@ Gunslinger :
       <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/rpg_cutscenes/</guid>
-      <description> Used Tech : Cinemachine, Yarn Spinner.
- View Project
-  </description>
+      <description>Cinematic Cut Scenes</description>
     </item>
     
     <item>
@@ -42,9 +44,7 @@ Gunslinger :
       <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/rpg_dialogue_system/</guid>
-      <description> Used Tech : Cinemachine, Yarn Spinner.
- View Project
-  </description>
+      <description>RPG Dialogue System</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ Gunslinger :
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</guid>
-      <description>So far I have created a nice and smooth third person camera with unity cinemachine . This camera support collision as well. I have also created another third person camera. I am just testing multiple things which one fit well. Btw here is the demo of the cinemachine camera. (little glitch for recording)</description>
+      <description>So far I have created a nice and smooth third person camera with unity &lt;strong&gt;cinemachine&lt;/strong&gt; .</description>
     </item>
     
     <item>
@@ -62,8 +62,7 @@ Gunslinger :
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/inheritable-singleton-script/</guid>
-      <description>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে। নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।
-using System.Collections; using System.Collections.Generic; using UnityEngine; public class SingletonBase&amp;lt;T&amp;gt; : MonoBehaviour where T : MonoBehaviour { private static object slock = new object(); safety private static T sInstance; public static T Instance { get { lock (slock) { if(sInstance == null) { sInstance = GameObject.</description>
+      <description>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।</description>
     </item>
     
     <item>
@@ -72,7 +71,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; p
       <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/genetic-algo/</guid>
-      <description></description>
+      <description>This is a simple implementation of Genetic Algorithm</description>
     </item>
     
     <item>
@@ -81,8 +80,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; p
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/</guid>
-      <description>আমি একটা মেশিন লার্নিং সিমুলেশন করি যেখানে Natural Selection বিষয়টা ছোট আকারে সিমুলেট করি।
-এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি। পপুলেশন সাইয হচ্ছে ১০ এবং জেনারেশন টাইম হচ্ছে ১০ সেকেন্ড। ১০ সেকেন্ড পর একটা জেনারেশন এর সব পপুলেশন ডেড হয়ে যাবে এবং এই পপুলেশনএর DNA data গুলো পরবর্তী পপুলেশনে ইনহেরিট করবে। এখানে সেই ডাটাগুলোর priority level বেশি থাকবে যারা বেশি সময় ধরে সারভাইভ করতে পেরেছে (অর্থাৎ সবার শেষে সেটা ডেড)। এই ডাটা গুলোরও পরবর্তীতে প্রজন্মে ইনহেরিট করার সম্ভাবনা ৫০% এবং মিউটেশন হচ্ছে ০.</description>
+      <description>এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি।  পপুলেশন সাইয হচ্ছে ১০ এবং &amp;hellip;</description>
     </item>
     
     <item>
@@ -91,10 +89,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; p
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/laser2d-doc/</guid>
-      <description>Download
-web version of the doc - Recommended.
- Verssion : 0.02 Updated : December 2017 Developer : Shohanur Rahaman Contact : shohan4556@gmail.com web : techshohan.me  Features  Four directional Laser (Top, Down, Left, Right) Modify Laser Color Easy to Implement
- Mobile Friendly Great for Pixel Art Games  How To Use  Getting Started Changing Laser Color Understanding Inspector Variables Using Four Directional Laser Modify Code  How to Add Enemy Damage Modify Input</description>
+      <description>How to use Laser2D &amp;hellip;</description>
     </item>
     
     <item>
@@ -103,8 +98,7 @@ web version of the doc - Recommended.
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</guid>
-      <description>ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip; প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি। প্লাগিন গুলার লিস্ট
- Beautify C# (for C# support) Debugger for Unity3D Unity Snippets Unity Tools material Icon Theme Trainling Semicolon Markdown All in One  তারপর আমি যেটা করি Menlo ফন্ট ইন্সটল করি। ফন্ট সাইজ রাখি ১৬</description>
+      <description>ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip;</description>
     </item>
     
     <item>
@@ -113,12 +107,7 @@ web version of the doc - Recommended.
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/game-ai-fsm/</guid>
-      <description>Hello there, I have posted a tutorial series about Finite State Machine with Unity3D. FSM is very easy to implement and very effective is some cases.
-Here is the tutorial series.
-
-follow me on facebook
-follow me on twitter
-follow me on github</description>
+      <description>How to implement a simple and effective Finite State Machine with Unity3D</description>
     </item>
     
     <item>
@@ -127,12 +116,7 @@ follow me on github</description>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/unity-tips-1/</guid>
-      <description>Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.
-Slider
-[Range(1, 100)] public int weight;  This code will come up with a slider in inspector.
-OnValidate()
-Sometimes you may want to validate value that comes from inspector. Unity has a nice method onValidate you can validate value.
-public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;); } }  ToolTip</description>
+      <description>Simple and easy to use Unity tips that will help to write code more smoothly.</description>
     </item>
     
     <item>
@@ -141,7 +125,7 @@ public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/quiz-game/</guid>
-      <description></description>
+      <description>A quiz game for CEED IT</description>
     </item>
     
     <item>
@@ -150,7 +134,7 @@ public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/boid/</guid>
-      <description></description>
+      <description>This is an implementation of Flocking agent.</description>
     </item>
     
     <item>
@@ -159,7 +143,7 @@ public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/captain-bland/</guid>
-      <description></description>
+      <description>Captain Bland&amp;rsquo;s Space Adventure is inspired by 90s space shooter game. you can feel the spice when you play the game.</description>
     </item>
     
     <item>
@@ -168,7 +152,7 @@ public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/dark-inside/</guid>
-      <description> Project Leader : Shohanur Rahaman Game Art: Belal Hossain View Project  </description>
+      <description>A puzzle platformer prototype made as a project in Software Engineering course.</description>
     </item>
     
     <item>
@@ -177,7 +161,7 @@ public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp
       <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/laser2d/</guid>
-      <description></description>
+      <description>Free laser effect available on Unity Asset Store</description>
     </item>
     
     <item>
@@ -186,7 +170,7 @@ public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/iso-car-prototype/</guid>
-      <description></description>
+      <description>Hudai Kaj kam nai ki kormu</description>
     </item>
     
   </channel>

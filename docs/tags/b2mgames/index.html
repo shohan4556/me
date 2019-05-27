@@ -33,17 +33,17 @@
 
   
 
-  <link rel="alternate" href="https://shohan4556.github.io/me/index.xml" type="application/rss+xml" title="Hello !">
-  <link rel="feed" href="https://shohan4556.github.io/me/index.xml" type="application/rss+xml" title="Hello !">
+  <link rel="alternate" href="https://shohan4556.github.io/me/tags/b2mgames/index.xml" type="application/rss+xml" title="Hello !">
+  <link rel="feed" href="https://shohan4556.github.io/me/tags/b2mgames/index.xml" type="application/rss+xml" title="Hello !">
 
   <link rel="icon" type="image/png" href="/me/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/me/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/">
+  <link rel="canonical" href="https://shohan4556.github.io/me/tags/b2mgames/">
 
   
 
-  <title>How To Setup Git with Google Drive, Dropbox, Onedrive | Hello !</title>
+  <title>b2mgames | Hello !</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -138,156 +138,31 @@
 </nav>
 
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
-
-  
-<div class="article-header">
-  <img src="/me/img/headers/c2.jpg" class="article-banner" itemprop="image">
-  <span class="article-header-caption">Image credit: Me !</span>
-</div>
 
 
 
-  <div class="article-container">
-    <h1 itemprop="name">How To Setup Git with Google Drive, Dropbox, Onedrive</h1>
-    
+<div class="universal-wrapper">
 
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2019-02-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Mon, Feb 4, 2019
-    </time>
-  </span>
+  <h1>b2mgames</h1>
 
   
 
   
   
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/me/tags/%e0%a6%93%e0%a6%aa%e0%a7%87%e0%a6%a8-%e0%a6%b8%e0%a7%8b%e0%a6%b0%e0%a7%8d%e0%a6%b8">ওপেন সোর্স</a
-    >, 
-    
-    <a href="/me/tags/%e0%a6%97%e0%a6%bf%e0%a6%9f%e0%a6%b9%e0%a6%be%e0%a6%ac">গিটহাব</a
-    >
-    
-  </span>
-  
-  
-
-  
-  
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fhow_to_setup_git_with_gdrive%2f"
-         target="_blank">
-        <i class="fa fa-facebook"></i>
-      </a>
-    </li>
-    <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=How%20To%20Setup%20Git%20with%20Google%20Drive%2c%20Dropbox%2c%20Onedrive&amp;url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fhow_to_setup_git_with_gdrive%2f"
-         target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fhow_to_setup_git_with_gdrive%2f&amp;title=How%20To%20Setup%20Git%20with%20Google%20Drive%2c%20Dropbox%2c%20Onedrive"
-         target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-    </li>
-    <li>
-      <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fhow_to_setup_git_with_gdrive%2f&amp;title=How%20To%20Setup%20Git%20with%20Google%20Drive%2c%20Dropbox%2c%20Onedrive"
-         target="_blank">
-        <i class="fa fa-weibo"></i>
-      </a>
-    </li>
-    <li>
-      <a class="email"
-         href="mailto:?subject=How%20To%20Setup%20Git%20with%20Google%20Drive%2c%20Dropbox%2c%20Onedrive&amp;body=https%3a%2f%2fshohan4556.github.io%2fme%2fpost%2fhow_to_setup_git_with_gdrive%2f">
-        <i class="fa fa-envelope"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-
-  
-
-</div>
-
-    <div class="article-style" itemprop="articleBody">
-      <ul>
-<li><strong>step - 01 :</strong> Install google drive, dropbox on your local PC and enable sync.</li>
-<li><strong>step - 02 :</strong> install and configure git on your PC.</li>
-<li><strong>step - 03 :</strong> create a folder on google-drive and open <code>git-bash</code> there</li>
-<li><strong>step - 04 :</strong> write git command <code>git init --bare</code></li>
-<li><strong>step - 05 :</strong> Initialize a git repo outside of google-drive</li>
-<li><strong>step - 06:</strong> now connect google drive repo with your the repo that you just created outside of google drive.
-<code>git remote add origin &quot;/C/Users/JoeUser/Google Drive/git/project1.git&quot;</code> (note if the url does not have any space then remove double quote)
-to check if the remote added <code>git remote -v</code></li>
-<li><strong>step - 07 :</strong> If remote added without any error then push your local changes <code>git push -u origin master</code>
-And you done. now you can make changes and push your local changes to google-drive repo.
-If you want to clone that repo then simply <code>git clone &quot;/C/Users/JoeUser/Google Drive/git/project1.git&quot;</code></li>
-</ul>
-
-<p><a href="https://www.youtube.com/watch?v=T2aJP5MOxug" target="_blank">video tutorial</a></p>
-
-<p>Follow me on
-<a href="https://github.com/shohan4556/" target="_blank">Githab</a>|
-<a href="https://twitter.com/shohan4556/" target="_blank">Twitter</a>|
-<a href="https://facebook.com/shohan4556/" target="_blank">Facebook</a>|
-<a href="https://www.quora.com/profile/Shohanur-Rahaman" target="_blank">Quora</a></p>
-
-<p><strong><em>© copyright reserved by the Author.</em></strong></p>
-
+  <div>
+    <h2><a href="https://shohan4556.github.io/me/project/boom-swipe/">Boom Swipe : Arcade Game</a></h2>
+    <div class="article-style">
+      
+      Boom Swipe : Arcade Game
+      
     </div>
   </div>
-
-</article>
-
-
-
-<div class="article-container">
-  <h3>Related</h3>
-  <ul>
-    
-    <li><a href="/me/post/github-basic/">গিটহাব  সহজিয়া</a></li>
-    
-    <li><a href="/me/post/how-to-get-github-student-pack/">কিভাবে গিটহাব  স্টুডেন্ট ডেভেলপার প্যাক নিবেন</a></li>
-    
-  </ul>
-</div>
-
-
-<div class="container">
-  <nav>
-  <ul class="pager">
-    
-    <li class="previous"><a href="https://shohan4556.github.io/me/post/oo-c-sharp-2/"><span
-      aria-hidden="true">&larr;</span> Object Oriented C# - (Polymorphism, Interface &amp; Abstract Class</a></li>
-    
-
-    
-  </ul>
-</nav>
-
-</div>
-
-<div class="article-container">
   
 
-</div>
+  
 
+
+</div>
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">

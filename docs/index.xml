@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hello ! on Hello !</title>
@@ -6,8 +5,26 @@
     <description>Recent content in Hello ! on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Boom Swipe : Arcade Game</title>
+      <link>https://shohan4556.github.io/me/project/boom-swipe/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/boom-swipe/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/YBRB0Gk.png&#34; alt=&#34;View&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Used Tech : Unity3D&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=2HQbSKULinQ&#34; target=&#34;_blank&#34;&gt;View Trailer&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.b2mgames.boomswipe&#34; target=&#34;_blank&#34;&gt;Download from Google Play Store&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>How To Setup Git with Google Drive, Dropbox, Onedrive</title>
@@ -148,33 +165,33 @@ Duel Gunslinger is a fast paced duel shooting game. You need at least two player
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Method overriding means changing the implementation of an Inherited method.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;If a declare a method as virtual in the base class, we can override it in a derived class.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;If a declare a method as virtual in the base class, we can override it in a derived class.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;public class Shape
 {
- public virtual Draw()
- {
- // Default implementation for all derived classes
- }
+public virtual Draw()
+{
+// Default implementation for all derived classes
+}
 }
 
 public class Circle : Shape
 {
- public override Draw()
- {
- // Changed implementation
- }
+public override Draw()
+{
+// Changed implementation
+}
 }
 public class Rectangle : Shape
 {
-  public override Draw()
-  {
-    // change implementation
-  }
+public override Draw()
+{
+// change implementation
+}
 }
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Interface&lt;/strong&gt;&lt;/p&gt;
 
@@ -187,18 +204,18 @@ public class Rectangle : Shape
 
 &lt;li&gt;&lt;p&gt;An interface can only declare methods and properties, but not fields (because fields are about implementation detail).&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;No access modifier (private, public)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;No access modifier (private, public)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 public interface ITaxCalculator 
 {
-    // int Tax; 
-    int Tax {get; set;}
-    int calculate(); // no implementation and no access modifier 
+// int Tax; 
+int Tax {get; set;}
+int calculate(); // no implementation and no access modifier 
 }
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Why use Interface ?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -313,25 +330,25 @@ public class Circle : Shape
 
 &lt;li&gt;&lt;p&gt;As a best practice, define a constructor only when an object “needs” to be initialised or it won’t be able to do its job.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Constructors do not have a return type, not even void, and they should have the exact same name as the class.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Constructors do not have a return type, not even void, and they should have the exact same name as the class.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;public class Car {
   
-  public string Color;
-  public string manufacturer;
+public string Color;
+public string manufacturer;
 
 // constructor
-  public Car(string _color, string _manufacturer){
-    Color = _color;
-    manufacturer = _manufacturer;
-  }
-
-  public void Drive(){
-    // car can drive
-  }
+public Car(string _color, string _manufacturer){
+Color = _color;
+manufacturer = _manufacturer;
 }
-&lt;/code&gt;&lt;/pre&gt;
+
+public void Drive(){
+// car can drive
+}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Property&lt;/strong&gt;&lt;/p&gt;
 
@@ -861,28 +878,6 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে  মধ্যেই ব্যাবহার করি এই মুহূর্তে মনে পড়ছে না।&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Game AI - Finite State Machine</title>
-      <link>https://shohan4556.github.io/me/post/game-ai-fsm/</link>
-      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/post/game-ai-fsm/</guid>
-      <description>&lt;p&gt;Hello there, I have posted a tutorial series about Finite State Machine with Unity3D. FSM is very easy to implement and very effective is some cases.&lt;/p&gt;
-
-&lt;p&gt;Here is the tutorial series.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dDQEFSk-rQM&amp;amp;list=PLWnE_CWJ15J7ajZQ8gKwed8rnetI0SdfN&#34; title=&#34;FSM with Unity3D Intro&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.imgur.com/Hp2oLiw.png&#34; alt=&#34;FSM with Unity3D Intro&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.facebook.com/shohan4556&#34; target=&#34;_blank&#34;&gt;facebook&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

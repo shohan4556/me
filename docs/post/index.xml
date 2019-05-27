@@ -17,7 +17,7 @@
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/</guid>
-      <description>step - 01 : Install google drive, dropbox on your local PC and enable sync. step - 02 : install and configure git on your PC. step - 03 : create a folder on google-drive and open git-bash there step - 04 : write git command git init --bare step - 05 : Initialize a git repo outside of google-drive step - 06: now connect google drive repo with your the repo that you just created outside of google drive.</description>
+      <description>Install google drive, dropbox on your local PC and enable sync</description>
     </item>
     
     <item>
@@ -26,14 +26,12 @@
       <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/oo-c-sharp-2/</guid>
-      <description>Overview In this post I will discuss about
- Polymorphism
- Interface Abstract Class  Polymorphism
- Polymorphism =Poly + morphism = Multiple + forms.
- Polymorphism can be achieved by method overriding and also by virtual method
-→ What is method overriding ?
- Method overriding means changing the implementation of an Inherited method.
- If a declare a method as virtual in the base class, we can override it in a derived class.</description>
+      <description>&lt;p&gt;An &lt;strong&gt;Interface&lt;/strong&gt; is a contract: The person writing the interface says, &amp;ldquo;hey, I accept things looking that way&amp;rdquo;, and the person using the interface says &amp;ldquo;OK, the class I write looks that way&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;An interface is an empty shell. There are only the signatures of the methods, which implies that the methods do not have a body. The interface can&amp;rsquo;t do anything. It&amp;rsquo;s just a pattern.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Abstract classes&lt;/strong&gt; look a lot like interfaces, but they have something more, &lt;strong&gt;You can define a behavior for them&lt;/strong&gt;. It&amp;rsquo;s more about a person saying, &amp;ldquo;these classes should look like that, and they have that in common, so fill in the blanks!&amp;rdquo;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -42,11 +40,10 @@
       <pubDate>Mon, 09 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/oo-c-sharp-1/</guid>
-      <description>Overview Today we will learn the OOP concept of C#.
- Class
- Inheritance Composition  Class Class is a template or blueprint of an object, it contain variables and method (behaviour). Class encapsulate date (stored in field and behaviour). Object is an instance of a class. Class don&amp;rsquo;t allocate memory, object does.
-Constructor
-A constructor is a method that is called when an instance of a class is created.</description>
+      <description>Having said all that, it doesn’t mean inheritance should be avoided at all times. In fact,
+it’s great to use inheritance when dealing with very stable classes on top of small
+hierarchies. As the hierarchy grows (or variations of classes increase), the hierarchy,
+however, becomes fragile. And that’s where composition can give you a better design.</description>
     </item>
     
     <item>
@@ -55,7 +52,7 @@ A constructor is a method that is called when an instance of a class is created.
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/project-pirate-dev-log-1/</guid>
-      <description>So far I have created a nice and smooth third person camera with unity cinemachine . This camera support collision as well. I have also created another third person camera. I am just testing multiple things which one fit well. Btw here is the demo of the cinemachine camera. (little glitch for recording)</description>
+      <description>So far I have created a nice and smooth third person camera with unity &lt;strong&gt;cinemachine&lt;/strong&gt; .</description>
     </item>
     
     <item>
@@ -64,8 +61,7 @@ A constructor is a method that is called when an instance of a class is created.
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/inheritable-singleton-script/</guid>
-      <description>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে। নিচে আমার নিজের লেখা একটি ইনহেরিটেবল স্ক্রিপ্ট। এই স্ক্রিপ্ট বার বার একই জিনিস লেখার ঝামেলা বাঁচাবে। যদি ছোট প্রোজেক্ট হয় তাহলে কাজে লাগবে না কারন ছোট খাটো প্রোজেক্টে অত বেশি সিঙ্গেলেটন দরকার হয় না সাধারণত।
-using System.Collections; using System.Collections.Generic; using UnityEngine; public class SingletonBase&amp;lt;T&amp;gt; : MonoBehaviour where T : MonoBehaviour { private static object slock = new object(); safety private static T sInstance; public static T Instance { get { lock (slock) { if(sInstance == null) { sInstance = GameObject.</description>
+      <description>সিঙ্গেলেটন একটা পরিচিত এবং জনপ্রিয় ডিজাইন প্যাটার্ন। অনেক সময় মাল্টিপল স্ক্রিপ্ট সিঙ্গেলেটন করতে হয়। একই জিনিস বার লেখা ঝামেলা সেজন্য inheritable singleton script ব্যাবহার করা যেতে পারে।</description>
     </item>
     
     <item>
@@ -74,8 +70,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; p
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/genetic-algo-with-machine-learning/</guid>
-      <description>আমি একটা মেশিন লার্নিং সিমুলেশন করি যেখানে Natural Selection বিষয়টা ছোট আকারে সিমুলেট করি।
-এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি। পপুলেশন সাইয হচ্ছে ১০ এবং জেনারেশন টাইম হচ্ছে ১০ সেকেন্ড। ১০ সেকেন্ড পর একটা জেনারেশন এর সব পপুলেশন ডেড হয়ে যাবে এবং এই পপুলেশনএর DNA data গুলো পরবর্তী পপুলেশনে ইনহেরিট করবে। এখানে সেই ডাটাগুলোর priority level বেশি থাকবে যারা বেশি সময় ধরে সারভাইভ করতে পেরেছে (অর্থাৎ সবার শেষে সেটা ডেড)। এই ডাটা গুলোরও পরবর্তীতে প্রজন্মে ইনহেরিট করার সম্ভাবনা ৫০% এবং মিউটেশন হচ্ছে ০.</description>
+      <description>এখানে DNA factor গুলো হচ্ছে r,g,b color and scale. প্রথমে randomly rgb value এবং scale এর পপুলেশন জেনারেট করি।  পপুলেশন সাইয হচ্ছে ১০ এবং &amp;hellip;</description>
     </item>
     
     <item>
@@ -84,7 +79,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; p
       <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/motivation-comic/</guid>
-      <description></description>
+      <description>I made this comics, just for fun !.</description>
     </item>
     
     <item>
@@ -93,8 +88,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; p
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/digital-world-gaming-conf-2017/</guid>
-      <description>কি-নোটে​ ​প্রথমেই​ ​যে​ ​বিষয়টা​ ​চলে​ ​আসছে​ ​“passion”​ ​যেটাই​ ​করেন​ ​না​ ​কেন​ ​ভালবাসা​ ​থাকতে​ ​হবে।​ ​আজকে​ ​ওয়েব​ ​ডেভ করলাম​ ​কাল​ ​ফ্রিলান্সিং​ ​করলাম​ ​পরশু​ ​গেমডেভ​ ​করলাম,​ ​এরকম​ ​নয়।​ ​ভালবাসা​ ​থাকতে​ ​হবে।​ ​“আমি​ ​কি​ ​পারবো”,”​ ​আমি পারি​ ​না​ ​&amp;hellip;”​ ​এই​ ​বাক্য​ ​গুলো​ ​প্যাশনের​ ​সম্পূর্ণ​ ​বিপরীত।
-ফিক্সড​ ​মাইন্ডসেট​ ​নয়​ ​গ্রোথ​ ​মাইন্ডসেট​ ​থাকতে​ ​হবে।​ ​​গ্রোথ​ ​মাইন্ডসেট​ ​বিষয়​ ​টা​ ​যদি​ ​সহজ​ ​ভাষায়​ ​বলি​ ​তাহলে এরকম​ ​আপনি​ ​যদি​ ​আপনার​ ​গোল​ ​ঠিক​ ​করে​ ​ফেলেন​ ​আপনি​ ​এবং​ ​সেভাবে​ ​স্টেপ​ ​বাই​ ​স্টেপ​ ​কাজ​ ​করতে​ ​থাকেন,​ ​প্র্যাকটিস করতে​ ​থাকেন​ ​তাহলে​ ​আপনার​ ​নিউরাল​ ​গ্রোথও​ ​একই​ ​সাথে​ ​হতে​ ​থাকবে।​ ​এটার​ ​সাথে​ ​রিলেটেড​ ​হচ্ছে Grit(perseverance​ ​and​ ​passion​ ​for​ ​long-term​ ​goals)।​ ​আপনি​ ​এখন​ ​ফেইলর​ ​হতে​ ​পারেন​ ​কিন্তু​ ​এটা​ ​সাময়িক, সাময়িক​ ​ফেইলর​ ​আপনার​ ​লংটার্ম​ ​গোল​ ​থেকে​ ​বিচ্যুত​ ​করতে​ ​পারবে​ ​না। একটা​ ​বইয়ে​ ​কথাও​ ​মনে​ ​পড়তেছে​ ​এই​ ​মুহূর্তে​ ​-​ ​​Grit:​ ​The​ ​Power​ ​of​ ​Passion​ ​and​ ​Perseverance</description>
+      <description>প্রথমেই যে বিষয়টা চলে আসছে “passion” যেটাই করেন না কেন ভালবাসা থাকতে হবে। আজকে ওয়েব ডেভ করলাম কাল ফ্রিলান্সিং করলাম পরশু গেমডেভ করলাম, এরকম নয়। ভালবাসা থাকতে হবে। “আমি কি পারবো”,” আমি পারি না &amp;hellip;” এই বাক্য গুলো প্যাশনের সম্পূর্ণ বিপরীত &amp;hellip;</description>
     </item>
     
     <item>
@@ -103,10 +97,7 @@ using System.Collections; using System.Collections.Generic; using UnityEngine; p
       <pubDate>Wed, 06 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/laser2d-doc/</guid>
-      <description>Download
-web version of the doc - Recommended.
- Verssion : 0.02 Updated : December 2017 Developer : Shohanur Rahaman Contact : shohan4556@gmail.com web : techshohan.me  Features  Four directional Laser (Top, Down, Left, Right) Modify Laser Color Easy to Implement
- Mobile Friendly Great for Pixel Art Games  How To Use  Getting Started Changing Laser Color Understanding Inspector Variables Using Four Directional Laser Modify Code  How to Add Enemy Damage Modify Input</description>
+      <description>How to use Laser2D &amp;hellip;</description>
     </item>
     
     <item>
@@ -115,8 +106,7 @@ web version of the doc - Recommended.
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</guid>
-      <description>ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip; প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি। প্লাগিন গুলার লিস্ট
- Beautify C# (for C# support) Debugger for Unity3D Unity Snippets Unity Tools material Icon Theme Trainling Semicolon Markdown All in One  তারপর আমি যেটা করি Menlo ফন্ট ইন্সটল করি। ফন্ট সাইজ রাখি ১৬</description>
+      <description>ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip;</description>
     </item>
     
     <item>
@@ -125,12 +115,7 @@ web version of the doc - Recommended.
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/game-ai-fsm/</guid>
-      <description>Hello there, I have posted a tutorial series about Finite State Machine with Unity3D. FSM is very easy to implement and very effective is some cases.
-Here is the tutorial series.
-
-follow me on facebook
-follow me on twitter
-follow me on github</description>
+      <description>How to implement a simple and effective Finite State Machine with Unity3D</description>
     </item>
     
     <item>
@@ -139,12 +124,7 @@ follow me on github</description>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/unity-tips-1/</guid>
-      <description>Hello there, I am going to write a short post about Unity Editor tips that will boost up your workflow.
-Slider
-[Range(1, 100)] public int weight;  This code will come up with a slider in inspector.
-OnValidate()
-Sometimes you may want to validate value that comes from inspector. Unity has a nice method onValidate you can validate value.
-public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp;quot;Hey speed should be greater than 0&amp;quot;); } }  ToolTip</description>
+      <description>Simple and easy to use Unity tips that will help to write code more smoothly.</description>
     </item>
     
     <item>
@@ -153,9 +133,7 @@ public float speed; void onValidate() { if(speed&amp;lt;=0){ Debug.LogError(&amp
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/generic-class/</guid>
-      <description>Generic class same as typical class in C# except Generic type. So what the f**k is generic type ? Generic type means it is not specified any particular type. Let&amp;rsquo;s see an example of an ordinary class
-class MyOrdinaryClass{ // properties and methods goes here } var myObj1 = new MyOrdinaryClass();  So what we did here, we have instantiated an object myObj1 type of MyOrdinaryClass.
-Here is an example of generic class</description>
+      <description>Generic class same as typical class in C# except Generic type. So what the f**k is generic type ? Generic type means it is not</description>
     </item>
     
     <item>
@@ -164,8 +142,7 @@ Here is an example of generic class</description>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/are-we-happy/</guid>
-      <description>কোন একটা বিষয়ে লেখার সবচেয়ে কঠিন বিষয় হচ্ছে, প্রথম লাইনটা লেখা। আমি অনেকদিন ধরেই ভাবছি আমি কি সুখি? চিন্তার সুতোটা শেষ পর্যন্ত চলে গেছে &amp;ldquo;আমরা&amp;rdquo; তে অর্থাৎ আমরা কি সুখি ?
-এক জন গ্র্যাজুয়েট কে যদি এই মুহূর্তে যদি প্রশ্ন করা হয়, আপনার জীবনের গোল কি ? উত্তর আসতে পারে, Healthy Job, Business or Higher Education &amp;hellip; ব্লা ব্লা &amp;hellip; তারপর ? তারপর আবার কি সুন্দরী একটা বউ অথবা হ্যান্ডসাম জামাই। লাইফ সাকসেস !</description>
+      <description>ফোকাস ইলুশন - আমরা মনে করি এই জিনিসটা আমার জীবনে দরকার ভালো থাকার জন্য, আমরা ওভার ফোকাস করে ফেলি। কিন্তু আসলে সেই জিনিসটা না হলে বা কিছুটা কম হলেও ক্ষতি নাই। আপনার সুন্দর চকে চকে গাড়ি দরকার বলে আমি মনে করতেছেন কিন্তু এটা ভাবছেন না &amp;hellip;</description>
     </item>
     
     <item>
@@ -174,7 +151,7 @@ Here is an example of generic class</description>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/my-honest-interview-p1/</guid>
-      <description>প্রশ্ন: আপনি পাঁচ বছর পর নিজেকে কোথায় দেখতে চান ? এই প্রশ্নটা কি ঠিক কি কারনে করা হয় আমার জানা নেই, আমার উল্টা প্রশ্নকর্তাকে প্রশ্ন করতে ইচ্ছা করে, আপনি পাঁচ বছর আগে নিজেকে কোথায় দেখতে চেয়েছিলেন পাঁচ বছর পর এখন কি ঠিক সেই জায়গায় বাছাকাছি জায়গায় আছেন? আগামী পাঁচ বছর পর আমি কি করবো, কি হবো, কই যাবো সেটা কে বলতে পারে ? পাঁচ বছর পর আমি অমুক কোম্পানির সিও হব, অমুক **ল ছিঁড়বো এগুলার কোন মানেই নাই।</description>
+      <description>এই প্রশ্নটা কি ঠিক কি কারনে করা হয় আমার জানা নেই, আমার উল্টা প্রশ্নকর্তাকে প্রশ্ন করতে ইচ্ছা করে, আপনি পাঁচ বছর আগে &amp;hellip;</description>
     </item>
     
     <item>
@@ -183,7 +160,7 @@ Here is an example of generic class</description>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/how-to-get-github-student-pack/</guid>
-      <description>গিটহাব ১৮+ যেকোনো স্টুডেন্টকে তাদের স্টুডেন্ট প্যাকটা ফ্রি দেয়। এই প্যাকেজে অনেক প্রিমিয়াম ফিচার ইনক্লুডেড যেমন ২ বছর এর জন্য যেমন, গিটহাবে আনলিমিটেড প্রাইভেট রিপো খুলতে পারবে, একটা .me ফ্রি ডোমেইন, হ্যাকহ্যান্ড এ ৩০৳ এর ফ্রি সার্ভিস নিতে পারবে, গিটক্রাকেন প্রো ১ বছর এর জন্য ফ্রি ব্যাবহার করতে পারবে সহ আরও অনেক কিছু। এই প্যাক নিতে যেটা করতে হবে এই লিঙ্কে (https://education.github.com/) গিয়ে কলেজ অথবা ইউনিভারসিটির ভেরিফাইড মেইল (educational mail) দিয়ে একটা ফর্ম সাবমিট করতে হয়, তারপর ২৪ ঘণ্টার এর মধ্যে রিভিউ হয়ে কনফার্মেশন মেইল আসবে। বাংলাদেশের অধিঙ্কাংশ শিক্ষা প্রতিষ্ঠান শিক্ষার্থীদের জন্য কোন মেইল সার্ভিস প্রভাইড করে না। আপনি যদি জিমেইল, বা ইয়াহু মেইল দেন তাহলে না পাওয়ার সম্ভাবনা বেশি। এজন্য আপনাকে আপনার আইডি কার্ড এর একটা ছবি তুলে দিতে হবে যেখানে ভেলিডেশন তারিখটা দেখা যায়। এটা ইম্পরট্যান্ট যদি ভেলিডেশন তারিখ না থাকে তাহলে নাও পেতে পারেন। আমার আপলোড করা ছবিটা একবার দেখে নিতে পারেন।</description>
+      <description>গিটহাব ১৮+ যেকোনো স্টুডেন্টকে তাদের স্টুডেন্ট প্যাকটা ফ্রি দেয়। এই প্যাকেজে অনেক প্রিমিয়াম ফিচার ইনক্লুডেড যেমন ২ বছর এর জন্য &amp;hellip;</description>
     </item>
     
     <item>
@@ -192,9 +169,10 @@ Here is an example of generic class</description>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/github-basic/</guid>
-      <description>ওপেন সোর্স এ contribution করার জন্য Github এর কোন বিকল্প খুব কমই আছে। Github খুব সম্ভবত বড়ো কোড hosting সাইট । github এ পাবলিক অথবা প্রাইভেট (সামান্য অর্থের বিনিময়ে) repository খোলা যায়।
-আপনি কেন ওপেন সোর্স প্রোজেক্টে আপনার শ্রম দিবেন ?
-কারনটা হচ্ছে ,আপনার নিজের ভালোর জন্য , আপনি ওপেন সোর্সে আপানার যে স্কিল, শ্রম, এবং সময় দিবেন সেটা আসলে আপনার নিজেকে আরও দক্ষ করা জন্য, একটা উদাহরণ দেই ধরা যাক আপনি atom editor এর একটা বাগ খুঁজে বের করলেন এবং pull request সেন্ড করলেন তখন atom এর contributor list এ আপনার নামটা উঠে যাবে, বাগটা যেহেতু আপনি খুঁজে বের করেছেন সেহেতু আপনার ডিবাগিং স্কিলটা ঝালাই হয়ে গেলো এছাড়া আপনার জব পাওয়ার জন্য ওপেন সোর্স contributor রা অগ্রাধিকার পায়।গুগল, ফেসবুক থেকে শুরু করে মাইক্রোসফট পর্যন্ত এখন ওপেন সোর্সের দিকে ঝুঁকছে। সবচেয়ে বড় কথা আপনি শিখতে পারবেন। আপনার একটা পরিচিতি হবে, একটা কমিউনিটি বিল্ডাপ হবে।</description>
+      <description>&lt;p&gt;আপনি কেন ওপেন সোর্স প্রোজেক্টে আপনার শ্রম দিবেন ?&lt;/p&gt;
+
+&lt;p&gt;কারনটা হচ্ছে ,আপনার নিজের ভালোর জন্য , আপনি ওপেন সোর্সে আপানার যে স্কিল, শ্রম, এবং সময় দিবেন সেটা আসলে আপনার নিজেকে আরও দক্ষ করা জন্য, একটা উদাহরণ দেই ধরা যাক আপনি  atom editor এর একটা বাগ খুঁজে বের করলেন &amp;hellip;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

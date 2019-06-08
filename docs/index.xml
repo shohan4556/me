@@ -5,8 +5,50 @@
     <description>Recent content in Hello ! on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/me/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Neon Gunslinger : 2 Player Game</title>
+      <link>https://shohan4556.github.io/me/project/neon_gunslinger/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/neon_gunslinger/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/OTaQMjS.png&#34; alt=&#34;View&#34; /&gt;
+Duel Gunslinger is a fast paced duel shooting game. You need at least two players to play the game.Duel gunslinger have two gameplay mode, gunslinger and quick draw. Each game-mode will give you a unique thrill. Duels gunslinger will tests your accuracy, timing and speed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;How to play :&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gunslinger :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;✋ A player stands on each side of the device&lt;/p&gt;
+
+&lt;p&gt;✋ Each player have 4 bullets&lt;/p&gt;
+
+&lt;p&gt;✋ Once the game starts, one player shoot the other player&lt;/p&gt;
+
+&lt;p&gt;✋ Player can shoot by tapping the button of their side&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tips : Focus on timing and speed.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/mgUZHWX.png&#34; alt=&#34;View&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quick Draw :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;✋ Each player have one bullet&lt;/p&gt;
+
+&lt;p&gt;✋ Each player get 5 seconds to shoot&lt;/p&gt;
+
+&lt;p&gt;✋ One bullet, 5 seconds, One kill&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Tips : wait for your chance&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/IPzSfLY.png&#34; alt=&#34;View&#34; /&gt;
+&lt;img src=&#34;https://i.imgur.com/Cun3QOO.png&#34; alt=&#34;View&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;The will be avaiable on playstore soon&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Boom Swipe : Arcade Game</title>
@@ -831,53 +873,6 @@ Here is an example, assumes that you have a script &lt;code&gt;Myscript&lt;/code
 &lt;p&gt;follow me on &lt;a href=&#34;https://www.twitter.com/shohan4556&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;follow me on &lt;a href=&#34;https://www.github.com/shohan4556&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>আমার Unity3D সেটআপ</title>
-      <link>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</link>
-      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://shohan4556.github.io/me/post/my-setup-in-unity3d/</guid>
-      <description>&lt;p&gt;ইউনিটি সেটআপ দেয়ার পর আমি প্রথম যে কাজ টা করি &amp;hellip;  প্রথমেই ভিসুয়াল স্টুডিও কোড ইন্সটল করি। মনডেভেলপ এর চেয়ে VSCode ই অনেক
-বেশি ফ্রেন্ডলি মনে হয় আমার কাছে। তারপর কিছু প্লাগিন ইন্সটল করি।
-প্লাগিন গুলার লিস্ট&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Beautify&lt;/li&gt;
-&lt;li&gt;C# (for C# support)&lt;/li&gt;
-&lt;li&gt;Debugger for Unity3D&lt;/li&gt;
-&lt;li&gt;Unity Snippets&lt;/li&gt;
-&lt;li&gt;Unity Tools&lt;/li&gt;
-&lt;li&gt;material Icon Theme&lt;/li&gt;
-&lt;li&gt;Trainling Semicolon&lt;/li&gt;
-&lt;li&gt;Markdown All in One&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;তারপর আমি যেটা করি &lt;a href=&#34;https://github.com/hbin/top-programming-fonts&#34; target=&#34;_blank&#34;&gt;Menlo&lt;/a&gt; ফন্ট ইন্সটল করি।
-ফন্ট সাইজ রাখি ১৬&lt;/p&gt;
-
-&lt;p&gt;এটা আমার ভিএস কোড এর  prefernce file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{
-    &amp;quot;workbench.iconTheme&amp;quot;: &amp;quot;material-icon-theme&amp;quot;,
-    &amp;quot;window.zoomLevel&amp;quot;: 0,
-    &amp;quot;editor.fontSize&amp;quot;: 16,
-    &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Menlo&amp;quot;,
-    &amp;quot;material-icon-theme.showUpdateMessage&amp;quot;: false,
-    &amp;quot;extensions.ignoreRecommendations&amp;quot;: true,
-    &amp;quot;markdown.extension.preview.autoShowPreviewToSide&amp;quot;: true
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ডার্ক থিম ব্যাবহার করি সব সময়।&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=EpYOBMrne0s&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/EpYOBMrne0s/0.jpg&#34; alt=&#34;How to configure Visual Studio Code with Unity3D&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;এছাড়াও আরও কিছু প্লাগিন বা থিম মাঝে  মধ্যেই ব্যাবহার করি এই মুহূর্তে মনে পড়ছে না।&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     

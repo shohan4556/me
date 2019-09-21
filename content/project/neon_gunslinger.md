@@ -58,7 +58,7 @@ Duel Gunslinger is a fast paced duel shooting game. You need at least two player
 ![View](https://i.imgur.com/IPzSfLY.png)
 ![View](https://i.imgur.com/Cun3QOO.png) 
  
- ***The will be avaiable on playstore soon***
+ ***[Download](https://play.google.com/store/apps/details?id=com.shohan.neongunslinger)***
  
  
  

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>How to use Scriptable Object like PlayerPrefs</title>
+      <link>https://shohan4556.github.io/me/post/how-to-use-so-as-playerpref/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/how-to-use-so-as-playerpref/</guid>
+      <description>I will show you a a simple trick, you can convert your SO object as playerpref.</description>
+    </item>
+    
+    <item>
       <title>How To Setup Git with Google Drive, Dropbox, Onedrive</title>
       <link>https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/</link>
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>

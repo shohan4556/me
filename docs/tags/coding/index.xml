@@ -6,10 +6,19 @@
     <description>Recent content in Coding on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to use Scriptable Object like PlayerPrefs</title>
+      <link>https://shohan4556.github.io/me/post/how-to-use-so-as-playerpref/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/post/how-to-use-so-as-playerpref/</guid>
+      <description>I will show you a a simple trick, you can convert your SO object as playerpref.</description>
+    </item>
     
     <item>
       <title>Object Oriented C# - (Polymorphism, Interface &amp; Abstract Class</title>

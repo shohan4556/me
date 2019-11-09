@@ -2,7 +2,7 @@
 date = "2019-11-09T00:00:00"
 draft = false
 tags = ["Coding", "C-Sharp"]
-title = "How to use Scriptable Object like PlayerPrefs"
+title = "How to save ScriptableObject data"
 math = false
 summary = """
 I will show you a a simple trick, you can convert your SO object as playerpref. 

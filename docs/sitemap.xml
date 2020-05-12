@@ -1,12 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/tags/c-sharp/</loc>
-      <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>https://shohan4556.github.io/me/project/100daysofcode/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -14,9 +14,8 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/tags/coding/</loc>
-      <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>https://shohan4556.github.io/me/project/nilimshop-rmf-analysis/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -24,9 +23,26 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/</loc>
-      <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>https://shohan4556.github.io/me/project/nilim-dashboard/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/project/mukti_path/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/project/my-video-portfolio/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -43,38 +59,8 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/tags/</loc>
-      <lastmod>2019-11-09T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://shohan4556.github.io/me/project/neon_gunslinger/</loc>
       <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/project/</loc>
-      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/unity-3d/</loc>
-      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -91,38 +77,8 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/tags/b2mgames/</loc>
-      <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/</loc>
       <lastmod>2019-02-04T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/%E0%A6%93%E0%A6%AA%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8/</loc>
-      <lastmod>2019-02-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/%E0%A6%97%E0%A6%BF%E0%A6%9F%E0%A6%B9%E0%A6%BE%E0%A6%AC/</loc>
-      <lastmod>2019-02-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -193,28 +149,8 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/tags/ai/</loc>
-      <lastmod>2018-02-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://shohan4556.github.io/me/project/genetic-algo/</loc>
       <lastmod>2018-02-25T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/artificial-intelligence/</loc>
-      <lastmod>2018-02-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -233,26 +169,6 @@
     
       <loc>https://shohan4556.github.io/me/post/motivation-comic/</loc>
       <lastmod>2018-02-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%AC%E0%A6%BF/</loc>
-      <lastmod>2018-02-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/game-development/</loc>
-      <lastmod>2017-12-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -359,26 +275,6 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/tags/other/</loc>
-      <lastmod>2017-09-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/phaser-js/</loc>
-      <lastmod>2017-09-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://shohan4556.github.io/me/project/laser2d/</loc>
       <lastmod>2017-09-11T00:00:00+00:00</lastmod>
     </url>
@@ -399,16 +295,6 @@
     
       <loc>https://shohan4556.github.io/me/project/jolly-jumper/</loc>
       <lastmod>2017-09-07T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://shohan4556.github.io/me/tags/prototype/</loc>
-      <lastmod>2017-09-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -506,16 +392,6 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/publication_types/2/</loc>
-      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://shohan4556.github.io/me/publication/person-re-identification/</loc>
       <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     </url>
@@ -525,9 +401,8 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/publication_types/</loc>
-      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>https://shohan4556.github.io/me/publication/clothing-search/</loc>
+      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -545,8 +420,49 @@
     
     <url>
     
-      <loc>https://shohan4556.github.io/me/publication/clothing-search/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+      <loc>https://shohan4556.github.io/me/publication_types/2/</loc>
+      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/ai/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/artificial-intelligence/</loc>
+      <lastmod>2018-02-24T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/b2mgames/</loc>
+      <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/c-sharp/</loc>
+      <lastmod>2019-11-09T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -555,6 +471,146 @@
     <url>
     
       <loc>https://shohan4556.github.io/me/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/coding/</loc>
+      <lastmod>2019-11-09T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/ds-ml/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/game-development/</loc>
+      <lastmod>2017-12-07T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/</loc>
+      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/other/</loc>
+      <lastmod>2017-09-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/phaser-js/</loc>
+      <lastmod>2017-09-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/project/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/prototype/</loc>
+      <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/publication_types/</loc>
+      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/unity-3d/</loc>
+      <lastmod>2019-12-15T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/%E0%A6%93%E0%A6%AA%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8/</loc>
+      <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/%E0%A6%97%E0%A6%BF%E0%A6%9F%E0%A6%B9%E0%A6%BE%E0%A6%AC/</loc>
+      <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://shohan4556.github.io/me/tags/%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%AC%E0%A6%BF/</loc>
+      <lastmod>2018-02-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

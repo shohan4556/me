@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>phaser-js on Hello !</title>
+    <title>Phaser Js on Hello !</title>
     <link>https://shohan4556.github.io/me/tags/phaser-js/</link>
-    <description>Recent content in phaser-js on Hello !</description>
+    <description>Recent content in Phaser Js on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Tue, 12 Sep 2017 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/fuzzle/</guid>
-      <description>Tap what you read not what you see.</description>
+      <description></description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/jolly-jumper/</guid>
-      <description>Addictive arcade style game.</description>
+      <description></description>
     </item>
     
   </channel>

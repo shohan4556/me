@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.50" />
   <meta name="author" content="Shohanur Rahaman">
-  <meta name="description" content="Game Developer">
+  <meta name="description" content="Game Developer|Data Analyst">
 
   
   
@@ -253,33 +253,33 @@
 <ul>
 <li><p>Method overriding means changing the implementation of an Inherited method.</p></li>
 
-<li><p>If a declare a method as virtual in the base class, we can override it in a derived class.</p>
+<li><p>If a declare a method as virtual in the base class, we can override it in a derived class.</p></li>
+</ul>
 
 <pre><code>public class Shape
 {
-public virtual Draw()
-{
-// Default implementation for all derived classes
-}
+ public virtual Draw()
+ {
+ // Default implementation for all derived classes
+ }
 }
 
 public class Circle : Shape
 {
-public override Draw()
-{
-// Changed implementation
-}
+ public override Draw()
+ {
+ // Changed implementation
+ }
 }
 public class Rectangle : Shape
 {
-public override Draw()
-{
-// change implementation
-}
+  public override Draw()
+  {
+    // change implementation
+  }
 }
 
-</code></pre></li>
-</ul>
+</code></pre>
 
 <p><strong>Interface</strong></p>
 
@@ -292,18 +292,18 @@ public override Draw()
 
 <li><p>An interface can only declare methods and properties, but not fields (because fields are about implementation detail).</p></li>
 
-<li><p>No access modifier (private, public)</p>
+<li><p>No access modifier (private, public)</p></li>
+</ul>
 
 <pre><code>
 public interface ITaxCalculator 
 {
-// int Tax; 
-int Tax {get; set;}
-int calculate(); // no implementation and no access modifier 
+    // int Tax;	
+    int Tax {get; set;}
+    int calculate(); // no implementation and no access modifier 
 }
 
-</code></pre></li>
-</ul>
+</code></pre>
 
 <p><strong><em>Why use Interface ?</em></strong></p>
 
@@ -341,14 +341,14 @@ code again.</p>
 
 <pre><code>public abstract class Shape
 {
-    int area;
-    
-    // define behavior, implement this for everybody
-    int GetArea()
-    {
-        return this.area;
-    }
-    
+	int area;
+	
+	// define behavior, implement this for everybody
+	int GetArea()
+	{
+		return this.area;
+	}
+	
 // That can be very different, force them to provide their own implementation.
   public abstract void Draw(); 
 }

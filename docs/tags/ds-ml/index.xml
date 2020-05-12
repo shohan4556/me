@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ds/Ml on Hello !</title>
+    <link>https://shohan4556.github.io/me/tags/ds-ml/</link>
+    <description>Recent content in Ds/Ml on Hello !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Shohan</copyright>
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shohan4556.github.io/me/tags/ds-ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>100 Days of Code Challenge</title>
+      <link>https://shohan4556.github.io/me/project/100daysofcode/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/100daysofcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business Analysis</title>
+      <link>https://shohan4556.github.io/me/project/nilimshop-rmf-analysis/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/nilimshop-rmf-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Dashboard</title>
+      <link>https://shohan4556.github.io/me/project/nilim-dashboard/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/nilim-dashboard/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

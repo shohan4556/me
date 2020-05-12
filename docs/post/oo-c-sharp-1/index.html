@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.50" />
   <meta name="author" content="Shohanur Rahaman">
-  <meta name="description" content="Game Developer">
+  <meta name="description" content="Game Developer|Data Analyst">
 
   
   
@@ -252,25 +252,25 @@
 
 <li><p>As a best practice, define a constructor only when an object “needs” to be initialised or it won’t be able to do its job.</p></li>
 
-<li><p>Constructors do not have a return type, not even void, and they should have the exact same name as the class.</p>
+<li><p>Constructors do not have a return type, not even void, and they should have the exact same name as the class.</p></li>
+</ul>
 
 <pre><code>public class Car {
   
-public string Color;
-public string manufacturer;
+  public string Color;
+  public string manufacturer;
 
 // constructor
-public Car(string _color, string _manufacturer){
-Color = _color;
-manufacturer = _manufacturer;
-}
+  public Car(string _color, string _manufacturer){
+    Color = _color;
+    manufacturer = _manufacturer;
+  }
 
-public void Drive(){
-// car can drive
+  public void Drive(){
+    // car can drive
+  }
 }
-}
-</code></pre></li>
-</ul>
+</code></pre>
 
 <p><strong>Property</strong></p>
 
@@ -308,11 +308,11 @@ public void Drive(){
 <p>→ Example :  A car is a vehicle. (parent class vehicle, child class car).</p>
 
 <pre><code>Public class Vehicle{
-    // share common attribute 
+	// share common attribute 
 }
 
 Public class speedBoat : Vehicle{
-    // code specific to speedBoat
+	// code specific to speedBoat
 }
 </code></pre>
 

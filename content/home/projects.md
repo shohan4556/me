@@ -34,20 +34,21 @@ view = 1
   tag = ".phaser-js"
 
 [[filter]]
+  name = "DS/ML"
+  tag = ".AI"
+  
+[[filter]]
   name = "Academic"
   tag = ".academic"
 
 [[filter]]
+  name = "Prototype"
+  tag = ".prototype"
+  
+[[filter]]
   name = "Other"
   tag = ".other"
   
-[[filter]]
-  name = "Prototype"
-  tag = ".prototype"
-
-[[filter]]
-  name = "AI"
-  tag = ".AI"
 
 +++
 

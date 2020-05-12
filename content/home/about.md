@@ -12,7 +12,7 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
+    "Machine Learning",
     "Drawing",
     "Animation",
     "Travelling"
@@ -33,12 +33,24 @@ weight = 1
   course = "BSc in Computer Sceince & Engineering"
   institution = "City University"
   year = 2018
+  
+[[education.courses]]
+  course = "Msc in Computer Sceince & Engineering"
+  institution = "Jahangirnagar University"
+  year = 2019
  
 +++
 
 # About Me
 
-Indie game developer. Specialized in 2D and 3D gameplay programming with Unity3D. Solid foundation in programming (C#). Expert user of GitHub. Good at Game-Design. More than 3 years working within Unity3D.
+Professional game developer. Specialized in 2D and 3D gameplay scripting with Unity3D. Solid foundation in programming (C#), game AI, mechanim etc. Expert user of GitHub. Good at Game-Design. More than 4 years working within Unity3D.
+
+---
+✔Unity3D ✔C# ✔Game AI ✔Python3 ✔Data Analysis ✔Machine Learning ✔Growth Hacking ✔Digital Marketing Strategist 
+
+
+[see my video portfolio](https://www.youtube.com/watch?v=bZsKFHOL8tg)
+
 [see my github profile visualization](https://sourcerer.io/shohan4556)
 
-I am available as a freelance game developer and would love to take up challenging projects. If you would like to talk about a project, opportunity, consult about something feel free to leave a message.
+

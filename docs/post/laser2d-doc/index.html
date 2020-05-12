@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.50" />
   <meta name="author" content="Shohanur Rahaman">
-  <meta name="description" content="Game Developer">
+  <meta name="description" content="Game Developer|Data Analyst">
 
   
   
@@ -335,20 +335,20 @@ There is another way is <strong>Changing the Laser Direction.</strong></p>
 <p>To modify input go through the <code>LaserBeam</code> script and find the <code>FireLaser</code> function you can find there the input code. Its easy to change the code.
 Here is an example, assumes that you have a script <code>Myscript</code> you can simply do it like this  from <code>Myscript</code></p>
 
-<pre><code>    public LaserBeam laserbeam; // drag the LaserBeam gameobject
-    void Start()
-    {
-        if(laserbeam==null){
-           laserbeam =  Gameobject.FindObjectOfType&lt;LaserBeam&gt;();
-        }
-    }
-    
-    void Update()
-    {
-        if( Input.GetButtonDown(keyCode.Space){
-         laserbeam.FireLaser();   
-        }
-    }
+<pre><code>	public LaserBeam laserbeam; // drag the LaserBeam gameobject
+	void Start()
+	{
+		if(laserbeam==null){
+		   laserbeam = 	Gameobject.FindObjectOfType&lt;LaserBeam&gt;();
+		}
+	}
+	
+	void Update()
+	{
+	    if(	Input.GetButtonDown(keyCode.Space){
+		 laserbeam.FireLaser();   
+	    }
+	}
 </code></pre>
 
 <p><em>Note :</em> Don&rsquo;t forget to comment out the <code>FireLaser</code> method form the <code>LaserBeam</code> script.</p>

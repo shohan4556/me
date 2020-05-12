@@ -6,10 +6,55 @@
     <description>Recent content in Projects on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>100 Days of Code Challenge</title>
+      <link>https://shohan4556.github.io/me/project/100daysofcode/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/100daysofcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business Analysis</title>
+      <link>https://shohan4556.github.io/me/project/nilimshop-rmf-analysis/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/nilimshop-rmf-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Dashboard</title>
+      <link>https://shohan4556.github.io/me/project/nilim-dashboard/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/nilim-dashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mukti Path</title>
+      <link>https://shohan4556.github.io/me/project/mukti_path/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/mukti_path/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My Vidio Portfolio</title>
+      <link>https://shohan4556.github.io/me/project/my-video-portfolio/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/my-video-portfolio/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Neon Gunslinger : 2 Player Game</title>
@@ -17,7 +62,12 @@
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/neon_gunslinger/</guid>
-      <description>Neon Gunslinger is a fast paced duel shooting 2 player game. Duels gunslinger will tests your accuracy, timing and speed. (Neon Gunslinger is an Extended version of Duel Gunslinger.</description>
+      <description>Duel Gunslinger is a fast paced duel shooting game. You need at least two players to play the game.Duel gunslinger have two gameplay mode, gunslinger and quick draw. Each game-mode will give you a unique thrill. Duels gunslinger will tests your accuracy, timing and speed.
+How to play :
+Gunslinger :
+✋ A player stands on each side of the device
+✋ Each player have 4 bullets
+✋ Once the game starts, one player shoot the other player</description>
     </item>
     
     <item>
@@ -26,7 +76,10 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/boom-swipe/</guid>
-      <description>Boom Swipe : Arcade Game</description>
+      <description> Used Tech : Unity3D
+ View Trailer
+ Download from Google Play Store
+  </description>
     </item>
     
     <item>
@@ -35,7 +88,12 @@
       <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/duel_gunslinger/</guid>
-      <description>Duel Gunslinger is a fast paced duel shooting 2 player game. Duels gunslinger will tests your accuracy, timing and speed.</description>
+      <description>Duel Gunslinger is a fast paced duel shooting game. You need at least two players to play the game.Duel gunslinger have two gameplay mode, gunslinger and quick draw. Each game-mode will give you a unique thrill. Duels gunslinger will tests your accuracy, timing and speed.
+How to play :
+Gunslinger :
+✋ A player stands on each side of the device
+✋ Each player have 4 bullets
+✋ Once the game starts, one player shoot the other player</description>
     </item>
     
     <item>
@@ -44,7 +102,9 @@
       <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/rpg_cutscenes/</guid>
-      <description>Cinematic Cut Scenes</description>
+      <description> Used Tech : Cinemachine, Yarn Spinner.
+ View Project
+  </description>
     </item>
     
     <item>
@@ -53,7 +113,9 @@
       <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/rpg_dialogue_system/</guid>
-      <description>RPG Dialogue System</description>
+      <description> Used Tech : Cinemachine, Yarn Spinner.
+ View Project
+  </description>
     </item>
     
     <item>
@@ -62,7 +124,7 @@
       <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/genetic-algo/</guid>
-      <description>This is a simple implementation of Genetic Algorithm</description>
+      <description></description>
     </item>
     
     <item>
@@ -71,7 +133,7 @@
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/quiz-game/</guid>
-      <description>A quiz game for CEED IT</description>
+      <description></description>
     </item>
     
     <item>
@@ -80,7 +142,7 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/boid/</guid>
-      <description>This is an implementation of Flocking agent.</description>
+      <description></description>
     </item>
     
     <item>
@@ -89,7 +151,7 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/captain-bland/</guid>
-      <description>Captain Bland&amp;rsquo;s Space Adventure is inspired by 90s space shooter game. you can feel the spice when you play the game.</description>
+      <description></description>
     </item>
     
     <item>
@@ -98,7 +160,7 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/dark-inside/</guid>
-      <description>A puzzle platformer prototype made as a project in Software Engineering course.</description>
+      <description> Project Leader : Shohanur Rahaman Game Art: Belal Hossain View Project  </description>
     </item>
     
     <item>
@@ -107,7 +169,8 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/dark-proton/</guid>
-      <description>Bracket Editor Theme</description>
+      <description>When I have used to work with *PhaserJs I mostly work in night. My eyes is very sensitive so that I have tried several themes most of the themes were not suits to my eyes. So I have decided to make my own theme and made this theme which is availe on braket theme repository.
+ Here is the theme repository.  </description>
     </item>
     
     <item>
@@ -116,7 +179,7 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/fuzzle/</guid>
-      <description>Tap what you read not what you see.</description>
+      <description></description>
     </item>
     
     <item>
@@ -125,7 +188,7 @@
       <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/laser2d/</guid>
-      <description>Free laser effect available on Unity Asset Store</description>
+      <description></description>
     </item>
     
     <item>
@@ -134,7 +197,7 @@
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/iso-car-prototype/</guid>
-      <description>Hudai Kaj kam nai ki kormu</description>
+      <description></description>
     </item>
     
     <item>
@@ -143,7 +206,7 @@
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/jolly-jumper/</guid>
-      <description>Addictive arcade style game.</description>
+      <description></description>
     </item>
     
   </channel>

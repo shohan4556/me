@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>b2mgames on Hello !</title>
+    <title>B2mgames on Hello !</title>
     <link>https://shohan4556.github.io/me/tags/b2mgames/</link>
-    <description>Recent content in b2mgames on Hello !</description>
+    <description>Recent content in B2mgames on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
     <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,10 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/boom-swipe/</guid>
-      <description>Boom Swipe : Arcade Game</description>
+      <description> Used Tech : Unity3D
+ View Trailer
+ Download from Google Play Store
+  </description>
     </item>
     
   </channel>

@@ -17,7 +17,7 @@
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/how_to_setup_git_with_gdrive/</guid>
-      <description>Install google drive, dropbox on your local PC and enable sync</description>
+      <description>step - 01 : Install google drive, dropbox on your local PC and enable sync. step - 02 : install and configure git on your PC. step - 03 : create a folder on google-drive and open git-bash there step - 04 : write git command git init --bare step - 05 : Initialize a git repo outside of google-drive step - 06: now connect google drive repo with your the repo that you just created outside of google drive.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/how-to-get-github-student-pack/</guid>
-      <description>গিটহাব ১৮+ যেকোনো স্টুডেন্টকে তাদের স্টুডেন্ট প্যাকটা ফ্রি দেয়। এই প্যাকেজে অনেক প্রিমিয়াম ফিচার ইনক্লুডেড যেমন ২ বছর এর জন্য &amp;hellip;</description>
+      <description>গিটহাব ১৮+ যেকোনো স্টুডেন্টকে তাদের স্টুডেন্ট প্যাকটা ফ্রি দেয়। এই প্যাকেজে অনেক প্রিমিয়াম ফিচার ইনক্লুডেড যেমন ২ বছর এর জন্য যেমন, গিটহাবে আনলিমিটেড প্রাইভেট রিপো খুলতে পারবে, একটা .me ফ্রি ডোমেইন, হ্যাকহ্যান্ড এ ৩০৳ এর ফ্রি সার্ভিস নিতে পারবে, গিটক্রাকেন প্রো ১ বছর এর জন্য ফ্রি ব্যাবহার করতে পারবে সহ আরও অনেক কিছু। এই প্যাক নিতে যেটা করতে হবে এই লিঙ্কে (https://education.github.com/) গিয়ে কলেজ অথবা ইউনিভারসিটির ভেরিফাইড মেইল (educational mail) দিয়ে একটা ফর্ম সাবমিট করতে হয়, তারপর ২৪ ঘণ্টার এর মধ্যে রিভিউ হয়ে কনফার্মেশন মেইল আসবে। বাংলাদেশের অধিঙ্কাংশ শিক্ষা প্রতিষ্ঠান শিক্ষার্থীদের জন্য কোন মেইল সার্ভিস প্রভাইড করে না। আপনি যদি জিমেইল, বা ইয়াহু মেইল দেন তাহলে না পাওয়ার সম্ভাবনা বেশি। এজন্য আপনাকে আপনার আইডি কার্ড এর একটা ছবি তুলে দিতে হবে যেখানে ভেলিডেশন তারিখটা দেখা যায়। এটা ইম্পরট্যান্ট যদি ভেলিডেশন তারিখ না থাকে তাহলে নাও পেতে পারেন। আমার আপলোড করা ছবিটা একবার দেখে নিতে পারেন।</description>
     </item>
     
     <item>
@@ -35,10 +35,9 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/post/github-basic/</guid>
-      <description>&lt;p&gt;আপনি কেন ওপেন সোর্স প্রোজেক্টে আপনার শ্রম দিবেন ?&lt;/p&gt;
-
-&lt;p&gt;কারনটা হচ্ছে ,আপনার নিজের ভালোর জন্য , আপনি ওপেন সোর্সে আপানার যে স্কিল, শ্রম, এবং সময় দিবেন সেটা আসলে আপনার নিজেকে আরও দক্ষ করা জন্য, একটা উদাহরণ দেই ধরা যাক আপনি  atom editor এর একটা বাগ খুঁজে বের করলেন &amp;hellip;&lt;/p&gt;
-</description>
+      <description>ওপেন সোর্স এ contribution করার জন্য Github এর কোন বিকল্প খুব কমই আছে। Github খুব সম্ভবত বড়ো কোড hosting সাইট । github এ পাবলিক অথবা প্রাইভেট (সামান্য অর্থের বিনিময়ে) repository খোলা যায়।
+আপনি কেন ওপেন সোর্স প্রোজেক্টে আপনার শ্রম দিবেন ?
+কারনটা হচ্ছে ,আপনার নিজের ভালোর জন্য , আপনি ওপেন সোর্সে আপানার যে স্কিল, শ্রম, এবং সময় দিবেন সেটা আসলে আপনার নিজেকে আরও দক্ষ করা জন্য, একটা উদাহরণ দেই ধরা যাক আপনি atom editor এর একটা বাগ খুঁজে বের করলেন এবং pull request সেন্ড করলেন তখন atom এর contributor list এ আপনার নামটা উঠে যাবে, বাগটা যেহেতু আপনি খুঁজে বের করেছেন সেহেতু আপনার ডিবাগিং স্কিলটা ঝালাই হয়ে গেলো এছাড়া আপনার জব পাওয়ার জন্য ওপেন সোর্স contributor রা অগ্রাধিকার পায়।গুগল, ফেসবুক থেকে শুরু করে মাইক্রোসফট পর্যন্ত এখন ওপেন সোর্সের দিকে ঝুঁকছে। সবচেয়ে বড় কথা আপনি শিখতে পারবেন। আপনার একটা পরিচিতি হবে, একটা কমিউনিটি বিল্ডাপ হবে।</description>
     </item>
     
   </channel>

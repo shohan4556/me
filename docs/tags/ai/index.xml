@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI on Hello !</title>
+    <title>Ai on Hello !</title>
     <link>https://shohan4556.github.io/me/tags/ai/</link>
-    <description>Recent content in AI on Hello !</description>
+    <description>Recent content in Ai on Hello !</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Shohan</copyright>
-    <lastBuildDate>Sun, 25 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shohan4556.github.io/me/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>100 Days of Code Challenge</title>
+      <link>https://shohan4556.github.io/me/project/100daysofcode/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/100daysofcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business Analysis</title>
+      <link>https://shohan4556.github.io/me/project/nilimshop-rmf-analysis/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/nilimshop-rmf-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Dashboard</title>
+      <link>https://shohan4556.github.io/me/project/nilim-dashboard/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shohan4556.github.io/me/project/nilim-dashboard/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Genetic Algorithm with Machine Learning</title>
@@ -17,7 +44,7 @@
       <pubDate>Sun, 25 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/genetic-algo/</guid>
-      <description>This is a simple implementation of Genetic Algorithm</description>
+      <description></description>
     </item>
     
     <item>
@@ -26,7 +53,7 @@
       <pubDate>Tue, 12 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://shohan4556.github.io/me/project/boid/</guid>
-      <description>This is an implementation of Flocking agent.</description>
+      <description></description>
     </item>
     
   </channel>
